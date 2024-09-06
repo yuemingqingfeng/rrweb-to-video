@@ -61,7 +61,7 @@ class Page extends events.EventEmitter {
     this.readAble.push(null)
     this.ffmpeg
     .videoCodec('mpeg4')
-    .videoBitrate('1000k')
+    .videoBitrate('4000k')
     .inputFPS(50)
     .on('end', () => {
       console.log('\n视频转换成功')
