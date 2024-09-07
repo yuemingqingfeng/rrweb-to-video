@@ -42,11 +42,11 @@ class Page extends events.EventEmitter {
       }
       
     }
-    await this.page.goto('http://127.0.0.1:8888')
+    await this.page.goto('http://127.0.0.1:8888/replay.html')
   }
   async startCut () {
     this.startTime = Date.now()
-    this.progressBar = new ProgressBar('开始转换 [:bar] :percent', { total: this.timeLength, width: 50, complete: '=' });
+    this.progressBar = new ProgressBar('开始转换 [:bar] :percent', { total: this.timeLength, width: 50, complete: '*' });
     this.iframe = await this.page.$('iframe')
     this.isPlaying = true;
     this.imgIndex = 0
@@ -61,7 +61,7 @@ class Page extends events.EventEmitter {
     this.readAble.push(null)
     this.ffmpeg
     .videoCodec('mpeg4')
-    .videoBitrate('4000k')
+    .videoBitrate('400k')
     .inputFPS(50)
     .on('end', () => {
       console.log('\n视频转换成功')

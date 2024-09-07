@@ -3,9 +3,10 @@ const path = require('path');
 const app = express()
 
 const createServer = function () {
-  app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '../replay.html'))
-  })
+
+  //本地化配置
+  app.use(express.static('dist'));
+
   
   const server = app.listen(8888, function () {
     var host = server.address().address
