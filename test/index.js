@@ -1,6 +1,6 @@
-const rr = require('../src/index')
+const rr = require('../bin/index')
 
-const Transform = require('../src/transform')
+const Transform = require('../bin/transform')
 
 
 const events = require('./test.js')

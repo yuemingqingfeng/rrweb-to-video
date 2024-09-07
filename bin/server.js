@@ -5,7 +5,7 @@ const app = express()
 const createServer = function () {
 
   //本地化配置
-  app.use(express.static('dist'));
+  app.use(express.static('public'));
 
   
   const server = app.listen(8888, function () {
