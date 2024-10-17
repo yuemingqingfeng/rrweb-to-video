@@ -13,8 +13,8 @@ class Manager {
     console.log('启动无头浏览器')
     this.browser = await puppeteer.launch({
       ignoreHTTPSErrors: true,
-      headless: false,
-      devtools: true,
+      headless: true,
+      devtools: false,
       args: [
         '–disable-gpu',
         '–disable-dev-shm-usage',
@@ -39,10 +39,13 @@ class Manager {
       // console.log('开始回放')
     })
     pageTab.on('end', () => {
-      //console.log('结束回放，生成视频')
+      console.log('结束回放，生成视频')
       pageTab.close()
       let index = this.pageList.indexOf(pageTab)
       this.pageList.splice(index, 1)
+    })
+    pageTab.on('error', (error) => {
+      console.log("报错了")
     })
     pageTab.init()
     this.pageList.push(pageTab)
@@ -60,8 +63,6 @@ class Manager {
     } else {
       this.newPage(events, options)
     }
-    
-
   }
 }
 

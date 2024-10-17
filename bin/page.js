@@ -61,7 +61,7 @@ class Page extends events.EventEmitter {
     this.readAble.push(null)
     this.ffmpeg
     .videoCodec('mpeg4')
-    .videoBitrate('100k')
+    .videoBitrate(20756240)
     .inputFPS(50)
     .on('end', () => {
       console.log('\n视频转换成功')
@@ -75,34 +75,50 @@ class Page extends events.EventEmitter {
     this.emit('end')
   }
   updateCanvas () {
-    if (this.isPlaying === false) {
-      return;
-    }
-    var speed = 20
-    if (this.imgIndex * speed >= this.timeLength) {
-      this.stopCut();
-      return;
-    }
-    this.progressBar.tick(speed)
-
-    this.iframe.screenshot({
-      type: 'png',
-      encoding: 'binary',
-    }).then(buffer => {
+    try{
       if (this.isPlaying === false) {
         return;
       }
-      this.readAble.push(buffer)
-      this.page.evaluate((data) => {
-        window.chromePlayer.pause(data * 20);
-      }, this,this.imgIndex)
 
-      this.updateCanvas(this.imgIndex++)
-    }).catch(e => {
-      // console.error(e)
+
+      var speed = 10
+
+      var bit = Math.floor(1000/speed)
+
+      //实际视频长度
+
+      if (this.imgIndex * bit >= this.timeLength) {
+        this.stopCut();
+        return;
+      }
+      this.progressBar.tick(bit)
+  
+      this.iframe.screenshot({
+        type: 'png',
+        encoding: 'binary',
+      }).then(buffer => {
+        if (this.isPlaying === false) {
+          return;
+        }
+        this.readAble.push(buffer)
+        this.page.evaluate((data) => {
+          // try{
+          window.chromePlayer.pause(data.index*data.bit);
+          // }catch(ex){
+          //   console.log(`rrweb再现报错`)
+          // }
+        }, {"index":this.imgIndex,"bit":bit}).catch((ex)=>{
+          console.log(`rrweb再现报错`)
+        })
+  
+        this.updateCanvas(this.imgIndex++)
+      }).catch(e => {
+        // console.error(e)
+        console.log("录制截图报错了--------")
+      })
+    }catch(ex){
       console.log("录制截图报错了--------")
-      this.updateCanvas(this.imgIndex++)
-    })
+    }
   }
   /**
    * 视频转换成功后，关闭tab页
