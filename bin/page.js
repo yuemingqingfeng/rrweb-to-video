@@ -81,7 +81,7 @@ class Page extends events.EventEmitter {
       }
 
 
-      var speed = 10
+      var speed = 15
 
       var bit = Math.floor(1000/speed)
 
