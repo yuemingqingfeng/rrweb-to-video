@@ -3,7 +3,7 @@ const rr = require('../bin/index')
 const Transform = require('../bin/transform')
 
 
-const events = require('./test.js')
+const events = require('./compare.js')
 
 let trans = new Transform(events)
 

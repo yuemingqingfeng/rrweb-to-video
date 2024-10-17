@@ -9,11 +9,24 @@
     />
     <script src="./rrweb.min.js"></script>
     <script src="./lz-string.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/rrweb-player@latest/dist/style.css">
+    <script src="https://fastly.jsdelivr.net/npm/rrweb-player@latest/dist/index.js"></script> -->
     <title>Document</title>
   </head>
   <body>
     <script>
+      // const link = document.createElement('link')
+      // link.type = 'text/css'
+      // link.rel = 'stylesheet'
+      // link.href = 'https://fastly.jsdelivr.net/npm/rrweb-player@latest/dist/style.css'
+      // document.head.appendChild(link)
+      // const s = document.createElement('script')
+      // s.type = 'text/javascript'
+      // s.src = 'https://fastly.jsdelivr.net/npm/rrweb-player@latest/dist/index.js'
+      // document.body.appendChild(s)
+
       window.onload = function () {
+
         window.pageLoaded();
       };
       function replay(events) {
@@ -36,7 +49,13 @@
           window.replayEnd();
         });
 
-        window.chromePlayer.play();
+        window.chromePlayer.on("error",(error) => {
+          console.log("rrweb报错了-------")
+        })
+
+        window.chromePlayer.play().on(err => ()=>{
+          console.log("播放途中报错")
+        });
       }
     </script>
   </body>

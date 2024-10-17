@@ -1,1194 +1,2897 @@
-let events = [
-    {
-        "type": 4,
-        "data": {
-            "href": "http://127.0.0.1:7001/record",
-            "width": 1536,
-            "height": 682
-        },
-        "timestamp": 1608724377509
-    },
-    {
-        "type": 2,
-        "data": {
-            "node": {
-                "type": 0,
-                "childNodes": [
-                    {
-                        "type": 1,
-                        "name": "html",
-                        "publicId": "",
-                        "systemId": "",
-                        "id": 2
-                    },
-                    {
-                        "type": 2,
-                        "tagName": "html",
-                        "attributes": {
-                            "lang": "en"
-                        },
-                        "childNodes": [
-                            {
-                                "type": 2,
-                                "tagName": "head",
-                                "attributes": {},
-                                "childNodes": [
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 5
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "meta",
-                                        "attributes": {
-                                            "charset": "UTF-8"
-                                        },
-                                        "childNodes": [],
-                                        "id": 6
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 7
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "meta",
-                                        "attributes": {
-                                            "name": "viewport",
-                                            "content": "width=device-width, initial-scale=1.0"
-                                        },
-                                        "childNodes": [],
-                                        "id": 8
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 9
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "title",
-                                        "attributes": {},
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "rrweb",
-                                                "id": 11
-                                            }
-                                        ],
-                                        "id": 10
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 12
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "link",
-                                        "attributes": {
-                                            "rel": "stylesheet",
-                                            "href": "https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css"
-                                        },
-                                        "childNodes": [],
-                                        "id": 13
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 14
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "link",
-                                        "attributes": {
-                                            "rel": "stylesheet",
-                                            "href": "https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css"
-                                        },
-                                        "childNodes": [],
-                                        "id": 15
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 16
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "link",
-                                        "attributes": {
-                                            "href": "http://127.0.0.1:7001/index.css"
-                                        },
-                                        "childNodes": [],
-                                        "id": 17
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 18
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "script",
-                                        "attributes": {
-                                            "src": "https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.js"
-                                        },
-                                        "childNodes": [],
-                                        "id": 19
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 20
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "style",
-                                        "attributes": {},
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n      textarea {\n        width: 500px;\n        height: 100px;\n      }\n      .color-block {\n        min-height: 100px;\n        line-height: 100px;\n        margin-bottom: 10px;\n        text-align: center;\n      }\n      img {\n        width: 300px;\n      }\n    ",
-                                                "isStyle": true,
-                                                "id": 22
-                                            }
-                                        ],
-                                        "id": 21
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 23
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "script",
-                                        "attributes": {},
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "SCRIPT_PLACEHOLDER",
-                                                "id": 25
-                                            }
-                                        ],
-                                        "id": 24
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n  ",
-                                        "id": 26
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "style",
-                                        "attributes": {
-                                            "type": "text/css"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "#visual-info-panel {display: none; position: fixed;bottom: 0;right: 0;height:100%;width: 300px;background: #fff;border: 1px solid #ccc;z-index: 99999; transition: all 0.3s ease-in-out; overflow-x: hidden; overflow-y: auto;}#visual-info-panel .info-panel-header { height: 48px; width: 300px; line-height: 48px; padding: 0 12px; font-size: 14px; border-bottom: 1px solid #ccc; box-sizing: border-box; }#visual-info-panel .expendBtn { position: absolute; display: inline-block; right: 0px; margin: 8px; cursor: pointer; color: #3E7FEE; }#visual-info-panel .info-panel-body { width: 300px; line-height: 18px; padding: 12px; font-size: 14px; box-sizing: border-box; }#visual-info-panel.close { height: 48px; width: 48px; overflow: hidden; }.hubble-abtest-page-overlay {background: transparent;display: none;position: fixed;right: 0px;top: 0px;width: 100%;height: 100%;margin: 0 !important;padding: 0 !important;z-index: 99998}.hubble-abtest-cursor {position: fixed; background-color: rgba(0, 107, 255, 0.21); border: 1px solid rgba(0, 107, 255, 1); z-index: 99998;pointer-events: none;border-radius: 2px;box-sizing: content-box;margin: 0 !important;padding: 0 !important; }.hubble-abtest-selected {z-index: 99999;}.left-line-distance, .top-line-distance, .right-line-distance, .bottom-line-distance {position: absolute; width: 0; height: 0px;}.left-line-distance { right: 100%; top: 50%; border-top: 1px solid #fe4066; }.right-line-distance { left: 100%; top: 50%; border-top: 1px solid #fe4066; }.top-line-distance { left: 50%; bottom: 100%; border-right: 1px solid #fe4066; }.bottom-line-distance { left: 50%; top: 100%; border-right: 1px solid #fe4066; }.left-line-distance .text, .top-line-distance .text, .right-line-distance .text, .bottom-line-distance .text, .rect-hover-width-text, .rect-hover-height-text { position: absolute; diaplay: inline-block; border-radius: 2px; padding: 2px; font-size: 12px; background: #fff; color: #fe4066; }.left-line-distance .text, .right-line-distance .text { left: 50%; transform: translateX(-50%); bottom: 6px; }.top-line-distance .text, .bottom-line-distance .text { top: 50%; transform: translateY(-50%); left: 6px; }.line-v, .line-h { position: fixed; top: 0; left: 0; border: 1px dashed #009dff; box-sizing: border-box; }.line-v { width: 100%; height: 0; border-left: 0; border-right: 0;}.line-h { width: 0; height: 100%; border-top: 0; border-bottom: 0;}.rect-hover-width-text {  left: 50%; bottom: calc(100% + 6px); transform: translateX(-50%); }.rect-hover-height-text { right: calc(100% + 6px); top: 50%; transform: translateY(-50%); }",
-                                                "isStyle": true,
-                                                "id": 28
-                                            }
-                                        ],
-                                        "id": 27
-                                    }
-                                ],
-                                "id": 4
-                            },
-                            {
-                                "type": 3,
-                                "textContent": "\n  ",
-                                "id": 29
-                            },
-                            {
-                                "type": 2,
-                                "tagName": "body",
-                                "attributes": {},
-                                "childNodes": [
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 31
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "button",
-                                        "attributes": {
-                                            "id": "start",
-                                            "onclick": "record()"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "开始录制",
-                                                "id": 33
-                                            }
-                                        ],
-                                        "id": 32
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 34
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "button",
-                                        "attributes": {
-                                            "id": "stop",
-                                            "onclick": "stopRecord()",
-                                            "style": "display: none"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n      停止录制\n    ",
-                                                "id": 36
-                                            }
-                                        ],
-                                        "id": 35
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 37
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "button",
-                                        "attributes": {
-                                            "id": "replay",
-                                            "onclick": "replay()",
-                                            "style": "display: none"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "回访",
-                                                "id": 39
-                                            }
-                                        ],
-                                        "id": 38
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 40
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "span",
-                                        "attributes": {
-                                            "style": "margin-left: 20px"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "数据大小：",
-                                                "id": 42
-                                            }
-                                        ],
-                                        "id": 41
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "span",
-                                        "attributes": {
-                                            "id": "dataSize"
-                                        },
-                                        "childNodes": [],
-                                        "id": 43
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 44
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "span",
-                                        "attributes": {
-                                            "style": "margin-left: 20px"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "视频时长：",
-                                                "id": 46
-                                            }
-                                        ],
-                                        "id": 45
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "span",
-                                        "attributes": {
-                                            "id": "timeLength"
-                                        },
-                                        "childNodes": [],
-                                        "id": 47
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 48
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "hr",
-                                        "attributes": {},
-                                        "childNodes": [],
-                                        "id": 49
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 50
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "textarea",
-                                        "attributes": {
-                                            "placeholder": "请输入内容"
-                                        },
-                                        "childNodes": [],
-                                        "id": 51
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 52
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "div",
-                                        "attributes": {
-                                            "class": "color-block",
-                                            "style": "background: red",
-                                            "onclick": "removeDom(this)"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n      ",
-                                                "id": 54
-                                            },
-                                            {
-                                                "type": 2,
-                                                "tagName": "img",
-                                                "attributes": {
-                                                    "src": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
-                                                },
-                                                "childNodes": [],
-                                                "id": 55
-                                            },
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n    ",
-                                                "id": 56
-                                            }
-                                        ],
-                                        "id": 53
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 57
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "div",
-                                        "attributes": {
-                                            "class": "color-block",
-                                            "style": "background: orange",
-                                            "onclick": "removeDom(this)"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n      ",
-                                                "id": 59
-                                            },
-                                            {
-                                                "type": 2,
-                                                "tagName": "img",
-                                                "attributes": {
-                                                    "src": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1089874897,1268118658&fm=26&gp=0.jpg"
-                                                },
-                                                "childNodes": [],
-                                                "id": 60
-                                            },
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n    ",
-                                                "id": 61
-                                            }
-                                        ],
-                                        "id": 58
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 62
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "div",
-                                        "attributes": {
-                                            "class": "color-block",
-                                            "style": "background: green",
-                                            "onclick": "removeDom(this)"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n      单击删除\n    ",
-                                                "id": 64
-                                            }
-                                        ],
-                                        "id": 63
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n    ",
-                                        "id": 65
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "div",
-                                        "attributes": {
-                                            "class": "color-block",
-                                            "style": "background: blue",
-                                            "onclick": "removeDom(this)"
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 3,
-                                                "textContent": "\n      单击删除\n    ",
-                                                "id": 67
-                                            }
-                                        ],
-                                        "id": 66
-                                    },
-                                    {
-                                        "type": 3,
-                                        "textContent": "\n  \n\n",
-                                        "id": 68
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "hubbleoverlay",
-                                        "attributes": {
-                                            "class": "hubble-abtest-page-overlay"
-                                        },
-                                        "childNodes": [],
-                                        "id": 69
-                                    },
-                                    {
-                                        "type": 2,
-                                        "tagName": "div",
-                                        "attributes": {
-                                            "id": "visual-info-panel",
-                                            "class": ""
-                                        },
-                                        "childNodes": [
-                                            {
-                                                "type": 2,
-                                                "tagName": "img",
-                                                "attributes": {
-                                                    "class": "expendBtn",
-                                                    "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAkklEQVRYR+1VWw6AIAyTG+8Gwg16Yw0f/m2WR5CYlE8aXWnWNh2bT9o8/xCBfylgZlfdGQAucYZ7+9alABvAcBGQAs0KPMsUpSRzQc93r3YKflQAZA8zs3p/ThP4sh+6cmAFMRGQAiM2zABKYMNqQdeiUYuOEKB1vCwHWN0yvDmKoxewAQwXASkwrYDKSAqsUOAGEu+CIYfBLMoAAAAASUVORK5CYII="
-                                                },
-                                                "childNodes": [],
-                                                "id": 71
-                                            },
-                                            {
-                                                "type": 2,
-                                                "tagName": "div",
-                                                "attributes": {
-                                                    "class": "info-panel-header",
-                                                    "style": "display: block;"
-                                                },
-                                                "childNodes": [
-                                                    {
-                                                        "type": 3,
-                                                        "textContent": "属性及样式",
-                                                        "id": 73
-                                                    }
-                                                ],
-                                                "id": 72
-                                            },
-                                            {
-                                                "type": 2,
-                                                "tagName": "div",
-                                                "attributes": {
-                                                    "class": "info-panel-body",
-                                                    "style": "display: block;"
-                                                },
-                                                "childNodes": [],
-                                                "id": 74
-                                            }
-                                        ],
-                                        "id": 70
-                                    }
-                                ],
-                                "id": 30
-                            }
-                        ],
-                        "id": 3
-                    }
-                ],
-                "id": 1
-            },
-            "initialOffset": {
-                "left": 0,
-                "top": 0
-            }
-        },
-        "timestamp": 1608724377515
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 0,
-            "texts": [],
-            "attributes": [
-                {
-                    "id": 32,
-                    "attributes": {
-                        "style": "display: none;"
-                    }
-                },
-                {
-                    "id": 35,
-                    "attributes": {
-                        "style": "display: inline-block;"
-                    }
-                }
-            ],
-            "removes": [],
-            "adds": []
-        },
-        "timestamp": 1608724377522
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 1,
-            "positions": [
-                {
-                    "x": 48,
-                    "y": 25,
-                    "id": 35,
-                    "timeOffset": 0
-                }
-            ]
-        },
-        "timestamp": 1608724377525
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 6,
-            "id": 32
-        },
-        "timestamp": 1608724377526
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 1,
-            "id": 51,
-            "x": 145,
-            "y": 98
-        },
-        "timestamp": 1608724377674
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 5,
-            "id": 51
-        },
-        "timestamp": 1608724377675
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 0,
-            "id": 51,
-            "x": 145,
-            "y": 98
-        },
-        "timestamp": 1608724377780
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 2,
-            "id": 51,
-            "x": 145,
-            "y": 98
-        },
-        "timestamp": 1608724377780
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 5,
-            "text": "d",
-            "isChecked": false,
-            "id": 51
-        },
-        "timestamp": 1608724377845
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 5,
-            "text": "ds",
-            "isChecked": false,
-            "id": 51
-        },
-        "timestamp": 1608724377993
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 1,
-            "positions": [
-                {
-                    "x": 82,
-                    "y": 41,
-                    "id": 49,
-                    "timeOffset": -454
-                },
-                {
-                    "x": 145,
-                    "y": 98,
-                    "id": 51,
-                    "timeOffset": -401
-                },
-                {
-                    "x": 147,
-                    "y": 98,
-                    "id": 51,
-                    "timeOffset": -231
-                },
-                {
-                    "x": 153,
-                    "y": 101,
-                    "id": 51,
-                    "timeOffset": -172
-                },
-                {
-                    "x": 183,
-                    "y": 120,
-                    "id": 51,
-                    "timeOffset": -116
-                },
-                {
-                    "x": 203,
-                    "y": 146,
-                    "id": 51,
-                    "timeOffset": -65
-                },
-                {
-                    "x": 217,
-                    "y": 156,
-                    "id": 30,
-                    "timeOffset": -5
-                }
-            ]
-        },
-        "timestamp": 1608724378029
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 5,
-            "text": "dsd",
-            "isChecked": false,
-            "id": 51
-        },
-        "timestamp": 1608724378118
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 5,
-            "text": "dsds",
-            "isChecked": false,
-            "id": 51
-        },
-        "timestamp": 1608724378248
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 1,
-            "id": 53,
-            "x": 437,
-            "y": 277
-        },
-        "timestamp": 1608724378443
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 6,
-            "id": 51
-        },
-        "timestamp": 1608724378444
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 1,
-            "positions": [
-                {
-                    "x": 232,
-                    "y": 170,
-                    "id": 53,
-                    "timeOffset": -454
-                },
-                {
-                    "x": 297,
-                    "y": 213,
-                    "id": 53,
-                    "timeOffset": -404
-                },
-                {
-                    "x": 324,
-                    "y": 233,
-                    "id": 53,
-                    "timeOffset": -351
-                },
-                {
-                    "x": 368,
-                    "y": 262,
-                    "id": 53,
-                    "timeOffset": -295
-                },
-                {
-                    "x": 403,
-                    "y": 274,
-                    "id": 53,
-                    "timeOffset": -239
-                },
-                {
-                    "x": 432,
-                    "y": 277,
-                    "id": 53,
-                    "timeOffset": -175
-                },
-                {
-                    "x": 437,
-                    "y": 277,
-                    "id": 53,
-                    "timeOffset": -107
-                },
-                {
-                    "x": 438,
-                    "y": 277,
-                    "id": 53,
-                    "timeOffset": -46
-                }
-            ]
-        },
-        "timestamp": 1608724378531
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 0,
-            "id": 53,
-            "x": 438,
-            "y": 277
-        },
-        "timestamp": 1608724378534
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 2,
-            "id": 53,
-            "x": 438,
-            "y": 277
-        },
-        "timestamp": 1608724378534
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 0,
-            "texts": [],
-            "attributes": [],
-            "removes": [
-                {
-                    "parentId": 30,
-                    "id": 53
-                }
-            ],
-            "adds": []
-        },
-        "timestamp": 1608724378535
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 1,
-            "id": 66,
-            "x": 531,
-            "y": 571
-        },
-        "timestamp": 1608724378944
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 1,
-            "positions": [
-                {
-                    "x": 438,
-                    "y": 277,
-                    "id": 58,
-                    "timeOffset": -494
-                },
-                {
-                    "x": 447,
-                    "y": 290,
-                    "id": 58,
-                    "timeOffset": -443
-                },
-                {
-                    "x": 506,
-                    "y": 388,
-                    "id": 58,
-                    "timeOffset": -391
-                },
-                {
-                    "x": 512,
-                    "y": 431,
-                    "id": 63,
-                    "timeOffset": -335
-                },
-                {
-                    "x": 520,
-                    "y": 481,
-                    "id": 63,
-                    "timeOffset": -279
-                },
-                {
-                    "x": 531,
-                    "y": 576,
-                    "id": 66,
-                    "timeOffset": -223
-                },
-                {
-                    "x": 530,
-                    "y": 571,
-                    "id": 66,
-                    "timeOffset": -159
-                }
-            ]
-        },
-        "timestamp": 1608724379032
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 0,
-            "id": 66,
-            "x": 531,
-            "y": 571
-        },
-        "timestamp": 1608724379064
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 2,
-            "id": 66,
-            "x": 531,
-            "y": 571
-        },
-        "timestamp": 1608724379064
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 0,
-            "texts": [],
-            "attributes": [],
-            "removes": [
-                {
-                    "parentId": 30,
-                    "id": 66
-                }
-            ],
-            "adds": []
-        },
-        "timestamp": 1608724379065
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 1,
-            "id": 63,
-            "x": 545,
-            "y": 458
-        },
-        "timestamp": 1608724379395
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 0,
-            "id": 63,
-            "x": 544,
-            "y": 456
-        },
-        "timestamp": 1608724379480
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 2,
-            "id": 63,
-            "x": 544,
-            "y": 456
-        },
-        "timestamp": 1608724379480
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 0,
-            "texts": [],
-            "attributes": [],
-            "removes": [
-                {
-                    "parentId": 30,
-                    "id": 63
-                }
-            ],
-            "adds": []
-        },
-        "timestamp": 1608724379481
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 1,
-            "positions": [
-                {
-                    "x": 531,
-                    "y": 570,
-                    "id": 3,
-                    "timeOffset": -441
-                },
-                {
-                    "x": 532,
-                    "y": 569,
-                    "id": 3,
-                    "timeOffset": -375
-                },
-                {
-                    "x": 540,
-                    "y": 542,
-                    "id": 3,
-                    "timeOffset": -317
-                },
-                {
-                    "x": 544,
-                    "y": 470,
-                    "id": 63,
-                    "timeOffset": -264
-                },
-                {
-                    "x": 545,
-                    "y": 460,
-                    "id": 63,
-                    "timeOffset": -208
-                },
-                {
-                    "x": 544,
-                    "y": 456,
-                    "id": 63,
-                    "timeOffset": -72
-                },
-                {
-                    "x": 524,
-                    "y": 437,
-                    "id": 3,
-                    "timeOffset": -22
-                }
-            ]
-        },
-        "timestamp": 1608724379537
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 1,
-            "id": 58,
-            "x": 470,
-            "y": 248
-        },
-        "timestamp": 1608724379678
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 0,
-            "id": 58,
-            "x": 470,
-            "y": 248
-        },
-        "timestamp": 1608724379752
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 2,
-            "id": 58,
-            "x": 470,
-            "y": 248
-        },
-        "timestamp": 1608724379752
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 0,
-            "texts": [],
-            "attributes": [],
-            "removes": [
-                {
-                    "parentId": 30,
-                    "id": 58
-                }
-            ],
-            "adds": []
-        },
-        "timestamp": 1608724379753
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 1,
-            "positions": [
-                {
-                    "x": 501,
-                    "y": 366,
-                    "id": 58,
-                    "timeOffset": -469
-                },
-                {
-                    "x": 484,
-                    "y": 278,
-                    "id": 58,
-                    "timeOffset": -413
-                },
-                {
-                    "x": 468,
-                    "y": 246,
-                    "id": 3,
-                    "timeOffset": -270
-                },
-                {
-                    "x": 283,
-                    "y": 199,
-                    "id": 3,
-                    "timeOffset": -209
-                },
-                {
-                    "x": 181,
-                    "y": 112,
-                    "id": 51,
-                    "timeOffset": -159
-                },
-                {
-                    "x": 72,
-                    "y": 53,
-                    "id": 51,
-                    "timeOffset": -103
-                },
-                {
-                    "x": 33,
-                    "y": 31,
-                    "id": 35,
-                    "timeOffset": -45
-                }
-            ]
-        },
-        "timestamp": 1608724380038
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 1,
-            "id": 35,
-            "x": 28,
-            "y": 29
-        },
-        "timestamp": 1608724380193
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 5,
-            "id": 35
-        },
-        "timestamp": 1608724380194
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 0,
-            "id": 35,
-            "x": 27,
-            "y": 28
-        },
-        "timestamp": 1608724380280
-    },
-    {
-        "type": 3,
-        "data": {
-            "source": 2,
-            "type": 2,
-            "id": 35,
-            "x": 27,
-            "y": 28
-        },
-        "timestamp": 1608724380280
-    }
-];
+let events =  [
+		{
+			"id": "64ef4741dc22313b820344b9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":4,\"data\":{\"href\":\"https://finance.xingbeibaoxian.com/insurance-main/short-product-detail?itemId=100775&bizCode=xb&posterId=934&shareKey=1008908029&recomKey=1008908029&hseshareKey=48e42f23b1a519c9\",\"width\":360,\"height\":722},\"timestamp\":1693402945015}]",
+			"sort": 1,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.432+0000"
+		},
+		{
+			"id": "64ef47413fc0fa5a7db3a28a",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":2,\"data\":{\"node\":{\"type\":0,\"childNodes\":[{\"type\":1,\"name\":\"html\",\"publicId\":\"\",\"systemId\":\"\",\"id\":2},{\"type\":2,\"tagName\":\"html\",\"attributes\":{\"lang\":\"zh-CN\"},\"childNodes\":[{\"type\":2,\"tagName\":\"head\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"charset\":\"utf-8\"},\"childNodes\":[],\"id\":5},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"app-id\",\"content\":\"1\"},\"childNodes\":[],\"id\":6},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"biz-type\",\"content\":\"102\"},\"childNodes\":[],\"id\":7},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"keywords\",\"content\":\"\"},\"childNodes\":[],\"id\":8},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"description\",\"content\":\"\"},\"childNodes\":[],\"id\":9},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"viewport\",\"content\":\"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\"},\"childNodes\":[],\"id\":10},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"format-detection\",\"content\":\"telephone=no\"},\"childNodes\":[],\"id\":11},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"icon\",\"type\":\"image/png\",\"href\":\"https://hzwimspic-1251601690.image.myqcloud.com/6fb14be0-45cb-11eb-a2a6-c93aa1f715ff_size_64x64\"},\"childNodes\":[],\"id\":12},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/css/vendor.1688550064213.da2dc4c5.chunk.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":13},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/css/main.1688550064213.9b98a27e.chunk.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":14},{\"type\":2,\"tagName\":\"style\",\"attributes\":{\"type\":\"text/css\"},\"childNodes\":[{\"type\":3,\"textContent\":\"#__vconsole {\\n  color: #000;\\n  font-size: 13px;\\n  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\\n  /* global */\\n  /* compoment */\\n}\\n#__vconsole .vc-max-height {\\n  max-height: 19.23076923em;\\n}\\n#__vconsole .vc-max-height-line {\\n  max-height: 3.38461538em;\\n}\\n#__vconsole .vc-min-height {\\n  min-height: 3.07692308em;\\n}\\n#__vconsole dd,\\n#__vconsole dl,\\n#__vconsole pre {\\n  margin: 0;\\n}\\n#__vconsole .vc-switch {\\n  display: block;\\n  position: fixed;\\n  right: 0.76923077em;\\n  bottom: 0.76923077em;\\n  color: #FFF;\\n  background-color: #04BE02;\\n  line-height: 1;\\n  font-size: 1.07692308em;\\n  padding: 0.61538462em 1.23076923em;\\n  z-index: 10000;\\n  border-radius: 0.30769231em;\\n  box-shadow: 0 0 0.61538462em rgba(0, 0, 0, 0.4);\\n}\\n#__vconsole .vc-mask {\\n  display: none;\\n  position: fixed;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  background: rgba(0, 0, 0, 0);\\n  z-index: 10001;\\n  transition: background 0.3s;\\n  -webkit-tap-highlight-color: transparent;\\n  overflow-y: scroll;\\n}\\n#__vconsole .vc-panel {\\n  display: none;\\n  position: fixed;\\n  min-height: 85%;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  z-index: 10002;\\n  background-color: #EFEFF4;\\n  -webkit-transition: -webkit-transform 0.3s;\\n  transition: -webkit-transform 0.3s;\\n  transition: transform 0.3s;\\n  transition: transform 0.3s, -webkit-transform 0.3s;\\n  -webkit-transform: translate(0, 100%);\\n  transform: translate(0, 100%);\\n}\\n#__vconsole .vc-tabbar {\\n  border-bottom: 1px solid #D9D9D9;\\n  overflow-x: auto;\\n  height: 3em;\\n  width: auto;\\n  white-space: nowrap;\\n}\\n#__vconsole .vc-tabbar .vc-tab {\\n  display: inline-block;\\n  line-height: 3em;\\n  padding: 0 1.15384615em;\\n  border-right: 1px solid #D9D9D9;\\n  text-decoration: none;\\n  color: #000;\\n  -webkit-tap-highlight-color: transparent;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-tabbar .vc-tab:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-tabbar .vc-tab.vc-actived {\\n  background-color: #FFF;\\n}\\n#__vconsole .vc-content {\\n  background-color: #FFF;\\n  overflow-x: hidden;\\n  overflow-y: auto;\\n  position: absolute;\\n  top: 3.07692308em;\\n  left: 0;\\n  right: 0;\\n  bottom: 3.07692308em;\\n  -webkit-overflow-scrolling: touch;\\n  margin-bottom: constant(safe-area-inset-bottom);\\n  margin-bottom: env(safe-area-inset-bottom);\\n}\\n#__vconsole .vc-content.vc-has-topbar {\\n  top: 5.46153846em;\\n}\\n#__vconsole .vc-topbar {\\n  background-color: #FBF9FE;\\n  display: flex;\\n  display: -webkit-box;\\n  flex-direction: row;\\n  flex-wrap: wrap;\\n  -webkit-box-direction: row;\\n  -webkit-flex-wrap: wrap;\\n  width: 100%;\\n}\\n#__vconsole .vc-topbar .vc-toptab {\\n  display: none;\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  line-height: 2.30769231em;\\n  padding: 0 1.15384615em;\\n  border-bottom: 1px solid #D9D9D9;\\n  text-decoration: none;\\n  text-align: center;\\n  color: #000;\\n  -webkit-tap-highlight-color: transparent;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-topbar .vc-toptab.vc-toggle {\\n  display: block;\\n}\\n#__vconsole .vc-topbar .vc-toptab:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-topbar .vc-toptab.vc-actived {\\n  border-bottom: 1px solid #3e82f7;\\n}\\n#__vconsole .vc-logbox {\\n  display: none;\\n  position: relative;\\n  min-height: 100%;\\n}\\n#__vconsole .vc-logbox i {\\n  font-style: normal;\\n}\\n#__vconsole .vc-logbox .vc-log {\\n  padding-bottom: 3em;\\n  -webkit-tap-highlight-color: transparent;\\n}\\n#__vconsole .vc-logbox .vc-log:empty:before {\\n  content: \\\"Empty\\\";\\n  color: #999;\\n  position: absolute;\\n  top: 45%;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  font-size: 1.15384615em;\\n  text-align: center;\\n}\\n#__vconsole .vc-logbox .vc-item {\\n  margin: 0;\\n  padding: 0.46153846em 0.61538462em;\\n  overflow: hidden;\\n  line-height: 1.3;\\n  border-bottom: 1px solid #EEE;\\n  word-break: break-word;\\n}\\n#__vconsole .vc-logbox .vc-item-info {\\n  color: #6A5ACD;\\n}\\n#__vconsole .vc-logbox .vc-item-debug {\\n  color: #DAA520;\\n}\\n#__vconsole .vc-logbox .vc-item-warn {\\n  color: #FFA500;\\n  border-color: #FFB930;\\n  background-color: #FFFACD;\\n}\\n#__vconsole .vc-logbox .vc-item-error {\\n  color: #DC143C;\\n  border-color: #F4A0AB;\\n  background-color: #FFE4E1;\\n}\\n#__vconsole .vc-logbox .vc-log.vc-log-partly .vc-item {\\n  display: none;\\n}\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-log .vc-item-log,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-info .vc-item-info,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-warn .vc-item-warn,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-error .vc-item-error {\\n  display: block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-content {\\n  margin-right: 4.61538462em;\\n  display: inline-block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-repeat {\\n  display: inline-block;\\n  margin-right: 0.30769231em;\\n  padding: 0 6.5px;\\n  color: #D7E0EF;\\n  background-color: #42597F;\\n  border-radius: 8.66666667px;\\n}\\n#__vconsole .vc-logbox .vc-item.vc-item-error .vc-item-repeat {\\n  color: #901818;\\n  background-color: #DC2727;\\n}\\n#__vconsole .vc-logbox .vc-item.vc-item-warn .vc-item-repeat {\\n  color: #987D20;\\n  background-color: #F4BD02;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code {\\n  display: block;\\n  white-space: pre-wrap;\\n  overflow: auto;\\n  position: relative;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input,\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output {\\n  padding-left: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input:before,\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {\\n  content: \\\"›\\\";\\n  position: absolute;\\n  top: -0.23076923em;\\n  left: 0;\\n  font-size: 1.23076923em;\\n  color: #6A5ACD;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {\\n  content: \\\"‹\\\";\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold {\\n  display: block;\\n  overflow: auto;\\n  -webkit-overflow-scrolling: touch;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer {\\n  display: block;\\n  font-style: italic;\\n  padding-left: 0.76923077em;\\n  position: relative;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:active {\\n  background-color: #E6E6E6;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:before {\\n  content: \\\"\\\";\\n  position: absolute;\\n  top: 0.30769231em;\\n  left: 0.15384615em;\\n  width: 0;\\n  height: 0;\\n  border: transparent solid 0.30769231em;\\n  border-left-color: #000;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer.vc-toggle:before {\\n  top: 0.46153846em;\\n  left: 0;\\n  border-top-color: #000;\\n  border-left-color: transparent;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner {\\n  display: none;\\n  margin-left: 0.76923077em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner.vc-toggle {\\n  display: block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner .vc-code-key {\\n  margin-left: 0.76923077em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer .vc-code-key {\\n  margin-left: 0;\\n}\\n#__vconsole .vc-logbox .vc-code-key {\\n  color: #905;\\n}\\n#__vconsole .vc-logbox .vc-code-private-key {\\n  color: #D391B5;\\n}\\n#__vconsole .vc-logbox .vc-code-function {\\n  color: #905;\\n  font-style: italic;\\n}\\n#__vconsole .vc-logbox .vc-code-number,\\n#__vconsole .vc-logbox .vc-code-boolean {\\n  color: #0086B3;\\n}\\n#__vconsole .vc-logbox .vc-code-string {\\n  color: #183691;\\n}\\n#__vconsole .vc-logbox .vc-code-null,\\n#__vconsole .vc-logbox .vc-code-undefined {\\n  color: #666;\\n}\\n#__vconsole .vc-logbox .vc-cmd {\\n  position: absolute;\\n  height: 3.07692308em;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  border-top: 1px solid #D9D9D9;\\n  display: block!important;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input-wrap {\\n  display: block;\\n  height: 2.15384615em;\\n  margin-right: 3.07692308em;\\n  padding: 0.46153846em 0.61538462em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input {\\n  width: 100%;\\n  border: none;\\n  resize: none;\\n  outline: none;\\n  padding: 0;\\n  font-size: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input::-webkit-input-placeholder {\\n  line-height: 2.15384615em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn {\\n  position: absolute;\\n  top: 0;\\n  right: 0;\\n  bottom: 0;\\n  width: 3.07692308em;\\n  border: none;\\n  background-color: #EFEFF4;\\n  outline: none;\\n  -webkit-touch-callout: none;\\n  font-size: 1em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted {\\n  position: fixed;\\n  width: 100%;\\n  background-color: #FBF9FE;\\n  border: 1px solid #D9D9D9;\\n  overflow-x: scroll;\\n  display: none;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted li {\\n  list-style: none;\\n  line-height: 30px;\\n  padding: 0 0.46153846em;\\n  border-bottom: 1px solid #D9D9D9;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-preview {\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-preview:active {\\n  background-color: #E6E6E6;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-detail {\\n  display: none;\\n  padding: 0 0 0.76923077em 1.53846154em;\\n  border-bottom: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-detail {\\n  display: block;\\n  background-color: #FBF9FE;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-table-row {\\n  background-color: #FFF;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-preview {\\n  background-color: #FBF9FE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row {\\n  display: flex;\\n  display: -webkit-flex;\\n  flex-direction: row;\\n  flex-wrap: wrap;\\n  -webkit-box-direction: row;\\n  -webkit-flex-wrap: wrap;\\n  overflow: hidden;\\n  border-bottom: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row.vc-left-border {\\n  border-left: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col {\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  padding: 0.23076923em 0.30769231em;\\n  border-left: 1px solid #EEE;\\n  overflow: auto;\\n  white-space: pre-wrap;\\n  word-break: break-word;\\n  /*white-space: nowrap;\\n        text-overflow: ellipsis;*/\\n  -webkit-overflow-scrolling: touch;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col:first-child {\\n  border: none;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-small .vc-table-col {\\n  padding: 0 0.30769231em;\\n  font-size: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-2 {\\n  flex: 2;\\n  -webkit-box-flex: 2;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-3 {\\n  flex: 3;\\n  -webkit-box-flex: 3;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-4 {\\n  flex: 4;\\n  -webkit-box-flex: 4;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-5 {\\n  flex: 5;\\n  -webkit-box-flex: 5;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-6 {\\n  flex: 6;\\n  -webkit-box-flex: 6;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row-error {\\n  border-color: #F4A0AB;\\n  background-color: #FFE4E1;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row-error .vc-table-col {\\n  color: #DC143C;\\n  border-color: #F4A0AB;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-title {\\n  font-weight: bold;\\n}\\n#__vconsole .vc-logbox.vc-actived {\\n  display: block;\\n}\\n#__vconsole .vc-toolbar {\\n  border-top: 1px solid #D9D9D9;\\n  line-height: 3em;\\n  position: absolute;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  display: flex;\\n  display: -webkit-box;\\n  flex-direction: row;\\n  -webkit-box-direction: row;\\n}\\n#__vconsole .vc-toolbar .vc-tool {\\n  display: none;\\n  text-decoration: none;\\n  color: #000;\\n  width: 50%;\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  text-align: center;\\n  position: relative;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-toolbar .vc-tool.vc-toggle,\\n#__vconsole .vc-toolbar .vc-tool.vc-global-tool {\\n  display: block;\\n}\\n#__vconsole .vc-toolbar .vc-tool:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-toolbar .vc-tool:after {\\n  content: \\\" \\\";\\n  position: absolute;\\n  top: 0.53846154em;\\n  bottom: 0.53846154em;\\n  right: 0;\\n  border-left: 1px solid #D9D9D9;\\n}\\n#__vconsole .vc-toolbar .vc-tool-last:after {\\n  border: none;\\n}\\n@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {\\n  #__vconsole .vc-toolbar,\\n  #__vconsole .vc-switch {\\n    bottom: constant(safe-area-inset-bottom);\\n    bottom: env(safe-area-inset-bottom);\\n  }\\n}\\n#__vconsole.vc-toggle .vc-switch {\\n  display: none;\\n}\\n#__vconsole.vc-toggle .vc-mask {\\n  background: rgba(0, 0, 0, 0.6);\\n  display: block;\\n}\\n#__vconsole.vc-toggle .vc-panel {\\n  -webkit-transform: translate(0, 0);\\n  transform: translate(0, 0);\\n}\\n\",\"isStyle\":true,\"id\":16}],\"id\":15},{\"type\":2,\"tagName\":\"style\",\"attributes\":{\"type\":\"text/css\"},\"childNodes\":[{\"type\":3,\"textContent\":\"/* color */\\n.vcelm-node {\\n  color: #183691;\\n}\\n.vcelm-k {\\n  color: #0086B3;\\n}\\n.vcelm-v {\\n  color: #905;\\n}\\n/* layout */\\n.vcelm-l {\\n  padding-left: 8px;\\n  position: relative;\\n  word-wrap: break-word;\\n  line-height: 1;\\n}\\n/*.vcelm-l.vcelm-noc {\\n  padding-left: 0;\\n}*/\\n.vcelm-l.vc-toggle > .vcelm-node {\\n  display: block;\\n}\\n.vcelm-l .vcelm-node:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n.vcelm-l.vcelm-noc .vcelm-node:active {\\n  background-color: transparent;\\n}\\n.vcelm-t {\\n  white-space: pre-wrap;\\n  word-wrap: break-word;\\n}\\n/* level */\\n.vcelm-l .vcelm-l {\\n  display: none;\\n}\\n.vcelm-l.vc-toggle > .vcelm-l {\\n  margin-left: 4px;\\n  display: block;\\n}\\n/* arrow */\\n.vcelm-l:before {\\n  content: \\\"\\\";\\n  display: block;\\n  position: absolute;\\n  top: 6px;\\n  left: 3px;\\n  width: 0;\\n  height: 0;\\n  border: transparent solid 3px;\\n  border-left-color: #000;\\n}\\n.vcelm-l.vc-toggle:before {\\n  display: block;\\n  top: 6px;\\n  left: 0;\\n  border-top-color: #000;\\n  border-left-color: transparent;\\n}\\n.vcelm-l.vcelm-noc:before {\\n  display: none;\\n}\\n\",\"isStyle\":true,\"id\":18}],\"id\":17},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"stylesheet\",\"type\":\"text/css\",\"href\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/css/7.1688550064213.6b1877cb.chunk.css\"},\"childNodes\":[],\"id\":19},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"charset\":\"utf-8\",\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/7.1688550064213.6b1877cb.chunk.js\"},\"childNodes\":[],\"id\":20}],\"id\":4},{\"type\":2,\"tagName\":\"body\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"article\",\"attributes\":{\"id\":\"root\"},\"childNodes\":[],\"id\":22},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.haiziwang.com/static/tracker/4.0.0/tracker.js\"},\"childNodes\":[],\"id\":23},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://res.wx.qq.com/open/js/jweixin-1.4.0.js\"},\"childNodes\":[],\"id\":24},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/runtime.1688550064213.4d53ab65.js\"},\"childNodes\":[],\"id\":25},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/vendor.1688550064213.da2dc4c5.chunk.js\"},\"childNodes\":[],\"id\":26},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/main.1688550064213.9b98a27e.chunk.js\"},\"childNodes\":[],\"id\":27},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"toast\"},\"childNodes\":[],\"id\":28},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"alert\"},\"childNodes\":[],\"id\":29},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"loader\"},\"childNodes\":[],\"id\":30},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"sharePrompt\"},\"childNodes\":[],\"id\":31},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"sharePanel\"},\"childNodes\":[],\"id\":32}],\"id\":21}],\"id\":3}],\"id\":1},\"initialOffset\":{\"left\":0,\"top\":0}},\"timestamp\":1693402945026}]",
+			"sort": 2,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.485+0000"
+		},
+		{
+			"id": "64ef47413fc0fa5a7db3a28b",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":22,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_5lnStx3PO5XdQznjXoaYD undefined\"},\"childNodes\":[],\"id\":33}}]},\"timestamp\":1693402945083}]",
+			"sort": 3,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.493+0000"
+		},
+		{
+			"id": "64ef47413fc0fa5a7db3a288",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":4,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"title\",\"attributes\":{},\"childNodes\":[],\"id\":34}},{\"parentId\":34,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"产品详情\",\"id\":35}}]},\"timestamp\":1693402945095}]",
+			"sort": 4,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.482+0000"
+		},
+		{
+			"id": "64ef4741dc22313b820344c0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":22,\"nextId\":33,\"node\":{\"type\":2,\"tagName\":\"section\",\"attributes\":{\"class\":\"_3CuSebo5OVfWvrEKaqQrGy undefined\"},\"childNodes\":[],\"id\":36}},{\"parentId\":36,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2kugfkobIjYTyuljbNZj0\"},\"childNodes\":[],\"id\":37}},{\"parentId\":37,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3A7Q-E-8zu4T9WwXwI_gQm undefined\"},\"childNodes\":[],\"id\":38}},{\"parentId\":38,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":39}},{\"parentId\":39,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"d_7SihxB4-kUCilisTH7Z\"},\"childNodes\":[],\"id\":40}},{\"parentId\":40,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"button\",\"attributes\":{\"class\":\"_1sYtgtgE7CwWjKDD4lYmp8 ghDAwHxOMXoXGfbAvOQM2 undefined\"},\"childNodes\":[],\"id\":41}},{\"parentId\":41,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":42}},{\"parentId\":42,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"立即投保\",\"id\":43}},{\"parentId\":36,\"nextId\":37,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1EyapFgnzo4fOS_9wCIWST\"},\"childNodes\":[],\"id\":44}},{\"parentId\":36,\"nextId\":44,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_247SGjDnKJ99l0qVZyl-6M\"},\"childNodes\":[],\"id\":45}},{\"parentId\":36,\"nextId\":45,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3TaNVeLhMZhrPhf4UIjb-z\"},\"childNodes\":[],\"id\":46}},{\"parentId\":36,\"nextId\":46,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"B3rnIfm1qnc3fqPeHSt5c\"},\"childNodes\":[],\"id\":47}},{\"parentId\":36,\"nextId\":47,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"class\":\"_8jZnr0CtT6zjgFHY89Ni8\",\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/4545f283-62e4-4df7-be2f-635ca97409aa?imageMogr2/format/webp/quality/80/thumbnail/750x420\",\"alt\":\"产品顶图\"},\"childNodes\":[],\"id\":48}},{\"parentId\":36,\"nextId\":48,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3OZAXHH1KYD40S80OqS6_R KJFbQ1MFhe7spIvHAbKYc\"},\"childNodes\":[],\"id\":49}},{\"parentId\":49,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"ul\",\"attributes\":{\"class\":\"wYlAoox0w3ONQNC04Ky57 undefined\"},\"childNodes\":[],\"id\":50}},{\"parentId\":50,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"li\",\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ undefined\"},\"childNodes\":[],\"id\":51}},{\"parentId\":50,\"nextId\":51,\"node\":{\"type\":2,\"tagName\":\"li\",\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ undefined\"},\"childNodes\":[],\"id\":52}},{\"parentId\":50,\"nextId\":52,\"node\":{\"type\":2,\"tagName\":\"li\",\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ undefined\"},\"childNodes\":[],\"id\":53}},{\"parentId\":53,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"uwiw6XyO-7NgADE2_mF6g\"},\"childNodes\":[],\"id\":54}},{\"parentId\":54,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Lh2vvZOyssb7EG5g_ovjg\"},\"childNodes\":[],\"id\":55}},{\"parentId\":54,\"nextId\":55,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":56}},{\"parentId\":56,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"保障内容\",\"id\":57}},{\"parentId\":52,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"uwiw6XyO-7NgADE2_mF6g\"},\"childNodes\":[],\"id\":58}},{\"parentId\":58,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Lh2vvZOyssb7EG5g_ovjg\"},\"childNodes\":[],\"id\":59}},{\"parentId\":58,\"nextId\":59,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":60}},{\"parentId\":60,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"产品介绍\",\"id\":61}},{\"parentId\":51,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"uwiw6XyO-7NgADE2_mF6g\"},\"childNodes\":[],\"id\":62}},{\"parentId\":62,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Lh2vvZOyssb7EG5g_ovjg\"},\"childNodes\":[],\"id\":63}},{\"parentId\":62,\"nextId\":63,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":64}},{\"parentId\":64,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"理赔说明\",\"id\":65}},{\"parentId\":47,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_1iFAmIlZexLjvt7oqkkRVH\"},\"childNodes\":[],\"id\":66}},{\"parentId\":47,\"nextId\":66,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9UyNk9ueBS7X4bTpeevfL\"},\"childNodes\":[],\"id\":67}},{\"parentId\":67,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1bOwTS1AyTM2gz8yJ1srlf \"},\"childNodes\":[],\"id\":68}},{\"parentId\":67,\"nextId\":68,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1rXyRDpoakkOo_47iKhV-U\"},\"childNodes\":[],\"id\":69}},{\"parentId\":69,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"_3vIFvFzXr-HWs_CupaPAHk\"},\"childNodes\":[],\"id\":70}},{\"parentId\":68,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":71}},{\"parentId\":68,\"nextId\":71,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_30-7T0QZRfwuQAvCQ6tRFI\"},\"childNodes\":[],\"id\":72}},{\"parentId\":68,\"nextId\":72,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3Zn9bukFU_wZVj-Do-vOOl\"},\"childNodes\":[],\"id\":73}},{\"parentId\":73,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h2\",\"attributes\":{\"class\":\"_3dlXe9KhDm8EQM9u2diqMY\",\"id\":\"0\"},\"childNodes\":[],\"id\":74}},{\"parentId\":74,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"a\",\"attributes\":{\"href\":\"https://finance.xingbeibaoxian.com/insurance/richText?title=%E4%BF%9D%E9%9A%9C%E8%AF%A6%E6%83%85&refresh=no&itemId=100775\",\"class\":\"_1MjNE5w5q_ZaIFsdA5ip7-\"},\"childNodes\":[],\"id\":75}},{\"parentId\":74,\"nextId\":75,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":76}},{\"parentId\":76,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"保障内容\",\"id\":77}},{\"parentId\":75,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"查看保障详情\",\"id\":78}},{\"parentId\":72,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_38GakMf52V0dB6tYh4smHL\"},\"childNodes\":[],\"id\":79}},{\"parentId\":71,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3E_vlnUFN1XJsBPIsl9I44\"},\"childNodes\":[],\"id\":80}},{\"parentId\":80,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"WrdRZVmgfCEe-BosHGh8g\"},\"childNodes\":[],\"id\":81}},{\"parentId\":80,\"nextId\":81,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_3kFTyPu_2DOKmNFLYIPP-M\",\"aria-labelledby\":\"money-rmb money-rmb-value\"},\"childNodes\":[],\"id\":82}},{\"parentId\":82,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{\"id\":\"money-rmb-value\"},\"childNodes\":[],\"id\":83}},{\"parentId\":82,\"nextId\":83,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"id\":\"money-rmb\"},\"childNodes\":[],\"id\":84}},{\"parentId\":82,\"nextId\":84,\"node\":{\"type\":3,\"textContent\":\"¥\",\"id\":85}},{\"parentId\":84,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"780\",\"id\":86}},{\"parentId\":83,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"起\",\"id\":87}},{\"parentId\":81,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"查看保费\",\"id\":88}},{\"parentId\":66,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"a\",\"attributes\":{\"href\":\"https://finance.xingbeibaoxian.com/insurance/richText?title=%E5%81%A5%E5%BA%B7%E5%91%8A%E7%9F%A5&itemId=100775\"},\"childNodes\":[],\"id\":89}},{\"parentId\":66,\"nextId\":89,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":90}},{\"parentId\":90,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"查看\",\"id\":91}},{\"parentId\":89,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"《健康告知》\",\"id\":92}},{\"parentId\":46,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_95epCW6fTg0x1SNpuicPU\"},\"childNodes\":[],\"id\":93}},{\"parentId\":46,\"nextId\":93,\"node\":{\"type\":2,\"tagName\":\"h2\",\"attributes\":{\"class\":\"_3dlXe9KhDm8EQM9u2diqMY\",\"id\":\"1\"},\"childNodes\":[],\"id\":94}},{\"parentId\":94,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":95}},{\"parentId\":95,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"产品介绍\",\"id\":96}},{\"parentId\":93,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":97}},{\"parentId\":93,\"nextId\":97,\"node\":{\"type\":3,\"textContent\":\"\\n\",\"id\":98}},{\"parentId\":93,\"nextId\":98,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":99}},{\"parentId\":93,\"nextId\":99,\"node\":{\"type\":3,\"textContent\":\"\\n\",\"id\":100}},{\"parentId\":93,\"nextId\":100,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":101}},{\"parentId\":93,\"nextId\":101,\"node\":{\"type\":3,\"textContent\":\"\\n\",\"id\":102}},{\"parentId\":93,\"nextId\":102,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":103}},{\"parentId\":103,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/c664de49-7bef-4aeb-a2ba-1844fb0e41be\",\"alt\":\"\"},\"childNodes\":[],\"id\":104}},{\"parentId\":101,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/ae237a05-71c9-4ebf-b5bb-35ae79d77ea8\",\"alt\":\"\"},\"childNodes\":[],\"id\":105}},{\"parentId\":99,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/272aefa6-76f3-4a64-96f5-5d2e8f8cbf62\",\"alt\":\"\"},\"childNodes\":[],\"id\":106}},{\"parentId\":97,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/00cc1c14-bd19-49fb-afa7-6260fedba369\",\"alt\":\"\"},\"childNodes\":[],\"id\":107}},{\"parentId\":45,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1jogchOFY-HEabKINPDW-B\"},\"childNodes\":[],\"id\":108}},{\"parentId\":45,\"nextId\":108,\"node\":{\"type\":2,\"tagName\":\"h2\",\"attributes\":{\"class\":\"_3dlXe9KhDm8EQM9u2diqMY\",\"id\":\"2\"},\"childNodes\":[],\"id\":109}},{\"parentId\":109,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":110}},{\"parentId\":110,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"理赔说明\",\"id\":111}},{\"parentId\":44,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":112}},{\"parentId\":44,\"nextId\":112,\"node\":{\"type\":2,\"tagName\":\"h2\",\"attributes\":{\"class\":\"_3dlXe9KhDm8EQM9u2diqMY\",\"id\":\"3\"},\"childNodes\":[],\"id\":113}},{\"parentId\":113,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":114}},{\"parentId\":114,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"常见问题\",\"id\":115}},{\"parentId\":38,\"nextId\":39,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"wRIRj9JwbAUXCQoratsf\"},\"childNodes\":[],\"id\":116}},{\"parentId\":38,\"nextId\":116,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":117}},{\"parentId\":38,\"nextId\":117,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_16Nn5j551k3EqhdLRacvKv\"},\"childNodes\":[],\"id\":118}},{\"parentId\":38,\"nextId\":118,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1UVjB2b4yin_ns0XNdwqaV\"},\"childNodes\":[],\"id\":119}},{\"parentId\":119,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":120}},{\"parentId\":119,\"nextId\":120,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{},\"childNodes\":[],\"id\":121}},{\"parentId\":120,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"咨询\",\"id\":122}},{\"parentId\":116,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"vqwGlHmlYFKTtlZ2ZR2bx\"},\"childNodes\":[],\"id\":123}},{\"parentId\":116,\"nextId\":123,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":124}},{\"parentId\":116,\"nextId\":124,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":125}},{\"parentId\":116,\"nextId\":125,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{},\"childNodes\":[],\"id\":126}},{\"parentId\":126,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"¥\",\"id\":127}},{\"parentId\":125,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"780\",\"id\":128}},{\"parentId\":124,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"起\",\"id\":129}}]},\"timestamp\":1693402945407}]",
+			"sort": 5,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.714+0000"
+		},
+		{
+			"id": "64ef47413fc0fa5a7db3a28d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":112,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1qwkaOf0inNIsdEIz-GBW2\"},\"childNodes\":[],\"id\":130}},{\"parentId\":130,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":131}},{\"parentId\":131,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":132}},{\"parentId\":132,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_2jI8UJSLAFv8CvJlp0MNrf\"},\"childNodes\":[],\"id\":133}},{\"parentId\":133,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"出生28天-14周岁\",\"id\":134}},{\"parentId\":112,\"nextId\":130,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1qwkaOf0inNIsdEIz-GBW2\"},\"childNodes\":[],\"id\":135}},{\"parentId\":112,\"nextId\":135,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1qwkaOf0inNIsdEIz-GBW2\"},\"childNodes\":[],\"id\":136}},{\"parentId\":136,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":137}},{\"parentId\":137,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":138}},{\"parentId\":137,\"nextId\":138,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":139}},{\"parentId\":139,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_1R155-f73lJrKtzilWV3Vz\"},\"childNodes\":[],\"id\":140}},{\"parentId\":140,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"_1_He-h_zgreLvfrjq6k340 undefined\"},\"childNodes\":[],\"id\":141}},{\"parentId\":140,\"nextId\":141,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{\"class\":\"_2ySKL1fbbkWsdeAHbQC2Qb\"},\"childNodes\":[],\"id\":142}},{\"parentId\":140,\"nextId\":142,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"-uhmfnt_AS8cV0w9kz5lv\"},\"childNodes\":[],\"id\":143}},{\"parentId\":142,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"这款产品有等待期吗？\",\"id\":144}},{\"parentId\":138,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_2jI8UJSLAFv8CvJlp0MNrf\"},\"childNodes\":[],\"id\":145}},{\"parentId\":145,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"意外及狂犬病疫苗接种无等待期;疾病门急诊等待期30天;疾病住院等待期30天，如住院医疗未以社保身份结算则等待期为90天。续保无等待期。\",\"id\":146}},{\"parentId\":135,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":147}},{\"parentId\":147,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":148}},{\"parentId\":147,\"nextId\":148,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":149}},{\"parentId\":149,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_1R155-f73lJrKtzilWV3Vz\"},\"childNodes\":[],\"id\":150}},{\"parentId\":150,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"_1_He-h_zgreLvfrjq6k340 undefined\"},\"childNodes\":[],\"id\":151}},{\"parentId\":150,\"nextId\":151,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{\"class\":\"_2ySKL1fbbkWsdeAHbQC2Qb\"},\"childNodes\":[],\"id\":152}},{\"parentId\":150,\"nextId\":152,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"-uhmfnt_AS8cV0w9kz5lv\"},\"childNodes\":[],\"id\":153}},{\"parentId\":152,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"这款产品对医院有要求吗？\",\"id\":154}},{\"parentId\":148,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_2jI8UJSLAFv8CvJlp0MNrf\"},\"childNodes\":[],\"id\":155}},{\"parentId\":155,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"1、疾病和意外医疗：二级及以上公立医院普通部，在北京平谷区、北京密云区、辽宁铁岭县、河北青县、河北青龙县、廊坊市、山东禹城市以及河南信阳市的所有医院和中国医科大学附属盛京医院发生的医疗费用均不在保险赔偿范围之内。\\n2、狂犬疫苗接种：防疫站、疾控中心、社区医院或二级及以上公立医院\",\"id\":156}},{\"parentId\":131,\"nextId\":132,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":157}},{\"parentId\":157,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_1R155-f73lJrKtzilWV3Vz\"},\"childNodes\":[],\"id\":158}},{\"parentId\":158,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"_1_He-h_zgreLvfrjq6k340 undefined\"},\"childNodes\":[],\"id\":159}},{\"parentId\":158,\"nextId\":159,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{\"class\":\"_2ySKL1fbbkWsdeAHbQC2Qb\"},\"childNodes\":[],\"id\":160}},{\"parentId\":158,\"nextId\":160,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"-uhmfnt_AS8cV0w9kz5lv\"},\"childNodes\":[],\"id\":161}},{\"parentId\":160,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"多大年龄可以投保本产品\",\"id\":162}}]},\"timestamp\":1693402945445}]",
+			"sort": 6,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.738+0000"
+		},
+		{
+			"id": "64ef4741dc22313b820344c1",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":108,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":163}},{\"parentId\":163,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/7578d92d-b0bf-491b-8b61-f4aba024c30a\",\"alt\":\"\"},\"childNodes\":[],\"id\":164}}]},\"timestamp\":1693402945471}]",
+			"sort": 7,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.757+0000"
+		},
+		{
+			"id": "64ef47413fc0fa5a7db3a28e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":79,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":165}},{\"parentId\":165,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":166}},{\"parentId\":166,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":167}},{\"parentId\":79,\"nextId\":165,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":168}},{\"parentId\":79,\"nextId\":168,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":169}},{\"parentId\":79,\"nextId\":169,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":170}},{\"parentId\":79,\"nextId\":170,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":171}},{\"parentId\":79,\"nextId\":171,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":172}},{\"parentId\":79,\"nextId\":172,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":173}},{\"parentId\":79,\"nextId\":173,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":174}},{\"parentId\":79,\"nextId\":174,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Km3z-pBThukj7SvAixcvl\"},\"childNodes\":[],\"id\":175}},{\"parentId\":175,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":176}},{\"parentId\":176,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":177}},{\"parentId\":176,\"nextId\":177,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":178}},{\"parentId\":178,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":179}},{\"parentId\":179,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":180}},{\"parentId\":179,\"nextId\":180,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":181}},{\"parentId\":179,\"nextId\":181,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":182}},{\"parentId\":182,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"门急诊医疗保险金\",\"id\":183}},{\"parentId\":181,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"5000元\",\"id\":184}},{\"parentId\":174,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":185}},{\"parentId\":185,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":186}},{\"parentId\":185,\"nextId\":186,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":187}},{\"parentId\":187,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":188}},{\"parentId\":188,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":189}},{\"parentId\":188,\"nextId\":189,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":190}},{\"parentId\":188,\"nextId\":190,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":191}},{\"parentId\":191,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"一般住院医疗保险金\",\"id\":192}},{\"parentId\":190,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"200万元\",\"id\":193}},{\"parentId\":173,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":194}},{\"parentId\":194,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":195}},{\"parentId\":194,\"nextId\":195,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":196}},{\"parentId\":196,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":197}},{\"parentId\":197,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":198}},{\"parentId\":197,\"nextId\":198,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":199}},{\"parentId\":197,\"nextId\":199,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":200}},{\"parentId\":200,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"重度恶性肿瘤保险金\",\"id\":201}},{\"parentId\":199,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"200万元\",\"id\":202}},{\"parentId\":172,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":203}},{\"parentId\":203,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":204}},{\"parentId\":203,\"nextId\":204,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":205}},{\"parentId\":205,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 _1CW7i7spGvQRvbkz415wWE\",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":206}},{\"parentId\":206,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{},\"childNodes\":[],\"id\":207}},{\"parentId\":206,\"nextId\":207,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":208}},{\"parentId\":206,\"nextId\":208,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":209}},{\"parentId\":209,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"质子重离子医疗费补偿\",\"id\":210}},{\"parentId\":208,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"100万元\",\"id\":211}},{\"parentId\":204,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_14SABoDM03BycdOzL-ZrUu\"},\"childNodes\":[],\"id\":212}},{\"parentId\":212,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"被保险人满18个月及以上拓展该权益\",\"id\":213}},{\"parentId\":171,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":214}},{\"parentId\":214,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":215}},{\"parentId\":214,\"nextId\":215,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":216}},{\"parentId\":216,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":217}},{\"parentId\":217,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":218}},{\"parentId\":217,\"nextId\":218,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":219}},{\"parentId\":217,\"nextId\":219,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":220}},{\"parentId\":220,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"意外身故保险金\",\"id\":221}},{\"parentId\":219,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"10万元\",\"id\":222}},{\"parentId\":170,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":223}},{\"parentId\":223,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":224}},{\"parentId\":223,\"nextId\":224,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":225}},{\"parentId\":225,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":226}},{\"parentId\":226,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":227}},{\"parentId\":226,\"nextId\":227,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":228}},{\"parentId\":226,\"nextId\":228,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":229}},{\"parentId\":229,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"意外伤残保险金\",\"id\":230}},{\"parentId\":228,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"10万元\",\"id\":231}},{\"parentId\":169,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":232}},{\"parentId\":232,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":233}},{\"parentId\":232,\"nextId\":233,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":234}},{\"parentId\":234,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 _1CW7i7spGvQRvbkz415wWE\",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":235}},{\"parentId\":235,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{},\"childNodes\":[],\"id\":236}},{\"parentId\":235,\"nextId\":236,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":237}},{\"parentId\":235,\"nextId\":237,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":238}},{\"parentId\":238,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"狂犬疫苗接种费用\",\"id\":239}},{\"parentId\":237,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"累计限额1000元\",\"id\":240}},{\"parentId\":233,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_14SABoDM03BycdOzL-ZrUu\"},\"childNodes\":[],\"id\":241}},{\"parentId\":241,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"被保险人保险期间内在暴露后需要在防疫站、疾控中心、社区医院或二级以上公立医院接种狂犬疫苗的，0免赔，累计及每次事故责任限额1000元。\",\"id\":242}},{\"parentId\":168,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1MIilrQrM7Hq6LwV0acV9Z\"},\"childNodes\":[],\"id\":243}},{\"parentId\":243,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2N5jbWbPAJc_-zUkS8oCth\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":244}},{\"parentId\":243,\"nextId\":244,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":245}},{\"parentId\":245,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 _1CW7i7spGvQRvbkz415wWE\",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":246}},{\"parentId\":246,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{},\"childNodes\":[],\"id\":247}},{\"parentId\":246,\"nextId\":247,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":248}},{\"parentId\":246,\"nextId\":248,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":249}},{\"parentId\":249,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"医院要求\",\"id\":250}},{\"parentId\":248,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"二级及以上公立医院\",\"id\":251}},{\"parentId\":244,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_14SABoDM03BycdOzL-ZrUu\"},\"childNodes\":[],\"id\":252}},{\"parentId\":252,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"指经中华人民共和国卫生部门评审确定的二级或二级以上的公立医院，但不包括主要作为诊所、康复、护理、休养、静养、戒酒、戒毒等或类似的医疗机构。该医院必须具有符合国家有关医院管理规则设置标准的医疗设备，且全天二十四小时有合格医师及护士驻院提供医疗及护理服务。此外，除外医院包括被保险人在河北青县、河北青龙县、河北东光县、廊坊市固安县、河南信阳、山东禹城、北京平谷区、密云区、辽宁铁岭、四川宜宾市所有医疗机构、四川雅安市雨城区人民医院、山东省莱州市人民医院、莱州市中医院、莱州市郭家店中心卫医院、山东滨州市中心医院，河北省邯郸市馆陶县人民医院。以上地区所有医院发生的治疗费用均不再赔付范围内。对于徐州市区仅限在公立的三级医院就诊，市区其余医院以及徐州市所辖的周边区、县、市医院、社康中心、乡镇卫生院除外；对于南通市区以及周边所辖的区、县、市均限在公立的二级甲等以上医院普通部就诊。在北京平谷区、北京密云区、辽宁铁岭县、河北青县、河北青龙县、廊坊市、山东禹城市以及河南信阳市的所有医院和中国医科大学附属盛京医院发生的医疗费用均不在保险赔偿范围之。\",\"id\":253}},{\"parentId\":166,\"nextId\":167,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":254}},{\"parentId\":254,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_3lLAXyw88E3db2nVkiNtN7 \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":255}},{\"parentId\":255,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":256}},{\"parentId\":255,\"nextId\":256,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":257}},{\"parentId\":255,\"nextId\":257,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":258}},{\"parentId\":258,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"注意事项\",\"id\":259}},{\"parentId\":257,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"因门诊留院观察而产生的医疗费用不报销\",\"id\":260}}]},\"timestamp\":1693402945510}]",
+			"sort": 8,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.782+0000"
+		},
+		{
+			"id": "64ef4741dc22313b820344c3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":68,\"nextId\":73,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":261}}]},\"timestamp\":1693402945520}]",
+			"sort": 9,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.791+0000"
+		},
+		{
+			"id": "64ef4741dc22313b820344c5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":38,\"id\":119}],\"adds\":[{\"parentId\":38,\"nextId\":118,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"RyeVNmeknQF4UqYU1K-YD\"},\"childNodes\":[],\"id\":262}},{\"parentId\":262,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/4fe35620-5c84-11ec-9767-23b49ae76a9d_size_54x54\"},\"childNodes\":[],\"id\":263}},{\"parentId\":262,\"nextId\":263,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":264}},{\"parentId\":264,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3g2ElfzU3uf37COI5zIqdV\"},\"childNodes\":[],\"id\":265}},{\"parentId\":264,\"nextId\":265,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2iNUCj1nr65dGZnaruWc0G\"},\"childNodes\":[],\"id\":266}},{\"parentId\":266,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"张颖\",\"id\":267}},{\"parentId\":265,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"保险顾问\",\"id\":268}}]},\"timestamp\":1693402945625}]",
+			"sort": 10,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.916+0000"
+		},
+		{
+			"id": "64ef4741dc22313b820344c4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":22,\"id\":33}],\"adds\":[]},\"timestamp\":1693402945627}]",
+			"sort": 11,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:25.896+0000"
+		},
+		{
+			"id": "64ef4747dc22313b82034500",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":66,\"x\":267.6064453125,\"y\":600.8287963867188},\"timestamp\":1693402951666}]",
+			"sort": 12,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:31.997+0000"
+		},
+		{
+			"id": "64ef4748dc22313b82034501",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":262.88177490234375,\"y\":593.1290283203125,\"id\":66,\"timeOffset\":0}]},\"timestamp\":1693402951740}]",
+			"sort": 13,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.026+0000"
+		},
+		{
+			"id": "64ef47483fc0fa5a7db3a2cf",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1},\"timestamp\":1693402951750}]",
+			"sort": 14,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.027+0000"
+		},
+		{
+			"id": "64ef4748dc22313b82034504",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":66,\"x\":267.08148193359375,\"y\":533.305908203125},\"timestamp\":1693402951816}]",
+			"sort": 15,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.090+0000"
+		},
+		{
+			"id": "64ef47483fc0fa5a7db3a2d2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":101.66666412353516},\"timestamp\":1693402951850}]",
+			"sort": 16,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.132+0000"
+		},
+		{
+			"id": "64ef4748dc22313b82034506",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":53,\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ _222jkrbKrf17a11VWmCAPg selected\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402951909}]",
+			"sort": 17,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.196+0000"
+		},
+		{
+			"id": "64ef47483fc0fa5a7db3a2d3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":204.3333282470703},\"timestamp\":1693402951950}]",
+			"sort": 18,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.230+0000"
+		},
+		{
+			"id": "64ef47483fc0fa5a7db3a2d5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":269},\"timestamp\":1693402952051}]",
+			"sort": 19,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.344+0000"
+		},
+		{
+			"id": "64ef47483fc0fa5a7db3a2d6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":305.6666564941406},\"timestamp\":1693402952151}]",
+			"sort": 20,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.440+0000"
+		},
+		{
+			"id": "64ef4748dc22313b8203450c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":267.08148193359375,\"y\":533.305908203125,\"id\":66,\"timeOffset\":-426}]},\"timestamp\":1693402952241}]",
+			"sort": 21,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.521+0000"
+		},
+		{
+			"id": "64ef4748dc22313b8203450d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":331},\"timestamp\":1693402952251}]",
+			"sort": 22,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.521+0000"
+		},
+		{
+			"id": "64ef4748dc22313b8203450e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":343},\"timestamp\":1693402952352}]",
+			"sort": 23,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.624+0000"
+		},
+		{
+			"id": "64ef4748dc22313b8203450f",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":105,\"x\":267.9564208984375,\"y\":596.803955078125},\"timestamp\":1693402952437}]",
+			"sort": 24,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.715+0000"
+		},
+		{
+			"id": "64ef4748dc22313b82034510",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":347.3333435058594},\"timestamp\":1693402952453}]",
+			"sort": 25,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.747+0000"
+		},
+		{
+			"id": "64ef4748dc22313b82034512",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":105,\"x\":270.68121337890625,\"y\":537.0558471679688},\"timestamp\":1693402952555}]",
+			"sort": 26,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.850+0000"
+		},
+		{
+			"id": "64ef4748dc22313b82034511",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":407},\"timestamp\":1693402952558}]",
+			"sort": 27,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.831+0000"
+		},
+		{
+			"id": "64ef47483fc0fa5a7db3a2de",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":523},\"timestamp\":1693402952659}]",
+			"sort": 28,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:32.941+0000"
+		},
+		{
+			"id": "64ef47493fc0fa5a7db3a2e0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":266.13153076171875,\"y\":586.4041748046875,\"id\":105,\"timeOffset\":-238},{\"x\":270.68121337890625,\"y\":537.0558471679688,\"id\":105,\"timeOffset\":-188}]},\"timestamp\":1693402952743}]",
+			"sort": 29,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.046+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034515",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":53,\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ undefined\"}},{\"id\":52,\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ _222jkrbKrf17a11VWmCAPg selected\"}},{\"id\":49,\"attributes\":{\"class\":\"_3OZAXHH1KYD40S80OqS6_R undefined\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402952761}]",
+			"sort": 30,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.050+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034514",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":618.3333129882812},\"timestamp\":1693402952773}]",
+			"sort": 31,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.046+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034517",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":676},\"timestamp\":1693402952874}]",
+			"sort": 32,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.163+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034518",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":105,\"x\":260.1319580078125,\"y\":603.7286987304688},\"timestamp\":1693402952899}]",
+			"sort": 33,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.174+0000"
+		},
+		{
+			"id": "64ef4749dc22313b8203451b",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":688.6666870117188},\"timestamp\":1693402952974}]",
+			"sort": 34,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.266+0000"
+		},
+		{
+			"id": "64ef47493fc0fa5a7db3a2e7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":105,\"x\":274.53094482421875,\"y\":519.6812744140625},\"timestamp\":1693402953065}]",
+			"sort": 35,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.341+0000"
+		},
+		{
+			"id": "64ef47493fc0fa5a7db3a2e8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":774},\"timestamp\":1693402953075}]",
+			"sort": 36,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.367+0000"
+		},
+		{
+			"id": "64ef4749dc22313b8203451e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":859.6666870117188},\"timestamp\":1693402953174}]",
+			"sort": 37,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.449+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034521",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":255.85723876953125,\"y\":594.2290649414062,\"id\":105,\"timeOffset\":-257},{\"x\":274.53094482421875,\"y\":519.6812744140625,\"id\":105,\"timeOffset\":-177}]},\"timestamp\":1693402953243}]",
+			"sort": 38,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.534+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034522",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":911},\"timestamp\":1693402953275}]",
+			"sort": 39,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.564+0000"
+		},
+		{
+			"id": "64ef47493fc0fa5a7db3a2ef",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":105,\"x\":255.9072723388672,\"y\":596.8040771484375},\"timestamp\":1693402953361}]",
+			"sort": 40,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.662+0000"
+		},
+		{
+			"id": "64ef47493fc0fa5a7db3a2ee",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":935.3333129882812},\"timestamp\":1693402953376}]",
+			"sort": 41,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.650+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034526",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":980.6666870117188},\"timestamp\":1693402953476}]",
+			"sort": 42,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.772+0000"
+		},
+		{
+			"id": "64ef47493fc0fa5a7db3a2f2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":105,\"x\":268.80633544921875,\"y\":526.9811401367188},\"timestamp\":1693402953493}]",
+			"sort": 43,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.778+0000"
+		},
+		{
+			"id": "64ef4749dc22313b82034528",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1071.6666259765625},\"timestamp\":1693402953576}]",
+			"sort": 44,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.849+0000"
+		},
+		{
+			"id": "64ef47493fc0fa5a7db3a2f6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1124.3333740234375},\"timestamp\":1693402953676}]",
+			"sort": 45,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:33.952+0000"
+		},
+		{
+			"id": "64ef474a3fc0fa5a7db3a2f8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":253.357421875,\"y\":589.05419921875,\"id\":105,\"timeOffset\":-311},{\"x\":268.80633544921875,\"y\":526.9811401367188,\"id\":105,\"timeOffset\":-249}]},\"timestamp\":1693402953742}]",
+			"sort": 46,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.024+0000"
+		},
+		{
+			"id": "64ef474adc22313b8203452d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1156.6666259765625},\"timestamp\":1693402953777}]",
+			"sort": 47,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.052+0000"
+		},
+		{
+			"id": "64ef474a3fc0fa5a7db3a2f9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":105,\"x\":265.631591796875,\"y\":593.7540283203125},\"timestamp\":1693402953813}]",
+			"sort": 48,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.095+0000"
+		},
+		{
+			"id": "64ef474adc22313b8203452f",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1165},\"timestamp\":1693402953879}]",
+			"sort": 49,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.167+0000"
+		},
+		{
+			"id": "64ef474a3fc0fa5a7db3a2fc",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1212.6666259765625},\"timestamp\":1693402953979}]",
+			"sort": 50,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.258+0000"
+		},
+		{
+			"id": "64ef474adc22313b82034531",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1214.3333740234375},\"timestamp\":1693402954080}]",
+			"sort": 51,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.354+0000"
+		},
+		{
+			"id": "64ef474a3fc0fa5a7db3a2fd",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":105,\"x\":270.80621337890625,\"y\":536.6558837890625},\"timestamp\":1693402954118}]",
+			"sort": 52,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.414+0000"
+		},
+		{
+			"id": "64ef474adc22313b82034534",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":263.95672607421875,\"y\":585.679443359375,\"id\":105,\"timeOffset\":-353},{\"x\":270.80621337890625,\"y\":536.6558837890625,\"id\":105,\"timeOffset\":-150}]},\"timestamp\":1693402954243}]",
+			"sort": 53,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.516+0000"
+		},
+		{
+			"id": "64ef474adc22313b82034536",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":105,\"x\":307.3036804199219,\"y\":475.28271484375},\"timestamp\":1693402954389}]",
+			"sort": 54,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.690+0000"
+		},
+		{
+			"id": "64ef474a3fc0fa5a7db3a301",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1203.6666259765625},\"timestamp\":1693402954434}]",
+			"sort": 55,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.710+0000"
+		},
+		{
+			"id": "64ef474adc22313b82034537",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":105,\"x\":278.7056579589844,\"y\":536.4808349609375},\"timestamp\":1693402954463}]",
+			"sort": 56,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.738+0000"
+		},
+		{
+			"id": "64ef474adc22313b82034538",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1017.6666870117188},\"timestamp\":1693402954537}]",
+			"sort": 57,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.881+0000"
+		},
+		{
+			"id": "64ef474a3fc0fa5a7db3a304",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":840.6666870117188},\"timestamp\":1693402954636}]",
+			"sort": 58,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:34.919+0000"
+		},
+		{
+			"id": "64ef474bdc22313b8203453b",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":709.6666870117188},\"timestamp\":1693402954736}]",
+			"sort": 59,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.010+0000"
+		},
+		{
+			"id": "64ef474bdc22313b8203453c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":301.7040710449219,\"y\":484.0823974609375,\"id\":105,\"timeOffset\":-317}]},\"timestamp\":1693402954743}]",
+			"sort": 60,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.038+0000"
+		},
+		{
+			"id": "64ef474b3fc0fa5a7db3a309",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":616},\"timestamp\":1693402954836}]",
+			"sort": 61,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.128+0000"
+		},
+		{
+			"id": "64ef474bdc22313b8203453d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":53,\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ _222jkrbKrf17a11VWmCAPg selected\"}},{\"id\":52,\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ undefined\"}},{\"id\":49,\"attributes\":{\"class\":\"_3OZAXHH1KYD40S80OqS6_R KJFbQ1MFhe7spIvHAbKYc\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402954844}]",
+			"sort": 62,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.120+0000"
+		},
+		{
+			"id": "64ef474bdc22313b8203453e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":105,\"x\":295.8544921875,\"y\":492.88214111328125},\"timestamp\":1693402954860}]",
+			"sort": 63,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.128+0000"
+		},
+		{
+			"id": "64ef474bdc22313b8203453f",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":105,\"x\":287.0050964355469,\"y\":525.3312377929688},\"timestamp\":1693402954904}]",
+			"sort": 64,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.175+0000"
+		},
+		{
+			"id": "64ef474bdc22313b82034540",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":471.3333435058594},\"timestamp\":1693402954938}]",
+			"sort": 65,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.210+0000"
+		},
+		{
+			"id": "64ef474b3fc0fa5a7db3a30c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":53,\"attributes\":{\"class\":\"_2psSXlrlqSY0Dj2lnVQmfZ undefined\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402955013}]",
+			"sort": 66,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.289+0000"
+		},
+		{
+			"id": "64ef474b3fc0fa5a7db3a30e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":47.66666793823242},\"timestamp\":1693402955039}]",
+			"sort": 67,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.322+0000"
+		},
+		{
+			"id": "64ef474bdc22313b82034541",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":0},\"timestamp\":1693402955139}]",
+			"sort": 68,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.422+0000"
+		},
+		{
+			"id": "64ef474bdc22313b82034542",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":291.67974853515625,\"y\":500.95684814453125,\"id\":105,\"timeOffset\":-358}]},\"timestamp\":1693402955243}]",
+			"sort": 69,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:35.516+0000"
+		},
+		{
+			"id": "64ef474e3fc0fa5a7db3a315",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":42,\"x\":304.77886962890625,\"y\":693.27587890625},\"timestamp\":1693402958498}]",
+			"sort": 70,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:38.884+0000"
+		},
+		{
+			"id": "64ef474e3fc0fa5a7db3a318",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":42,\"x\":304.77886962890625,\"y\":693.27587890625},\"timestamp\":1693402958607}]",
+			"sort": 71,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:38.903+0000"
+		},
+		{
+			"id": "64ef474edc22313b8203454b",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":1,\"positions\":[{\"x\":304,\"y\":693,\"id\":42,\"timeOffset\":0}]},\"timestamp\":1693402958617}]",
+			"sort": 72,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:38.897+0000"
+		},
+		{
+			"id": "64ef474e3fc0fa5a7db3a316",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":1,\"id\":42,\"x\":304,\"y\":693},\"timestamp\":1693402958620}]",
+			"sort": 73,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:38.898+0000"
+		},
+		{
+			"id": "64ef474e3fc0fa5a7db3a319",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":5,\"id\":41},\"timestamp\":1693402958623}]",
+			"sort": 74,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:38.931+0000"
+		},
+		{
+			"id": "64ef474e3fc0fa5a7db3a317",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":0,\"id\":42,\"x\":304,\"y\":693},\"timestamp\":1693402958625}]",
+			"sort": 75,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:38.901+0000"
+		},
+		{
+			"id": "64ef474edc22313b8203454c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":2,\"id\":42,\"x\":304,\"y\":693},\"timestamp\":1693402958629}]",
+			"sort": 76,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:38.949+0000"
+		},
+		{
+			"id": "64ef474fdc22313b8203454e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":281,\"attributes\":{\"class\":\"am-modal-mask am-fade-appear\"}},{\"id\":272,\"attributes\":{\"class\":\"am-modal cusmodalCustomerInsure am-modal-transparent am-fade-appear\"}}],\"removes\":[],\"adds\":[{\"parentId\":21,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"am-modal-container-1693402958641\"},\"childNodes\":[],\"id\":269}},{\"parentId\":269,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":270}},{\"parentId\":270,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-modal-wrap \",\"role\":\"dialog\"},\"childNodes\":[],\"id\":271}},{\"parentId\":271,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"role\":\"document\",\"class\":\"am-modal cusmodalCustomerInsure am-modal-transparent am-fade-appear\"},\"childNodes\":[],\"id\":272}},{\"parentId\":272,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-modal-content\"},\"childNodes\":[],\"id\":273}},{\"parentId\":273,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-modal-body\"},\"childNodes\":[],\"id\":274}},{\"parentId\":274,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1KhmzMy2E37WRpitj0bcT\"},\"childNodes\":[],\"id\":275}},{\"parentId\":275,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3pDHUNqfYQYRPqvoMP7Wau\"},\"childNodes\":[],\"id\":276}},{\"parentId\":276,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3U4_S_ZYM0pVeMj3GR93-u\"},\"childNodes\":[],\"id\":277}},{\"parentId\":277,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"button\",\"attributes\":{\"class\":\"_1sYtgtgE7CwWjKDD4lYmp8 ghDAwHxOMXoXGfbAvOQM2 undefined\"},\"childNodes\":[],\"id\":278}},{\"parentId\":278,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":279}},{\"parentId\":279,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"继续投保\",\"id\":280}},{\"parentId\":270,\"nextId\":271,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-modal-mask am-fade-appear\"},\"childNodes\":[],\"id\":281}},{\"parentId\":276,\"nextId\":277,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Ycftmz_dCfQlLWeCL50-9\"},\"childNodes\":[],\"id\":282}},{\"parentId\":276,\"nextId\":282,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3Q8oe0E8MkmBaHIjExQATq\"},\"childNodes\":[],\"id\":283}},{\"parentId\":283,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"\"},\"childNodes\":[],\"id\":284}},{\"parentId\":283,\"nextId\":284,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"-zvuXkOckUo0VYqbObVFt\"},\"childNodes\":[],\"id\":285}},{\"parentId\":285,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"投保提示\",\"id\":286}},{\"parentId\":284,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"客户告知书\",\"id\":287}},{\"parentId\":282,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3ojVukRG1kdSzgYkjZzDlj\"},\"childNodes\":[],\"id\":288}},{\"parentId\":288,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":289}},{\"parentId\":288,\"nextId\":289,\"node\":{\"type\":2,\"tagName\":\"strong\",\"attributes\":{},\"childNodes\":[],\"id\":290}},{\"parentId\":288,\"nextId\":290,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":291}},{\"parentId\":291,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"欢迎使用星贝保险平台服务\",\"id\":292}},{\"parentId\":290,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"您即将进入投保流程，请确保投保人本人操作。\",\"id\":293}},{\"parentId\":289,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"在接下来的投保过程中，请您根据提示仔细阅读相关文档内容。为保障您的权益，您的投保过程将被记录。\",\"id\":294}}]},\"timestamp\":1693402958657}]",
+			"sort": 77,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:39.022+0000"
+		},
+		{
+			"id": "64ef474fdc22313b8203454d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":281,\"attributes\":{\"class\":\"am-modal-mask am-fade-appear am-fade-appear-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402958681}]",
+			"sort": 78,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:39.003+0000"
+		},
+		{
+			"id": "64ef474f3fc0fa5a7db3a31a",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":272,\"attributes\":{\"class\":\"am-modal cusmodalCustomerInsure am-modal-transparent am-fade-appear am-fade-appear-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402958686}]",
+			"sort": 79,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:39.005+0000"
+		},
+		{
+			"id": "64ef474f3fc0fa5a7db3a31b",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":281,\"attributes\":{\"class\":\"am-modal-mask\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402958892}]",
+			"sort": 80,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:39.248+0000"
+		},
+		{
+			"id": "64ef474f3fc0fa5a7db3a31c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":272,\"attributes\":{\"class\":\"am-modal cusmodalCustomerInsure am-modal-transparent\"}},{\"id\":21,\"attributes\":{\"style\":\"overflow: hidden;\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402958906}]",
+			"sort": 81,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:39.262+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034550",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":279,\"x\":225.83433532714844,\"y\":497.05706787109375},\"timestamp\":1693402960890}]",
+			"sort": 82,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.233+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034552",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":279,\"x\":225.83433532714844,\"y\":497.05706787109375},\"timestamp\":1693402961016}]",
+			"sort": 83,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.317+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a320",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":1,\"positions\":[{\"x\":226,\"y\":497,\"id\":279,\"timeOffset\":0}]},\"timestamp\":1693402961021}]",
+			"sort": 84,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.337+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a31e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":1,\"id\":279,\"x\":226,\"y\":497},\"timestamp\":1693402961023}]",
+			"sort": 85,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.304+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034553",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":6,\"id\":41},\"timestamp\":1693402961024}]",
+			"sort": 86,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.343+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034551",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":5,\"id\":278},\"timestamp\":1693402961026}]",
+			"sort": 87,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.302+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a31f",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":0,\"id\":279,\"x\":226,\"y\":497},\"timestamp\":1693402961027}]",
+			"sort": 88,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.313+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034554",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":2,\"id\":279,\"x\":226,\"y\":497},\"timestamp\":1693402961029}]",
+			"sort": 89,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.374+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a321",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":281,\"attributes\":{\"class\":\"am-modal-mask am-fade-leave\"}},{\"id\":272,\"attributes\":{\"class\":\"am-modal cusmodalCustomerInsure am-modal-transparent am-fade-leave\"}}],\"removes\":[],\"adds\":[{\"parentId\":22,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_5lnStx3PO5XdQznjXoaYD undefined\"},\"childNodes\":[],\"id\":295}}]},\"timestamp\":1693402961054}]",
+			"sort": 90,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.412+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034555",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":281,\"attributes\":{\"class\":\"am-modal-mask am-fade-leave am-fade-leave-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402961084}]",
+			"sort": 91,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.419+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a322",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":272,\"attributes\":{\"class\":\"am-modal cusmodalCustomerInsure am-modal-transparent am-fade-leave am-fade-leave-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402961089}]",
+			"sort": 92,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.440+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034556",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":22,\"id\":295}],\"adds\":[]},\"timestamp\":1693402961148}]",
+			"sort": 93,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.435+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a323",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":281,\"attributes\":{\"class\":\"am-modal-mask am-modal-mask-hidden\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693402961301}]",
+			"sort": 94,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.578+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034557",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":6,\"id\":278},\"timestamp\":1693402961305}]",
+			"sort": 95,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.594+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a324",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":21,\"attributes\":{\"style\":\"\"}}],\"removes\":[{\"parentId\":21,\"id\":269}],\"adds\":[]},\"timestamp\":1693402961310}]",
+			"sort": 96,
+			"pageId": "1",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.593+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a325",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":4,\"data\":{\"href\":\"https://finance.xingbeibaoxian.com/insurance-main/health-notify?bizCode=xb&posterId=934&shareKey=1008908029&recomKey=1008908029&hseshareKey=48e42f23b1a519c9&itemId=100775&skuId=301181&insureTimeType=1\",\"width\":360,\"height\":722},\"timestamp\":1693402961612}]",
+			"sort": 97,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.896+0000"
+		},
+		{
+			"id": "64ef4751dc22313b82034558",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":2,\"data\":{\"node\":{\"type\":0,\"childNodes\":[{\"type\":1,\"name\":\"html\",\"publicId\":\"\",\"systemId\":\"\",\"id\":2},{\"type\":2,\"tagName\":\"html\",\"attributes\":{\"lang\":\"zh-CN\"},\"childNodes\":[{\"type\":2,\"tagName\":\"head\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"charset\":\"utf-8\"},\"childNodes\":[],\"id\":5},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"app-id\",\"content\":\"1\"},\"childNodes\":[],\"id\":6},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"biz-type\",\"content\":\"102\"},\"childNodes\":[],\"id\":7},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"keywords\",\"content\":\"\"},\"childNodes\":[],\"id\":8},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"description\",\"content\":\"\"},\"childNodes\":[],\"id\":9},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"viewport\",\"content\":\"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\"},\"childNodes\":[],\"id\":10},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"format-detection\",\"content\":\"telephone=no\"},\"childNodes\":[],\"id\":11},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"icon\",\"type\":\"image/png\",\"href\":\"https://hzwimspic-1251601690.image.myqcloud.com/6fb14be0-45cb-11eb-a2a6-c93aa1f715ff_size_64x64\"},\"childNodes\":[],\"id\":12},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/css/vendor.1688550064213.da2dc4c5.chunk.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":13},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/css/main.1688550064213.9b98a27e.chunk.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":14},{\"type\":2,\"tagName\":\"style\",\"attributes\":{\"type\":\"text/css\"},\"childNodes\":[{\"type\":3,\"textContent\":\"#__vconsole {\\n  color: #000;\\n  font-size: 13px;\\n  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\\n  /* global */\\n  /* compoment */\\n}\\n#__vconsole .vc-max-height {\\n  max-height: 19.23076923em;\\n}\\n#__vconsole .vc-max-height-line {\\n  max-height: 3.38461538em;\\n}\\n#__vconsole .vc-min-height {\\n  min-height: 3.07692308em;\\n}\\n#__vconsole dd,\\n#__vconsole dl,\\n#__vconsole pre {\\n  margin: 0;\\n}\\n#__vconsole .vc-switch {\\n  display: block;\\n  position: fixed;\\n  right: 0.76923077em;\\n  bottom: 0.76923077em;\\n  color: #FFF;\\n  background-color: #04BE02;\\n  line-height: 1;\\n  font-size: 1.07692308em;\\n  padding: 0.61538462em 1.23076923em;\\n  z-index: 10000;\\n  border-radius: 0.30769231em;\\n  box-shadow: 0 0 0.61538462em rgba(0, 0, 0, 0.4);\\n}\\n#__vconsole .vc-mask {\\n  display: none;\\n  position: fixed;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  background: rgba(0, 0, 0, 0);\\n  z-index: 10001;\\n  transition: background 0.3s;\\n  -webkit-tap-highlight-color: transparent;\\n  overflow-y: scroll;\\n}\\n#__vconsole .vc-panel {\\n  display: none;\\n  position: fixed;\\n  min-height: 85%;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  z-index: 10002;\\n  background-color: #EFEFF4;\\n  -webkit-transition: -webkit-transform 0.3s;\\n  transition: -webkit-transform 0.3s;\\n  transition: transform 0.3s;\\n  transition: transform 0.3s, -webkit-transform 0.3s;\\n  -webkit-transform: translate(0, 100%);\\n  transform: translate(0, 100%);\\n}\\n#__vconsole .vc-tabbar {\\n  border-bottom: 1px solid #D9D9D9;\\n  overflow-x: auto;\\n  height: 3em;\\n  width: auto;\\n  white-space: nowrap;\\n}\\n#__vconsole .vc-tabbar .vc-tab {\\n  display: inline-block;\\n  line-height: 3em;\\n  padding: 0 1.15384615em;\\n  border-right: 1px solid #D9D9D9;\\n  text-decoration: none;\\n  color: #000;\\n  -webkit-tap-highlight-color: transparent;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-tabbar .vc-tab:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-tabbar .vc-tab.vc-actived {\\n  background-color: #FFF;\\n}\\n#__vconsole .vc-content {\\n  background-color: #FFF;\\n  overflow-x: hidden;\\n  overflow-y: auto;\\n  position: absolute;\\n  top: 3.07692308em;\\n  left: 0;\\n  right: 0;\\n  bottom: 3.07692308em;\\n  -webkit-overflow-scrolling: touch;\\n  margin-bottom: constant(safe-area-inset-bottom);\\n  margin-bottom: env(safe-area-inset-bottom);\\n}\\n#__vconsole .vc-content.vc-has-topbar {\\n  top: 5.46153846em;\\n}\\n#__vconsole .vc-topbar {\\n  background-color: #FBF9FE;\\n  display: flex;\\n  display: -webkit-box;\\n  flex-direction: row;\\n  flex-wrap: wrap;\\n  -webkit-box-direction: row;\\n  -webkit-flex-wrap: wrap;\\n  width: 100%;\\n}\\n#__vconsole .vc-topbar .vc-toptab {\\n  display: none;\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  line-height: 2.30769231em;\\n  padding: 0 1.15384615em;\\n  border-bottom: 1px solid #D9D9D9;\\n  text-decoration: none;\\n  text-align: center;\\n  color: #000;\\n  -webkit-tap-highlight-color: transparent;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-topbar .vc-toptab.vc-toggle {\\n  display: block;\\n}\\n#__vconsole .vc-topbar .vc-toptab:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-topbar .vc-toptab.vc-actived {\\n  border-bottom: 1px solid #3e82f7;\\n}\\n#__vconsole .vc-logbox {\\n  display: none;\\n  position: relative;\\n  min-height: 100%;\\n}\\n#__vconsole .vc-logbox i {\\n  font-style: normal;\\n}\\n#__vconsole .vc-logbox .vc-log {\\n  padding-bottom: 3em;\\n  -webkit-tap-highlight-color: transparent;\\n}\\n#__vconsole .vc-logbox .vc-log:empty:before {\\n  content: \\\"Empty\\\";\\n  color: #999;\\n  position: absolute;\\n  top: 45%;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  font-size: 1.15384615em;\\n  text-align: center;\\n}\\n#__vconsole .vc-logbox .vc-item {\\n  margin: 0;\\n  padding: 0.46153846em 0.61538462em;\\n  overflow: hidden;\\n  line-height: 1.3;\\n  border-bottom: 1px solid #EEE;\\n  word-break: break-word;\\n}\\n#__vconsole .vc-logbox .vc-item-info {\\n  color: #6A5ACD;\\n}\\n#__vconsole .vc-logbox .vc-item-debug {\\n  color: #DAA520;\\n}\\n#__vconsole .vc-logbox .vc-item-warn {\\n  color: #FFA500;\\n  border-color: #FFB930;\\n  background-color: #FFFACD;\\n}\\n#__vconsole .vc-logbox .vc-item-error {\\n  color: #DC143C;\\n  border-color: #F4A0AB;\\n  background-color: #FFE4E1;\\n}\\n#__vconsole .vc-logbox .vc-log.vc-log-partly .vc-item {\\n  display: none;\\n}\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-log .vc-item-log,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-info .vc-item-info,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-warn .vc-item-warn,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-error .vc-item-error {\\n  display: block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-content {\\n  margin-right: 4.61538462em;\\n  display: inline-block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-repeat {\\n  display: inline-block;\\n  margin-right: 0.30769231em;\\n  padding: 0 6.5px;\\n  color: #D7E0EF;\\n  background-color: #42597F;\\n  border-radius: 8.66666667px;\\n}\\n#__vconsole .vc-logbox .vc-item.vc-item-error .vc-item-repeat {\\n  color: #901818;\\n  background-color: #DC2727;\\n}\\n#__vconsole .vc-logbox .vc-item.vc-item-warn .vc-item-repeat {\\n  color: #987D20;\\n  background-color: #F4BD02;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code {\\n  display: block;\\n  white-space: pre-wrap;\\n  overflow: auto;\\n  position: relative;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input,\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output {\\n  padding-left: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input:before,\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {\\n  content: \\\"›\\\";\\n  position: absolute;\\n  top: -0.23076923em;\\n  left: 0;\\n  font-size: 1.23076923em;\\n  color: #6A5ACD;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {\\n  content: \\\"‹\\\";\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold {\\n  display: block;\\n  overflow: auto;\\n  -webkit-overflow-scrolling: touch;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer {\\n  display: block;\\n  font-style: italic;\\n  padding-left: 0.76923077em;\\n  position: relative;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:active {\\n  background-color: #E6E6E6;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:before {\\n  content: \\\"\\\";\\n  position: absolute;\\n  top: 0.30769231em;\\n  left: 0.15384615em;\\n  width: 0;\\n  height: 0;\\n  border: transparent solid 0.30769231em;\\n  border-left-color: #000;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer.vc-toggle:before {\\n  top: 0.46153846em;\\n  left: 0;\\n  border-top-color: #000;\\n  border-left-color: transparent;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner {\\n  display: none;\\n  margin-left: 0.76923077em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner.vc-toggle {\\n  display: block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner .vc-code-key {\\n  margin-left: 0.76923077em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer .vc-code-key {\\n  margin-left: 0;\\n}\\n#__vconsole .vc-logbox .vc-code-key {\\n  color: #905;\\n}\\n#__vconsole .vc-logbox .vc-code-private-key {\\n  color: #D391B5;\\n}\\n#__vconsole .vc-logbox .vc-code-function {\\n  color: #905;\\n  font-style: italic;\\n}\\n#__vconsole .vc-logbox .vc-code-number,\\n#__vconsole .vc-logbox .vc-code-boolean {\\n  color: #0086B3;\\n}\\n#__vconsole .vc-logbox .vc-code-string {\\n  color: #183691;\\n}\\n#__vconsole .vc-logbox .vc-code-null,\\n#__vconsole .vc-logbox .vc-code-undefined {\\n  color: #666;\\n}\\n#__vconsole .vc-logbox .vc-cmd {\\n  position: absolute;\\n  height: 3.07692308em;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  border-top: 1px solid #D9D9D9;\\n  display: block!important;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input-wrap {\\n  display: block;\\n  height: 2.15384615em;\\n  margin-right: 3.07692308em;\\n  padding: 0.46153846em 0.61538462em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input {\\n  width: 100%;\\n  border: none;\\n  resize: none;\\n  outline: none;\\n  padding: 0;\\n  font-size: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input::-webkit-input-placeholder {\\n  line-height: 2.15384615em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn {\\n  position: absolute;\\n  top: 0;\\n  right: 0;\\n  bottom: 0;\\n  width: 3.07692308em;\\n  border: none;\\n  background-color: #EFEFF4;\\n  outline: none;\\n  -webkit-touch-callout: none;\\n  font-size: 1em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted {\\n  position: fixed;\\n  width: 100%;\\n  background-color: #FBF9FE;\\n  border: 1px solid #D9D9D9;\\n  overflow-x: scroll;\\n  display: none;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted li {\\n  list-style: none;\\n  line-height: 30px;\\n  padding: 0 0.46153846em;\\n  border-bottom: 1px solid #D9D9D9;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-preview {\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-preview:active {\\n  background-color: #E6E6E6;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-detail {\\n  display: none;\\n  padding: 0 0 0.76923077em 1.53846154em;\\n  border-bottom: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-detail {\\n  display: block;\\n  background-color: #FBF9FE;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-table-row {\\n  background-color: #FFF;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-preview {\\n  background-color: #FBF9FE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row {\\n  display: flex;\\n  display: -webkit-flex;\\n  flex-direction: row;\\n  flex-wrap: wrap;\\n  -webkit-box-direction: row;\\n  -webkit-flex-wrap: wrap;\\n  overflow: hidden;\\n  border-bottom: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row.vc-left-border {\\n  border-left: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col {\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  padding: 0.23076923em 0.30769231em;\\n  border-left: 1px solid #EEE;\\n  overflow: auto;\\n  white-space: pre-wrap;\\n  word-break: break-word;\\n  /*white-space: nowrap;\\n        text-overflow: ellipsis;*/\\n  -webkit-overflow-scrolling: touch;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col:first-child {\\n  border: none;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-small .vc-table-col {\\n  padding: 0 0.30769231em;\\n  font-size: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-2 {\\n  flex: 2;\\n  -webkit-box-flex: 2;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-3 {\\n  flex: 3;\\n  -webkit-box-flex: 3;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-4 {\\n  flex: 4;\\n  -webkit-box-flex: 4;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-5 {\\n  flex: 5;\\n  -webkit-box-flex: 5;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-6 {\\n  flex: 6;\\n  -webkit-box-flex: 6;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row-error {\\n  border-color: #F4A0AB;\\n  background-color: #FFE4E1;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row-error .vc-table-col {\\n  color: #DC143C;\\n  border-color: #F4A0AB;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-title {\\n  font-weight: bold;\\n}\\n#__vconsole .vc-logbox.vc-actived {\\n  display: block;\\n}\\n#__vconsole .vc-toolbar {\\n  border-top: 1px solid #D9D9D9;\\n  line-height: 3em;\\n  position: absolute;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  display: flex;\\n  display: -webkit-box;\\n  flex-direction: row;\\n  -webkit-box-direction: row;\\n}\\n#__vconsole .vc-toolbar .vc-tool {\\n  display: none;\\n  text-decoration: none;\\n  color: #000;\\n  width: 50%;\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  text-align: center;\\n  position: relative;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-toolbar .vc-tool.vc-toggle,\\n#__vconsole .vc-toolbar .vc-tool.vc-global-tool {\\n  display: block;\\n}\\n#__vconsole .vc-toolbar .vc-tool:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-toolbar .vc-tool:after {\\n  content: \\\" \\\";\\n  position: absolute;\\n  top: 0.53846154em;\\n  bottom: 0.53846154em;\\n  right: 0;\\n  border-left: 1px solid #D9D9D9;\\n}\\n#__vconsole .vc-toolbar .vc-tool-last:after {\\n  border: none;\\n}\\n@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {\\n  #__vconsole .vc-toolbar,\\n  #__vconsole .vc-switch {\\n    bottom: constant(safe-area-inset-bottom);\\n    bottom: env(safe-area-inset-bottom);\\n  }\\n}\\n#__vconsole.vc-toggle .vc-switch {\\n  display: none;\\n}\\n#__vconsole.vc-toggle .vc-mask {\\n  background: rgba(0, 0, 0, 0.6);\\n  display: block;\\n}\\n#__vconsole.vc-toggle .vc-panel {\\n  -webkit-transform: translate(0, 0);\\n  transform: translate(0, 0);\\n}\\n\",\"isStyle\":true,\"id\":16}],\"id\":15},{\"type\":2,\"tagName\":\"style\",\"attributes\":{\"type\":\"text/css\"},\"childNodes\":[{\"type\":3,\"textContent\":\"/* color */\\n.vcelm-node {\\n  color: #183691;\\n}\\n.vcelm-k {\\n  color: #0086B3;\\n}\\n.vcelm-v {\\n  color: #905;\\n}\\n/* layout */\\n.vcelm-l {\\n  padding-left: 8px;\\n  position: relative;\\n  word-wrap: break-word;\\n  line-height: 1;\\n}\\n/*.vcelm-l.vcelm-noc {\\n  padding-left: 0;\\n}*/\\n.vcelm-l.vc-toggle > .vcelm-node {\\n  display: block;\\n}\\n.vcelm-l .vcelm-node:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n.vcelm-l.vcelm-noc .vcelm-node:active {\\n  background-color: transparent;\\n}\\n.vcelm-t {\\n  white-space: pre-wrap;\\n  word-wrap: break-word;\\n}\\n/* level */\\n.vcelm-l .vcelm-l {\\n  display: none;\\n}\\n.vcelm-l.vc-toggle > .vcelm-l {\\n  margin-left: 4px;\\n  display: block;\\n}\\n/* arrow */\\n.vcelm-l:before {\\n  content: \\\"\\\";\\n  display: block;\\n  position: absolute;\\n  top: 6px;\\n  left: 3px;\\n  width: 0;\\n  height: 0;\\n  border: transparent solid 3px;\\n  border-left-color: #000;\\n}\\n.vcelm-l.vc-toggle:before {\\n  display: block;\\n  top: 6px;\\n  left: 0;\\n  border-top-color: #000;\\n  border-left-color: transparent;\\n}\\n.vcelm-l.vcelm-noc:before {\\n  display: none;\\n}\\n\",\"isStyle\":true,\"id\":18}],\"id\":17},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"stylesheet\",\"type\":\"text/css\",\"href\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/css/13.1688550064213.0c38415e.chunk.css\"},\"childNodes\":[],\"id\":19},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"charset\":\"utf-8\",\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/13.1688550064213.0c38415e.chunk.js\"},\"childNodes\":[],\"id\":20}],\"id\":4},{\"type\":2,\"tagName\":\"body\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"article\",\"attributes\":{\"id\":\"root\"},\"childNodes\":[],\"id\":22},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.haiziwang.com/static/tracker/4.0.0/tracker.js\"},\"childNodes\":[],\"id\":23},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://res.wx.qq.com/open/js/jweixin-1.4.0.js\"},\"childNodes\":[],\"id\":24},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/runtime.1688550064213.4d53ab65.js\"},\"childNodes\":[],\"id\":25},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/vendor.1688550064213.da2dc4c5.chunk.js\"},\"childNodes\":[],\"id\":26},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/insurance-main/static/js/main.1688550064213.9b98a27e.chunk.js\"},\"childNodes\":[],\"id\":27},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"toast\"},\"childNodes\":[],\"id\":28},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"alert\"},\"childNodes\":[],\"id\":29},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"loader\"},\"childNodes\":[],\"id\":30},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"sharePrompt\"},\"childNodes\":[],\"id\":31},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"sharePanel\"},\"childNodes\":[],\"id\":32}],\"id\":21}],\"id\":3}],\"id\":1},\"initialOffset\":{\"left\":0,\"top\":0}},\"timestamp\":1693402961618}]",
+			"sort": 98,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.950+0000"
+		},
+		{
+			"id": "64ef47513fc0fa5a7db3a326",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":22,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_5lnStx3PO5XdQznjXoaYD undefined\"},\"childNodes\":[],\"id\":33}}]},\"timestamp\":1693402961639}]",
+			"sort": 99,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:41.961+0000"
+		},
+		{
+			"id": "64ef47523fc0fa5a7db3a327",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":4,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"title\",\"attributes\":{},\"childNodes\":[],\"id\":34}},{\"parentId\":34,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"健康告知\",\"id\":35}}]},\"timestamp\":1693402961659}]",
+			"sort": 100,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:42.005+0000"
+		},
+		{
+			"id": "64ef4752dc22313b82034559",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":22,\"id\":33}],\"adds\":[]},\"timestamp\":1693402961766}]",
+			"sort": 101,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:42.039+0000"
+		},
+		{
+			"id": "64ef47523fc0fa5a7db3a328",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":22,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"section\",\"attributes\":{\"class\":\"_1l5A_ItcSDzbL3iS1Fukgi undefined \"},\"childNodes\":[],\"id\":36}},{\"parentId\":36,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3LlWrug1xeZkj9TtZpBgDm\"},\"childNodes\":[],\"id\":37}},{\"parentId\":37,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3WznhIzbk23qyMoO_gKNO4\"},\"childNodes\":[],\"id\":38}},{\"parentId\":38,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"hkcvNklTHHRzPlgoHG7_l\"},\"childNodes\":[],\"id\":39}},{\"parentId\":39,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"button\",\"attributes\":{\"class\":\"_1sYtgtgE7CwWjKDD4lYmp8 ghDAwHxOMXoXGfbAvOQM2 undefined\"},\"childNodes\":[],\"id\":40}},{\"parentId\":40,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":41}},{\"parentId\":41,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"确认无以上问题\",\"id\":42}},{\"parentId\":36,\"nextId\":37,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2QZtMLS5EXDw-GfX8U83gs\"},\"childNodes\":[],\"id\":43}},{\"parentId\":36,\"nextId\":43,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"k541sz1Y6xJowm3rZiGO6\"},\"childNodes\":[],\"id\":44}},{\"parentId\":44,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2qFk4ppUyce-QweF7mvPTi _2p55vu4x3gk-pXRMIx2ZdS\"},\"childNodes\":[],\"id\":45}},{\"parentId\":45,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":46}},{\"parentId\":45,\"nextId\":46,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"_25VK9CEddYfo_zhhB-_nHM\"},\"childNodes\":[],\"id\":47}},{\"parentId\":45,\"nextId\":47,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"_2dg7PoXxaULhIvqkZVjKJI\"},\"childNodes\":[],\"id\":48}},{\"parentId\":48,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"重要\",\"id\":49}},{\"parentId\":47,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"【被保人告知】请提供“是”或“否”的答案。对未成年被保险人，请被保险人的父母代为回答。投保人应在对所有被保险人健康、职业和收入状况充分了解的基础上履行如实告知义务。如被保险人的有关情况与下述告知内容不符：\\n        （1）本公司有权不同意承保或解除合同；\\n        （2）如发生保险事故，本公司不承担赔偿或给付保险金的责任，对于故意不如实告知的，不退还保险费。\",\"id\":50}},{\"parentId\":43,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":51}},{\"parentId\":51,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/4107019b-395f-4c39-8062-f59510e5a7ac\",\"alt\":\"\"},\"childNodes\":[],\"id\":52}},{\"parentId\":38,\"nextId\":39,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"hkcvNklTHHRzPlgoHG7_l\"},\"childNodes\":[],\"id\":53}},{\"parentId\":53,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"button\",\"attributes\":{\"class\":\"_1sYtgtgE7CwWjKDD4lYmp8 _1JhwObIxMrntR8v5t3I7c4 undefined\"},\"childNodes\":[],\"id\":54}},{\"parentId\":54,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":55}},{\"parentId\":55,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"有部分问题\",\"id\":56}}]},\"timestamp\":1693402961782}]",
+			"sort": 102,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:42:42.083+0000"
+		},
+		{
+			"id": "64ef4765dc22313b8203458d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":52,\"x\":258.132080078125,\"y\":608.153564453125},\"timestamp\":1693402981417}]",
+			"sort": 103,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:01.841+0000"
+		},
+		{
+			"id": "64ef4765dc22313b8203458e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":256.0572509765625,\"y\":599.8788452148438,\"id\":52,\"timeOffset\":0}]},\"timestamp\":1693402981543}]",
+			"sort": 104,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:01.867+0000"
+		},
+		{
+			"id": "64ef47653fc0fa5a7db3a35e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":0.6666666865348816},\"timestamp\":1693402981553}]",
+			"sort": 105,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:01.870+0000"
+		},
+		{
+			"id": "64ef4765dc22313b8203458f",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":52,\"x\":264.106689453125,\"y\":554.480224609375},\"timestamp\":1693402981639}]",
+			"sort": 106,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:01.912+0000"
+		},
+		{
+			"id": "64ef47653fc0fa5a7db3a35f",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":54.66666793823242},\"timestamp\":1693402981653}]",
+			"sort": 107,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:01.960+0000"
+		},
+		{
+			"id": "64ef47663fc0fa5a7db3a360",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":118.33333587646484},\"timestamp\":1693402981753}]",
+			"sort": 108,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:02.049+0000"
+		},
+		{
+			"id": "64ef4766dc22313b82034590",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":151.6666717529297},\"timestamp\":1693402981854}]",
+			"sort": 109,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:02.147+0000"
+		},
+		{
+			"id": "64ef4766dc22313b82034591",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":167.6666717529297},\"timestamp\":1693402981954}]",
+			"sort": 110,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:02.260+0000"
+		},
+		{
+			"id": "64ef4766dc22313b82034592",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":264.106689453125,\"y\":554.480224609375,\"id\":52,\"timeOffset\":-407}]},\"timestamp\":1693402982044}]",
+			"sort": 111,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:02.322+0000"
+		},
+		{
+			"id": "64ef47663fc0fa5a7db3a361",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":174},\"timestamp\":1693402982055}]",
+			"sort": 112,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:02.349+0000"
+		},
+		{
+			"id": "64ef4766dc22313b82034593",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":174.6666717529297},\"timestamp\":1693402982156}]",
+			"sort": 113,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:02.450+0000"
+		},
+		{
+			"id": "64ef4769dc22313b820345a5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":52,\"x\":258.8570556640625,\"y\":611.053466796875},\"timestamp\":1693402984685}]",
+			"sort": 114,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.013+0000"
+		},
+		{
+			"id": "64ef47693fc0fa5a7db3a376",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":255.83224487304688,\"y\":603.2037963867188,\"id\":52,\"timeOffset\":0}]},\"timestamp\":1693402984812}]",
+			"sort": 115,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.097+0000"
+		},
+		{
+			"id": "64ef4769dc22313b820345a6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":175},\"timestamp\":1693402984821}]",
+			"sort": 116,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.093+0000"
+		},
+		{
+			"id": "64ef47693fc0fa5a7db3a377",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":52,\"x\":259.3070068359375,\"y\":565.3299560546875},\"timestamp\":1693402984873}]",
+			"sort": 117,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.159+0000"
+		},
+		{
+			"id": "64ef4769dc22313b820345a8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":256.6666564941406},\"timestamp\":1693402984922}]",
+			"sort": 118,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.218+0000"
+		},
+		{
+			"id": "64ef47693fc0fa5a7db3a378",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":328.6666564941406},\"timestamp\":1693402985023}]",
+			"sort": 119,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.301+0000"
+		},
+		{
+			"id": "64ef47693fc0fa5a7db3a379",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":369.3333435058594},\"timestamp\":1693402985124}]",
+			"sort": 120,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.422+0000"
+		},
+		{
+			"id": "64ef47693fc0fa5a7db3a37c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":391.3333435058594},\"timestamp\":1693402985225}]",
+			"sort": 121,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.504+0000"
+		},
+		{
+			"id": "64ef4769dc22313b820345ad",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":259.3070068359375,\"y\":565.3299560546875,\"id\":52,\"timeOffset\":-441}]},\"timestamp\":1693402985312}]",
+			"sort": 122,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.586+0000"
+		},
+		{
+			"id": "64ef4769dc22313b820345ae",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":402.3333435058594},\"timestamp\":1693402985325}]",
+			"sort": 123,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.618+0000"
+		},
+		{
+			"id": "64ef47693fc0fa5a7db3a37d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":405.6666564941406},\"timestamp\":1693402985425}]",
+			"sort": 124,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:05.702+0000"
+		},
+		{
+			"id": "64ef47703fc0fa5a7db3a39c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":52,\"x\":260.08197021484375,\"y\":591.5540161132812},\"timestamp\":1693402991718}]",
+			"sort": 125,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.139+0000"
+		},
+		{
+			"id": "64ef47703fc0fa5a7db3a39d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":258.78204345703125,\"y\":582.9293823242188,\"id\":52,\"timeOffset\":0}]},\"timestamp\":1693402991888}]",
+			"sort": 126,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.194+0000"
+		},
+		{
+			"id": "64ef47703fc0fa5a7db3a39e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":414},\"timestamp\":1693402991901}]",
+			"sort": 127,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.200+0000"
+		},
+		{
+			"id": "64ef4770dc22313b820345ce",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":52,\"x\":265.0316162109375,\"y\":551.7303466796875},\"timestamp\":1693402991943}]",
+			"sort": 128,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.246+0000"
+		},
+		{
+			"id": "64ef4770dc22313b820345cf",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":474.3333435058594},\"timestamp\":1693402992002}]",
+			"sort": 129,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.294+0000"
+		},
+		{
+			"id": "64ef47703fc0fa5a7db3a3a0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":517.3333129882812},\"timestamp\":1693402992101}]",
+			"sort": 130,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.378+0000"
+		},
+		{
+			"id": "64ef47703fc0fa5a7db3a3a1",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":537.6666870117188},\"timestamp\":1693402992201}]",
+			"sort": 131,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.502+0000"
+		},
+		{
+			"id": "64ef47703fc0fa5a7db3a3a2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":546.3333129882812},\"timestamp\":1693402992302}]",
+			"sort": 132,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.588+0000"
+		},
+		{
+			"id": "64ef4770dc22313b820345d3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":265.0316162109375,\"y\":551.7303466796875,\"id\":52,\"timeOffset\":-446}]},\"timestamp\":1693402992388}]",
+			"sort": 133,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.663+0000"
+		},
+		{
+			"id": "64ef4770dc22313b820345d4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":548},\"timestamp\":1693402992402}]",
+			"sort": 134,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:12.692+0000"
+		},
+		{
+			"id": "64ef4771dc22313b820345d7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":52,\"x\":257.73211669921875,\"y\":592.1041259765625},\"timestamp\":1693402992814}]",
+			"sort": 135,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.129+0000"
+		},
+		{
+			"id": "64ef47713fc0fa5a7db3a3a6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":255.4072723388672,\"y\":582.37939453125,\"id\":52,\"timeOffset\":0}]},\"timestamp\":1693402992949}]",
+			"sort": 136,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.230+0000"
+		},
+		{
+			"id": "64ef47713fc0fa5a7db3a3a7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":552.6666870117188},\"timestamp\":1693402992956}]",
+			"sort": 137,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.272+0000"
+		},
+		{
+			"id": "64ef4771dc22313b820345d8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":52,\"x\":264.7066345214844,\"y\":553.0302734375},\"timestamp\":1693402992989}]",
+			"sort": 138,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.259+0000"
+		},
+		{
+			"id": "64ef47713fc0fa5a7db3a3a9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":628},\"timestamp\":1693402993056}]",
+			"sort": 139,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.333+0000"
+		},
+		{
+			"id": "64ef47713fc0fa5a7db3a3aa",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":683},\"timestamp\":1693402993157}]",
+			"sort": 140,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.443+0000"
+		},
+		{
+			"id": "64ef47713fc0fa5a7db3a3ab",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":712},\"timestamp\":1693402993258}]",
+			"sort": 141,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.534+0000"
+		},
+		{
+			"id": "64ef4771dc22313b820345db",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":727},\"timestamp\":1693402993359}]",
+			"sort": 142,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.635+0000"
+		},
+		{
+			"id": "64ef47713fc0fa5a7db3a3ac",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":731.6666870117188},\"timestamp\":1693402993460}]",
+			"sort": 143,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.750+0000"
+		},
+		{
+			"id": "64ef4771dc22313b820345dc",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":732},\"timestamp\":1693402993559}]",
+			"sort": 144,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.845+0000"
+		},
+		{
+			"id": "64ef4771dc22313b820345dd",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":52,\"x\":253.60740661621094,\"y\":584.904296875},\"timestamp\":1693402993631}]",
+			"sort": 145,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:13.904+0000"
+		},
+		{
+			"id": "64ef47723fc0fa5a7db3a3ad",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":253.60740661621094,\"y\":576.6046142578125,\"id\":52,\"timeOffset\":0}]},\"timestamp\":1693402993759}]",
+			"sort": 146,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:14.045+0000"
+		},
+		{
+			"id": "64ef47723fc0fa5a7db3a3ae",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":737},\"timestamp\":1693402993773}]",
+			"sort": 147,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:14.057+0000"
+		},
+		{
+			"id": "64ef47723fc0fa5a7db3a3af",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":747.6666870117188},\"timestamp\":1693402993873}]",
+			"sort": 148,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:14.150+0000"
+		},
+		{
+			"id": "64ef4772dc22313b820345de",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":748},\"timestamp\":1693402993974}]",
+			"sort": 149,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:14.247+0000"
+		},
+		{
+			"id": "64ef4772dc22313b820345df",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":255.9072723388672,\"y\":560.9801025390625,\"id\":52,\"timeOffset\":-298}]},\"timestamp\":1693402994261}]",
+			"sort": 150,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:14.569+0000"
+		},
+		{
+			"id": "64ef4773dc22313b820345e0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":255.9072723388672,\"y\":560.830078125,\"id\":52,\"timeOffset\":0}]},\"timestamp\":1693402995185}]",
+			"sort": 151,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.525+0000"
+		},
+		{
+			"id": "64ef47733fc0fa5a7db3a3b0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":749},\"timestamp\":1693402995197}]",
+			"sort": 152,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.528+0000"
+		},
+		{
+			"id": "64ef4773dc22313b820345e1",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":52,\"x\":271.8311462402344,\"y\":524.9561767578125},\"timestamp\":1693402995245}]",
+			"sort": 153,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.528+0000"
+		},
+		{
+			"id": "64ef47733fc0fa5a7db3a3b1",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":847.3333129882812},\"timestamp\":1693402995298}]",
+			"sort": 154,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.595+0000"
+		},
+		{
+			"id": "64ef47733fc0fa5a7db3a3b2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":949},\"timestamp\":1693402995398}]",
+			"sort": 155,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.680+0000"
+		},
+		{
+			"id": "64ef4773dc22313b820345e2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1013.3333129882812},\"timestamp\":1693402995499}]",
+			"sort": 156,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.797+0000"
+		},
+		{
+			"id": "64ef47733fc0fa5a7db3a3b3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1052.6666259765625},\"timestamp\":1693402995599}]",
+			"sort": 157,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.901+0000"
+		},
+		{
+			"id": "64ef4773dc22313b820345e3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":271.8311462402344,\"y\":524.9561767578125,\"id\":52,\"timeOffset\":-443}]},\"timestamp\":1693402995687}]",
+			"sort": 158,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.960+0000"
+		},
+		{
+			"id": "64ef47733fc0fa5a7db3a3b4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1076},\"timestamp\":1693402995700}]",
+			"sort": 159,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:15.973+0000"
+		},
+		{
+			"id": "64ef4774dc22313b820345e4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1088.6666259765625},\"timestamp\":1693402995800}]",
+			"sort": 160,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.076+0000"
+		},
+		{
+			"id": "64ef4774dc22313b820345e5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":52,\"x\":254.63232421875,\"y\":587.1041259765625},\"timestamp\":1693402995811}]",
+			"sort": 161,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.087+0000"
+		},
+		{
+			"id": "64ef47743fc0fa5a7db3a3b5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1102},\"timestamp\":1693402995899}]",
+			"sort": 162,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.180+0000"
+		},
+		{
+			"id": "64ef4774dc22313b820345e6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":52,\"x\":267.7064208984375,\"y\":536.705810546875},\"timestamp\":1693402995929}]",
+			"sort": 163,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.224+0000"
+		},
+		{
+			"id": "64ef47743fc0fa5a7db3a3b6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1200.3333740234375},\"timestamp\":1693402996000}]",
+			"sort": 164,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.296+0000"
+		},
+		{
+			"id": "64ef47743fc0fa5a7db3a3b7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":1,\"x\":0,\"y\":1239.3333740234375},\"timestamp\":1693402996100}]",
+			"sort": 165,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.374+0000"
+		},
+		{
+			"id": "64ef4774dc22313b820345e7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":254.7073211669922,\"y\":579.0545654296875,\"id\":52,\"timeOffset\":-309}]},\"timestamp\":1693402996188}]",
+			"sort": 166,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.487+0000"
+		},
+		{
+			"id": "64ef4774dc22313b820345e8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":52,\"x\":252.35748291015625,\"y\":576.57958984375},\"timestamp\":1693402996261}]",
+			"sort": 167,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.536+0000"
+		},
+		{
+			"id": "64ef47743fc0fa5a7db3a3b8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":52,\"x\":267.931396484375,\"y\":530.2060546875},\"timestamp\":1693402996588}]",
+			"sort": 168,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.914+0000"
+		},
+		{
+			"id": "64ef4774dc22313b820345e9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":252.78245544433594,\"y\":567.6298828125,\"id\":52,\"timeOffset\":-333},{\"x\":258.632080078125,\"y\":550.00537109375,\"id\":52,\"timeOffset\":-283},{\"x\":263.6317138671875,\"y\":540.2056884765625,\"id\":52,\"timeOffset\":-233},{\"x\":265.78155517578125,\"y\":535.1058349609375,\"id\":52,\"timeOffset\":-176},{\"x\":267.18145751953125,\"y\":531.8309326171875,\"id\":52,\"timeOffset\":-119}]},\"timestamp\":1693402996689}]",
+			"sort": 169,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:16.962+0000"
+		},
+		{
+			"id": "64ef4778dc22313b820345ee",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":41,\"x\":284.93023681640625,\"y\":688.4010009765625},\"timestamp\":1693403000480}]",
+			"sort": 170,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:20.946+0000"
+		},
+		{
+			"id": "64ef4778dc22313b820345ef",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":41,\"x\":284.93023681640625,\"y\":688.4010009765625},\"timestamp\":1693403000591}]",
+			"sort": 171,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:20.978+0000"
+		},
+		{
+			"id": "64ef4778dc22313b820345f0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":1,\"positions\":[{\"x\":285,\"y\":688,\"id\":41,\"timeOffset\":0}]},\"timestamp\":1693403000595}]",
+			"sort": 172,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:20.978+0000"
+		},
+		{
+			"id": "64ef47793fc0fa5a7db3a3c0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":1,\"id\":41,\"x\":285,\"y\":688},\"timestamp\":1693403000597}]",
+			"sort": 173,
+			"pageId": "2",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.037+0000"
+		},
+		{
+			"id": "64ef47793fc0fa5a7db3a3c1",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":4,\"data\":{\"href\":\"https://finance.xingbeibaoxian.com/insurance/shortProduct?bizCode=xb&posterId=934&shareKey=1008908029&recomKey=1008908029&hseshareKey=48e42f23b1a519c9&itemId=100775&skuId=301181&insureTimeType=1&noNeedHealthParamInfo=1\",\"width\":360,\"height\":722},\"timestamp\":1693403001242}]",
+			"sort": 177,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.536+0000"
+		},
+		{
+			"id": "64ef4779dc22313b820345f3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":2,\"data\":{\"node\":{\"type\":0,\"childNodes\":[{\"type\":1,\"name\":\"html\",\"publicId\":\"\",\"systemId\":\"\",\"id\":2},{\"type\":2,\"tagName\":\"html\",\"attributes\":{\"lang\":\"zh-CN\"},\"childNodes\":[{\"type\":2,\"tagName\":\"head\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"charset\":\"utf-8\"},\"childNodes\":[],\"id\":5},{\"type\":2,\"tagName\":\"title\",\"attributes\":{},\"childNodes\":[{\"type\":3,\"textContent\":\"星贝保险经纪-专注于孕婴童&新家庭的保险服务平台\",\"id\":7}],\"id\":6},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"app-id\",\"content\":\"1\"},\"childNodes\":[],\"id\":8},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"biz-type\",\"content\":\"102\"},\"childNodes\":[],\"id\":9},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"keywords\",\"content\":\"星贝保险,经纪,车险,产险,健康险,保险,意外保险,重疾险,少儿保险,人寿保险,医疗保险\"},\"childNodes\":[],\"id\":10},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"description\",\"content\":\"星贝保险经纪有限公司是经银保监会批准设立的全国性的保险经纪公司，是全国首家专注于孕、婴、童人群及其家庭的保险服务平台，为用户提供定制化保险产品，一站式满足新家庭多元化保险需求。\"},\"childNodes\":[],\"id\":11},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"icon\",\"type\":\"image/png\",\"href\":\"https://hzwimspic-1251601690.image.myqcloud.com/6fb14be0-45cb-11eb-a2a6-c93aa1f715ff_size_64x64\"},\"childNodes\":[],\"id\":12},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"viewport\",\"content\":\"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no\"},\"childNodes\":[],\"id\":13},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"theme-color\",\"content\":\"#000000\"},\"childNodes\":[],\"id\":14},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"format-detection\",\"content\":\"telephone=no\"},\"childNodes\":[],\"id\":15},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"http-equiv\":\"cache-control\",\"content\":\"max-age=3600\"},\"childNodes\":[],\"id\":16},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"page-id\",\"content\":\"\"},\"childNodes\":[],\"id\":17},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"referrer\",\"content\":\"no-referrer-when-downgrade\"},\"childNodes\":[],\"id\":18},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/insurance-h5/static/css/main.1692944370137.dd9f112d.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":19},{\"type\":2,\"tagName\":\"style\",\"attributes\":{\"type\":\"text/css\"},\"childNodes\":[{\"type\":3,\"textContent\":\"#__vconsole {\\n  color: #000;\\n  font-size: 13px;\\n  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\\n  /* global */\\n  /* compoment */\\n}\\n#__vconsole .vc-max-height {\\n  max-height: 19.23076923em;\\n}\\n#__vconsole .vc-max-height-line {\\n  max-height: 3.38461538em;\\n}\\n#__vconsole .vc-min-height {\\n  min-height: 3.07692308em;\\n}\\n#__vconsole dd,\\n#__vconsole dl,\\n#__vconsole pre {\\n  margin: 0;\\n}\\n#__vconsole .vc-switch {\\n  display: block;\\n  position: fixed;\\n  right: 0.76923077em;\\n  bottom: 0.76923077em;\\n  color: #FFF;\\n  background-color: #04BE02;\\n  line-height: 1;\\n  font-size: 1.07692308em;\\n  padding: 0.61538462em 1.23076923em;\\n  z-index: 10000;\\n  border-radius: 0.30769231em;\\n  box-shadow: 0 0 0.61538462em rgba(0, 0, 0, 0.4);\\n}\\n#__vconsole .vc-mask {\\n  display: none;\\n  position: fixed;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  background: rgba(0, 0, 0, 0);\\n  z-index: 10001;\\n  transition: background 0.3s;\\n  -webkit-tap-highlight-color: transparent;\\n  overflow-y: scroll;\\n}\\n#__vconsole .vc-panel {\\n  display: none;\\n  position: fixed;\\n  min-height: 85%;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  z-index: 10002;\\n  background-color: #EFEFF4;\\n  -webkit-transition: -webkit-transform 0.3s;\\n  transition: -webkit-transform 0.3s;\\n  transition: transform 0.3s;\\n  transition: transform 0.3s, -webkit-transform 0.3s;\\n  -webkit-transform: translate(0, 100%);\\n  transform: translate(0, 100%);\\n}\\n#__vconsole .vc-tabbar {\\n  border-bottom: 1px solid #D9D9D9;\\n  overflow-x: auto;\\n  height: 3em;\\n  width: auto;\\n  white-space: nowrap;\\n}\\n#__vconsole .vc-tabbar .vc-tab {\\n  display: inline-block;\\n  line-height: 3em;\\n  padding: 0 1.15384615em;\\n  border-right: 1px solid #D9D9D9;\\n  text-decoration: none;\\n  color: #000;\\n  -webkit-tap-highlight-color: transparent;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-tabbar .vc-tab:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-tabbar .vc-tab.vc-actived {\\n  background-color: #FFF;\\n}\\n#__vconsole .vc-content {\\n  background-color: #FFF;\\n  overflow-x: hidden;\\n  overflow-y: auto;\\n  position: absolute;\\n  top: 3.07692308em;\\n  left: 0;\\n  right: 0;\\n  bottom: 3.07692308em;\\n  -webkit-overflow-scrolling: touch;\\n  margin-bottom: constant(safe-area-inset-bottom);\\n  margin-bottom: env(safe-area-inset-bottom);\\n}\\n#__vconsole .vc-content.vc-has-topbar {\\n  top: 5.46153846em;\\n}\\n#__vconsole .vc-topbar {\\n  background-color: #FBF9FE;\\n  display: flex;\\n  display: -webkit-box;\\n  flex-direction: row;\\n  flex-wrap: wrap;\\n  -webkit-box-direction: row;\\n  -webkit-flex-wrap: wrap;\\n  width: 100%;\\n}\\n#__vconsole .vc-topbar .vc-toptab {\\n  display: none;\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  line-height: 2.30769231em;\\n  padding: 0 1.15384615em;\\n  border-bottom: 1px solid #D9D9D9;\\n  text-decoration: none;\\n  text-align: center;\\n  color: #000;\\n  -webkit-tap-highlight-color: transparent;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-topbar .vc-toptab.vc-toggle {\\n  display: block;\\n}\\n#__vconsole .vc-topbar .vc-toptab:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-topbar .vc-toptab.vc-actived {\\n  border-bottom: 1px solid #3e82f7;\\n}\\n#__vconsole .vc-logbox {\\n  display: none;\\n  position: relative;\\n  min-height: 100%;\\n}\\n#__vconsole .vc-logbox i {\\n  font-style: normal;\\n}\\n#__vconsole .vc-logbox .vc-log {\\n  padding-bottom: 3em;\\n  -webkit-tap-highlight-color: transparent;\\n}\\n#__vconsole .vc-logbox .vc-log:empty:before {\\n  content: \\\"Empty\\\";\\n  color: #999;\\n  position: absolute;\\n  top: 45%;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  font-size: 1.15384615em;\\n  text-align: center;\\n}\\n#__vconsole .vc-logbox .vc-item {\\n  margin: 0;\\n  padding: 0.46153846em 0.61538462em;\\n  overflow: hidden;\\n  line-height: 1.3;\\n  border-bottom: 1px solid #EEE;\\n  word-break: break-word;\\n}\\n#__vconsole .vc-logbox .vc-item-info {\\n  color: #6A5ACD;\\n}\\n#__vconsole .vc-logbox .vc-item-debug {\\n  color: #DAA520;\\n}\\n#__vconsole .vc-logbox .vc-item-warn {\\n  color: #FFA500;\\n  border-color: #FFB930;\\n  background-color: #FFFACD;\\n}\\n#__vconsole .vc-logbox .vc-item-error {\\n  color: #DC143C;\\n  border-color: #F4A0AB;\\n  background-color: #FFE4E1;\\n}\\n#__vconsole .vc-logbox .vc-log.vc-log-partly .vc-item {\\n  display: none;\\n}\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-log .vc-item-log,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-info .vc-item-info,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-warn .vc-item-warn,\\n#__vconsole .vc-logbox .vc-log.vc-log-partly-error .vc-item-error {\\n  display: block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-content {\\n  margin-right: 4.61538462em;\\n  display: inline-block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-repeat {\\n  display: inline-block;\\n  margin-right: 0.30769231em;\\n  padding: 0 6.5px;\\n  color: #D7E0EF;\\n  background-color: #42597F;\\n  border-radius: 8.66666667px;\\n}\\n#__vconsole .vc-logbox .vc-item.vc-item-error .vc-item-repeat {\\n  color: #901818;\\n  background-color: #DC2727;\\n}\\n#__vconsole .vc-logbox .vc-item.vc-item-warn .vc-item-repeat {\\n  color: #987D20;\\n  background-color: #F4BD02;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code {\\n  display: block;\\n  white-space: pre-wrap;\\n  overflow: auto;\\n  position: relative;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input,\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output {\\n  padding-left: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-input:before,\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {\\n  content: \\\"›\\\";\\n  position: absolute;\\n  top: -0.23076923em;\\n  left: 0;\\n  font-size: 1.23076923em;\\n  color: #6A5ACD;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-item-code.vc-item-code-output:before {\\n  content: \\\"‹\\\";\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold {\\n  display: block;\\n  overflow: auto;\\n  -webkit-overflow-scrolling: touch;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer {\\n  display: block;\\n  font-style: italic;\\n  padding-left: 0.76923077em;\\n  position: relative;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:active {\\n  background-color: #E6E6E6;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer:before {\\n  content: \\\"\\\";\\n  position: absolute;\\n  top: 0.30769231em;\\n  left: 0.15384615em;\\n  width: 0;\\n  height: 0;\\n  border: transparent solid 0.30769231em;\\n  border-left-color: #000;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer.vc-toggle:before {\\n  top: 0.46153846em;\\n  left: 0;\\n  border-top-color: #000;\\n  border-left-color: transparent;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner {\\n  display: none;\\n  margin-left: 0.76923077em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner.vc-toggle {\\n  display: block;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-inner .vc-code-key {\\n  margin-left: 0.76923077em;\\n}\\n#__vconsole .vc-logbox .vc-item .vc-fold .vc-fold-outer .vc-code-key {\\n  margin-left: 0;\\n}\\n#__vconsole .vc-logbox .vc-code-key {\\n  color: #905;\\n}\\n#__vconsole .vc-logbox .vc-code-private-key {\\n  color: #D391B5;\\n}\\n#__vconsole .vc-logbox .vc-code-function {\\n  color: #905;\\n  font-style: italic;\\n}\\n#__vconsole .vc-logbox .vc-code-number,\\n#__vconsole .vc-logbox .vc-code-boolean {\\n  color: #0086B3;\\n}\\n#__vconsole .vc-logbox .vc-code-string {\\n  color: #183691;\\n}\\n#__vconsole .vc-logbox .vc-code-null,\\n#__vconsole .vc-logbox .vc-code-undefined {\\n  color: #666;\\n}\\n#__vconsole .vc-logbox .vc-cmd {\\n  position: absolute;\\n  height: 3.07692308em;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  border-top: 1px solid #D9D9D9;\\n  display: block!important;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input-wrap {\\n  display: block;\\n  height: 2.15384615em;\\n  margin-right: 3.07692308em;\\n  padding: 0.46153846em 0.61538462em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input {\\n  width: 100%;\\n  border: none;\\n  resize: none;\\n  outline: none;\\n  padding: 0;\\n  font-size: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-input::-webkit-input-placeholder {\\n  line-height: 2.15384615em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn {\\n  position: absolute;\\n  top: 0;\\n  right: 0;\\n  bottom: 0;\\n  width: 3.07692308em;\\n  border: none;\\n  background-color: #EFEFF4;\\n  outline: none;\\n  -webkit-touch-callout: none;\\n  font-size: 1em;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-btn:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted {\\n  position: fixed;\\n  width: 100%;\\n  background-color: #FBF9FE;\\n  border: 1px solid #D9D9D9;\\n  overflow-x: scroll;\\n  display: none;\\n}\\n#__vconsole .vc-logbox .vc-cmd .vc-cmd-prompted li {\\n  list-style: none;\\n  line-height: 30px;\\n  padding: 0 0.46153846em;\\n  border-bottom: 1px solid #D9D9D9;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-preview {\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-preview:active {\\n  background-color: #E6E6E6;\\n}\\n#__vconsole .vc-logbox .vc-group .vc-group-detail {\\n  display: none;\\n  padding: 0 0 0.76923077em 1.53846154em;\\n  border-bottom: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-detail {\\n  display: block;\\n  background-color: #FBF9FE;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-table-row {\\n  background-color: #FFF;\\n}\\n#__vconsole .vc-logbox .vc-group.vc-actived .vc-group-preview {\\n  background-color: #FBF9FE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row {\\n  display: flex;\\n  display: -webkit-flex;\\n  flex-direction: row;\\n  flex-wrap: wrap;\\n  -webkit-box-direction: row;\\n  -webkit-flex-wrap: wrap;\\n  overflow: hidden;\\n  border-bottom: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row.vc-left-border {\\n  border-left: 1px solid #EEE;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col {\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  padding: 0.23076923em 0.30769231em;\\n  border-left: 1px solid #EEE;\\n  overflow: auto;\\n  white-space: pre-wrap;\\n  word-break: break-word;\\n  /*white-space: nowrap;\\n        text-overflow: ellipsis;*/\\n  -webkit-overflow-scrolling: touch;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col:first-child {\\n  border: none;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-small .vc-table-col {\\n  padding: 0 0.30769231em;\\n  font-size: 0.92307692em;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-2 {\\n  flex: 2;\\n  -webkit-box-flex: 2;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-3 {\\n  flex: 3;\\n  -webkit-box-flex: 3;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-4 {\\n  flex: 4;\\n  -webkit-box-flex: 4;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-5 {\\n  flex: 5;\\n  -webkit-box-flex: 5;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-6 {\\n  flex: 6;\\n  -webkit-box-flex: 6;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row-error {\\n  border-color: #F4A0AB;\\n  background-color: #FFE4E1;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-row-error .vc-table-col {\\n  color: #DC143C;\\n  border-color: #F4A0AB;\\n}\\n#__vconsole .vc-logbox .vc-table .vc-table-col-title {\\n  font-weight: bold;\\n}\\n#__vconsole .vc-logbox.vc-actived {\\n  display: block;\\n}\\n#__vconsole .vc-toolbar {\\n  border-top: 1px solid #D9D9D9;\\n  line-height: 3em;\\n  position: absolute;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  display: flex;\\n  display: -webkit-box;\\n  flex-direction: row;\\n  -webkit-box-direction: row;\\n}\\n#__vconsole .vc-toolbar .vc-tool {\\n  display: none;\\n  text-decoration: none;\\n  color: #000;\\n  width: 50%;\\n  flex: 1;\\n  -webkit-box-flex: 1;\\n  text-align: center;\\n  position: relative;\\n  -webkit-touch-callout: none;\\n}\\n#__vconsole .vc-toolbar .vc-tool.vc-toggle,\\n#__vconsole .vc-toolbar .vc-tool.vc-global-tool {\\n  display: block;\\n}\\n#__vconsole .vc-toolbar .vc-tool:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n#__vconsole .vc-toolbar .vc-tool:after {\\n  content: \\\" \\\";\\n  position: absolute;\\n  top: 0.53846154em;\\n  bottom: 0.53846154em;\\n  right: 0;\\n  border-left: 1px solid #D9D9D9;\\n}\\n#__vconsole .vc-toolbar .vc-tool-last:after {\\n  border: none;\\n}\\n@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) {\\n  #__vconsole .vc-toolbar,\\n  #__vconsole .vc-switch {\\n    bottom: constant(safe-area-inset-bottom);\\n    bottom: env(safe-area-inset-bottom);\\n  }\\n}\\n#__vconsole.vc-toggle .vc-switch {\\n  display: none;\\n}\\n#__vconsole.vc-toggle .vc-mask {\\n  background: rgba(0, 0, 0, 0.6);\\n  display: block;\\n}\\n#__vconsole.vc-toggle .vc-panel {\\n  -webkit-transform: translate(0, 0);\\n  transform: translate(0, 0);\\n}\\n\",\"isStyle\":true,\"id\":21}],\"id\":20},{\"type\":2,\"tagName\":\"style\",\"attributes\":{\"type\":\"text/css\"},\"childNodes\":[{\"type\":3,\"textContent\":\"/* color */\\n.vcelm-node {\\n  color: #183691;\\n}\\n.vcelm-k {\\n  color: #0086B3;\\n}\\n.vcelm-v {\\n  color: #905;\\n}\\n/* layout */\\n.vcelm-l {\\n  padding-left: 8px;\\n  position: relative;\\n  word-wrap: break-word;\\n  line-height: 1;\\n}\\n/*.vcelm-l.vcelm-noc {\\n  padding-left: 0;\\n}*/\\n.vcelm-l.vc-toggle > .vcelm-node {\\n  display: block;\\n}\\n.vcelm-l .vcelm-node:active {\\n  background-color: rgba(0, 0, 0, 0.15);\\n}\\n.vcelm-l.vcelm-noc .vcelm-node:active {\\n  background-color: transparent;\\n}\\n.vcelm-t {\\n  white-space: pre-wrap;\\n  word-wrap: break-word;\\n}\\n/* level */\\n.vcelm-l .vcelm-l {\\n  display: none;\\n}\\n.vcelm-l.vc-toggle > .vcelm-l {\\n  margin-left: 4px;\\n  display: block;\\n}\\n/* arrow */\\n.vcelm-l:before {\\n  content: \\\"\\\";\\n  display: block;\\n  position: absolute;\\n  top: 6px;\\n  left: 3px;\\n  width: 0;\\n  height: 0;\\n  border: transparent solid 3px;\\n  border-left-color: #000;\\n}\\n.vcelm-l.vc-toggle:before {\\n  display: block;\\n  top: 6px;\\n  left: 0;\\n  border-top-color: #000;\\n  border-left-color: transparent;\\n}\\n.vcelm-l.vcelm-noc:before {\\n  display: none;\\n}\\n\",\"isStyle\":true,\"id\":23}],\"id\":22},{\"type\":2,\"tagName\":\"style\",\"attributes\":{\"type\":\"text/css\"},\"childNodes\":[{\"type\":3,\"textContent\":\"/*do not import this file except components/style/index.less*/\\n.am-fade-enter,\\n.am-fade-appear {\\n  opacity: 0;\\n  animation-duration: 0.2s;\\n  animation-fill-mode: both;\\n  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);\\n  animation-play-state: paused;\\n}\\n.am-fade-leave {\\n  animation-duration: 0.2s;\\n  animation-fill-mode: both;\\n  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);\\n  animation-play-state: paused;\\n}\\n.am-fade-enter.am-fade-enter-active,\\n.am-fade-appear.am-fade-appear-active {\\n  animation-name: amFadeIn;\\n  animation-play-state: running;\\n}\\n.am-fade-leave.am-fade-leave-active {\\n  animation-name: amFadeOut;\\n  animation-play-state: running;\\n}\\n@keyframes amFadeIn {\\n  0% {\\n    opacity: 0;\\n  }\\n  100% {\\n    opacity: 1;\\n  }\\n}\\n@keyframes amFadeOut {\\n  0% {\\n    opacity: 1;\\n  }\\n  100% {\\n    opacity: 0;\\n  }\\n}\\n.am-slide-up-enter,\\n.am-slide-up-appear {\\n  transform: translate(0, 100%);\\n}\\n.am-slide-up-enter,\\n.am-slide-up-appear,\\n.am-slide-up-leave {\\n  animation-duration: 0.2s;\\n  animation-fill-mode: both;\\n  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);\\n  animation-play-state: paused;\\n}\\n.am-slide-up-enter.am-slide-up-enter-active,\\n.am-slide-up-appear.am-slide-up-appear-active {\\n  animation-name: amSlideUpIn;\\n  animation-play-state: running;\\n}\\n.am-slide-up-leave.am-slide-up-leave-active {\\n  animation-name: amSlideUpOut;\\n  animation-play-state: running;\\n}\\n@keyframes amSlideUpIn {\\n  0% {\\n    transform: translate(0, 100%);\\n  }\\n  100% {\\n    transform: translate(0, 0);\\n  }\\n}\\n@keyframes amSlideUpOut {\\n  0% {\\n    transform: translate(0, 0);\\n  }\\n  100% {\\n    transform: translate(0, 100%);\\n  }\\n}\\n.am.am-zoom-enter,\\n.am.am-zoom-leave {\\n  display: block;\\n}\\n.am-zoom-enter,\\n.am-zoom-appear {\\n  opacity: 0;\\n  animation-duration: 0.2s;\\n  animation-fill-mode: both;\\n  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);\\n  animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);\\n  animation-play-state: paused;\\n}\\n.am-zoom-leave {\\n  animation-duration: 0.2s;\\n  animation-fill-mode: both;\\n  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);\\n  animation-timing-function: cubic-bezier(0.6, -0.3, 0.74, 0.05);\\n  animation-play-state: paused;\\n}\\n.am-zoom-enter.am-zoom-enter-active,\\n.am-zoom-appear.am-zoom-appear-active {\\n  animation-name: amZoomIn;\\n  animation-play-state: running;\\n}\\n.am-zoom-leave.am-zoom-leave-active {\\n  animation-name: amZoomOut;\\n  animation-play-state: running;\\n}\\n@keyframes amZoomIn {\\n  0% {\\n    opacity: 0;\\n    transform-origin: 50% 50%;\\n    transform: scale(0, 0);\\n  }\\n  100% {\\n    opacity: 1;\\n    transform-origin: 50% 50%;\\n    transform: scale(1, 1);\\n  }\\n}\\n@keyframes amZoomOut {\\n  0% {\\n    opacity: 1;\\n    transform-origin: 50% 50%;\\n    transform: scale(1, 1);\\n  }\\n  100% {\\n    opacity: 0;\\n    transform-origin: 50% 50%;\\n    transform: scale(0, 0);\\n  }\\n}\\n.am-slide-down-enter,\\n.am-slide-down-appear {\\n  transform: translate(0, -100%);\\n}\\n.am-slide-down-enter,\\n.am-slide-down-appear,\\n.am-slide-down-leave {\\n  animation-duration: 0.2s;\\n  animation-fill-mode: both;\\n  animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);\\n  animation-play-state: paused;\\n}\\n.am-slide-down-enter.am-slide-down-enter-active,\\n.am-slide-down-appear.am-slide-down-appear-active {\\n  animation-name: amSlideDownIn;\\n  animation-play-state: running;\\n}\\n.am-slide-down-leave.am-slide-down-leave-active {\\n  animation-name: amSlideDownOut;\\n  animation-play-state: running;\\n}\\n@keyframes amSlideDownIn {\\n  0% {\\n    transform: translate(0, -100%);\\n  }\\n  100% {\\n    transform: translate(0, 0);\\n  }\\n}\\n@keyframes amSlideDownOut {\\n  0% {\\n    transform: translate(0, 0);\\n  }\\n  100% {\\n    transform: translate(0, -100%);\\n  }\\n}\\n*,\\n*:before,\\n*:after {\\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\\n}\\nbody {\\n  background-color: #f5f5f9;\\n  font-size: 14px;\\n}\\n*[contenteditable] {\\n  -webkit-user-select: auto !important;\\n}\\n*:focus {\\n  outline: none;\\n}\\na {\\n  background: transparent;\\n  text-decoration: none;\\n  outline: none;\\n}\\n.am-accordion {\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-accordion {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-accordion::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-accordion::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-accordion-anim-active {\\n  transition: all 0.2s ease-out;\\n}\\n.am-accordion .am-accordion-item .am-accordion-header {\\n  position: relative;\\n  color: #333;\\n  font-size: 17px;\\n  height: 44px;\\n  line-height: 44px;\\n  background-color: #fff;\\n  box-sizing: content-box;\\n  padding-left: 15px;\\n  padding-right: 30px;\\n  border-bottom: 1PX solid #ddd;\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-header {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-header::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-header::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-accordion .am-accordion-item .am-accordion-header i {\\n  position: absolute;\\n  display: block;\\n  top: 15px;\\n  right: 15px;\\n  width: 15px;\\n  height: 15px;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2226%22%20viewBox%3D%220%200%2016%2026%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22UI-KIT_%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20id%3D%229.9%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6%22%20transform%3D%22translate(-5809.000000%2C%20-8482.000000)%22%20fill%3D%22%23C7C7CC%22%3E%3Cpolygon%20id%3D%22Disclosure-Indicator%22%20points%3D%225811%208482%205809%208484%205820.5%208495%205809%208506%205811%208508%205825%208495%22%3E%3C%2Fpolygon%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);\\n  background-size: contain;\\n  background-repeat: no-repeat;\\n  background-position: 50% 50%;\\n  transform: rotate(90deg);\\n  transition: transform 0.2s ease;\\n}\\n.am-accordion .am-accordion-item .am-accordion-header[aria-expanded~=\\\"true\\\"] i {\\n  transform: rotate(270deg);\\n}\\n.am-accordion .am-accordion-item .am-accordion-content {\\n  overflow: hidden;\\n  background: #fff;\\n}\\n.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box {\\n  font-size: 15px;\\n  color: #333;\\n  position: relative;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-body {\\n  border-top: 0;\\n}\\n.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box .am-list-body:before {\\n  display: none !important;\\n}\\n.am-accordion .am-accordion-item .am-accordion-content.am-accordion-content-inactive {\\n  display: none;\\n}\\n.am-action-sheet-wrap {\\n  position: fixed;\\n  overflow: auto;\\n  top: 0;\\n  right: 0;\\n  bottom: 0;\\n  left: 0;\\n  z-index: 1000;\\n  -webkit-overflow-scrolling: touch;\\n  outline: 0;\\n}\\n.am-action-sheet-mask {\\n  position: fixed;\\n  top: 0;\\n  right: 0;\\n  left: 0;\\n  bottom: 0;\\n  background-color: rgba(0, 0, 0, 0.4);\\n  height: 100%;\\n  z-index: 1000;\\n}\\n.am-action-sheet-mask-hidden {\\n  display: none;\\n}\\n.am-action-sheet-close {\\n  display: none;\\n}\\n.am-action-sheet {\\n  position: fixed;\\n  left: 0;\\n  bottom: 0;\\n  width: 100%;\\n  background-color: #fff;\\n  padding-bottom: env(safe-area-inset-bottom);\\n}\\n.am-action-sheet.am-action-sheet-share {\\n  background-color: #f2f2f2;\\n}\\n.am-action-sheet-title,\\n.am-action-sheet-message {\\n  margin: 15px auto;\\n  padding: 0 15px;\\n  text-align: center;\\n}\\n.am-action-sheet-title {\\n  font-size: 17px;\\n}\\n.am-action-sheet-message {\\n  color: #888;\\n  font-size: 14px;\\n}\\n.am-action-sheet-button-list {\\n  text-align: center;\\n  color: #333;\\n}\\n.am-action-sheet-button-list-item {\\n  font-size: 18px;\\n  padding: 0 8px;\\n  margin: 0;\\n  position: relative;\\n  height: 50px;\\n  line-height: 50px;\\n  box-sizing: border-box;\\n  white-space: nowrap;\\n  text-overflow: ellipsis;\\n  overflow-x: hidden;\\n  border-top: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-action-sheet-button-list-item {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-action-sheet-button-list-item::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-action-sheet-button-list-item::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-action-sheet-button-list-item.am-action-sheet-button-list-item-active {\\n  background-color: #ddd;\\n}\\n.am-action-sheet-button-list-badge {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n}\\n.am-action-sheet-button-list-badge .am-badge {\\n  margin-left: 8px;\\n  flex-shrink: 0;\\n}\\n.am-action-sheet-button-list-item-content {\\n  display: inline-block;\\n  white-space: nowrap;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n}\\n.am-action-sheet-button-list .am-action-sheet-cancel-button {\\n  padding-top: 6px;\\n  position: relative;\\n}\\n.am-action-sheet-button-list .am-action-sheet-cancel-button-mask {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  width: 100%;\\n  height: 6px;\\n  background-color: #e7e7ed;\\n  border-top: 1PX solid #ddd;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-action-sheet-button-list .am-action-sheet-cancel-button-mask {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-action-sheet-button-list .am-action-sheet-cancel-button-mask::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-action-sheet-button-list .am-action-sheet-cancel-button-mask::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-action-sheet-button-list .am-action-sheet-cancel-button-mask {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-action-sheet-button-list .am-action-sheet-cancel-button-mask::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-action-sheet-button-list .am-action-sheet-cancel-button-mask::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-action-sheet-button-list .am-action-sheet-destructive-button {\\n  color: #f4333c;\\n}\\n.am-action-sheet-share-list {\\n  display: flex;\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n  padding: 21px 0 21px 15px;\\n  overflow-y: scroll;\\n  -webkit-overflow-scrolling: touch;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-action-sheet-share-list {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-action-sheet-share-list::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-action-sheet-share-list::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-action-sheet-share-list-item {\\n  flex: none;\\n  margin: 0 12px 0 0;\\n}\\n.am-action-sheet-share-list-item-icon {\\n  margin-bottom: 9px;\\n  width: 60px;\\n  height: 60px;\\n  background-color: #fff;\\n  border-radius: 3px;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.am-action-sheet-share-list-item-title {\\n  color: #888;\\n  font-size: 10px;\\n  text-align: center;\\n}\\n.am-action-sheet-share-cancel-button {\\n  height: 50px;\\n  line-height: 50px;\\n  text-align: center;\\n  background-color: #fff;\\n  color: #333;\\n  font-size: 18px;\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n  box-sizing: border-box;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-action-sheet-share-cancel-button {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-action-sheet-share-cancel-button::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-action-sheet-share-cancel-button::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-action-sheet-share-cancel-button.am-action-sheet-share-cancel-button-active {\\n  background-color: #ddd;\\n}\\n.am-activity-indicator {\\n  display: flex;\\n  align-items: center;\\n  z-index: 99;\\n}\\n.am-activity-indicator-spinner {\\n  display: inline-block;\\n  width: 20px;\\n  height: 20px;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22-2.125%20-1.875%2064%2064%22%3E%3Cpath%20fill%3D%22%23CCC%22%20d%3D%22M29.875-1.875c-17.673%200-32%2014.327-32%2032s14.327%2032%2032%2032%2032-14.327%2032-32-14.327-32-32-32zm0%2060.7c-15.85%200-28.7-12.85-28.7-28.7s12.85-28.7%2028.7-28.7%2028.7%2012.85%2028.7%2028.7-12.85%2028.7-28.7%2028.7z%22%2F%3E%3Cpath%20fill%3D%22%23ff6ea2%22%20d%3D%22M61.858%2030.34c.003-.102.008-.203.008-.305%200-11.43-5.996-21.452-15.01-27.113l-.013.026c-.24-.137-.515-.22-.81-.22-.912%200-1.65.738-1.65%201.65%200%20.654.384%201.215.937%201.482%207.963%205.1%2013.247%2014.017%2013.247%2024.176%200%20.147-.01.293-.01.44h.022c0%20.01-.004.02-.004.03%200%20.91.74%201.65%201.65%201.65s1.65-.74%201.65-1.65c0-.06-.012-.112-.018-.167z%22%2F%3E%3C%2Fsvg%3E);\\n  background-position: 50%;\\n  background-size: 100%;\\n  background-repeat: no-repeat;\\n  animation: spinner-anime 1s linear infinite;\\n}\\n.am-activity-indicator-tip {\\n  font-size: 14px;\\n  margin-left: 8px;\\n  color: #333;\\n  opacity: 0.4;\\n}\\n.am-activity-indicator.am-activity-indicator-toast {\\n  position: fixed;\\n  top: 0;\\n  left: 0;\\n  width: 100%;\\n  height: 100%;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  text-align: center;\\n  z-index: 1999;\\n}\\n.am-activity-indicator.am-activity-indicator-toast .am-activity-indicator-spinner {\\n  margin: 0;\\n}\\n.am-activity-indicator.am-activity-indicator-toast .am-activity-indicator-toast {\\n  display: inline-block;\\n  position: relative;\\n  top: 4px;\\n}\\n.am-activity-indicator-content {\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n  padding: 15px 15px;\\n  border-radius: 7px;\\n  background-clip: padding-box;\\n  color: #fff;\\n  background-color: rgba(58, 58, 58, 0.9);\\n  font-size: 15px;\\n  line-height: 20px;\\n}\\n.am-activity-indicator-spinner-lg {\\n  width: 32px;\\n  height: 32px;\\n}\\n@keyframes spinner-anime {\\n  100% {\\n    transform: rotate(360deg);\\n  }\\n}\\n.am-badge {\\n  position: relative;\\n  display: inline-block;\\n  line-height: 1;\\n  vertical-align: middle;\\n}\\n.am-badge-text {\\n  text-rendering: optimizeLegibility;\\n  -webkit-font-smoothing: antialiased;\\n  -moz-osx-font-smoothing: grayscale;\\n  position: absolute;\\n  top: -6px;\\n  height: 18px;\\n  line-height: 18px;\\n  min-width: 9px;\\n  border-radius: 12px;\\n  padding: 0 5px;\\n  text-align: center;\\n  font-size: 12px;\\n  color: #fff;\\n  background-color: #ff5b05;\\n  white-space: nowrap;\\n  transform: translateX(-45%);\\n  transform-origin: -10% center;\\n  z-index: 10;\\n  font-family: \\\"Helvetica Neue\\\", Helvetica, \\\"PingFang SC\\\", \\\"Hiragino Sans GB\\\", \\\"Microsoft YaHei\\\", \\\"\\\\5FAE\\\\8F6F\\\\96C5\\\\9ED1\\\", SimSun, sans-serif;\\n}\\n.am-badge-text a {\\n  color: #fff;\\n}\\n.am-badge-text p {\\n  margin: 0;\\n  padding: 0;\\n}\\n.am-badge-hot .am-badge-text {\\n  background-color: #f96268;\\n}\\n.am-badge-dot {\\n  position: absolute;\\n  transform: translateX(-50%);\\n  transform-origin: 0 center;\\n  top: -4px;\\n  height: 8px;\\n  width: 8px;\\n  border-radius: 100%;\\n  background: #ff5b05;\\n  z-index: 10;\\n}\\n.am-badge-dot-large {\\n  height: 16px;\\n  width: 16px;\\n}\\n.am-badge-not-a-wrapper .am-badge-text,\\n.am-badge-not-a-wrapper .am-badge-dot {\\n  top: auto;\\n  display: block;\\n  position: relative;\\n  transform: translateX(0);\\n}\\n.am-badge-corner {\\n  width: 80px;\\n  padding: 8px;\\n  position: absolute;\\n  right: -32px;\\n  top: 8px;\\n  background-color: #ff5b05;\\n  color: #fff;\\n  white-space: nowrap;\\n  transform: rotate(45deg);\\n  text-align: center;\\n  font-size: 15px;\\n}\\n.am-badge-corner-wrapper {\\n  overflow: hidden;\\n}\\n.am-button {\\n  display: block;\\n  outline: 0 none;\\n  -webkit-appearance: none;\\n  box-sizing: border-box;\\n  padding: 0;\\n  text-align: center;\\n  font-size: 18px;\\n  height: 47px;\\n  line-height: 47px;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  word-break: break-word;\\n  white-space: nowrap;\\n  color: #333;\\n  background-color: #fff;\\n  border: 1PX solid #ddd;\\n  border-radius: 5px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-button {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-button::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ddd;\\n    border-radius: 10px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-button-borderfix:before {\\n  transform: scale(0.49) !important;\\n}\\n.am-button.am-button-active {\\n  background-color: #ddd;\\n}\\n.am-button.am-button-disabled {\\n  color: rgba(51, 51, 51, 0.3);\\n  opacity: 0.6;\\n}\\n.am-button-primary {\\n  color: #fff;\\n  background-color: #ff6ea2;\\n  border: 1PX solid #ff6ea2;\\n  border-radius: 5px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-button-primary {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-button-primary::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ff6ea2;\\n    border-radius: 10px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-button-primary.am-button-active {\\n  color: rgba(255, 255, 255, 0.3);\\n  background-color: #0e80d2;\\n}\\n.am-button-primary.am-button-disabled {\\n  color: rgba(255, 255, 255, 0.6);\\n  opacity: 0.4;\\n}\\n.am-button-ghost {\\n  color: #ff6ea2;\\n  background-color: transparent;\\n  border: 1PX solid #ff6ea2;\\n  border-radius: 5px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-button-ghost {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-button-ghost::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ff6ea2;\\n    border-radius: 10px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-button-ghost.am-button-active {\\n  color: rgba(255, 110, 162, 0.6);\\n  background-color: transparent;\\n  border: 1PX solid rgba(255, 110, 162, 0.6);\\n  border-radius: 5px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-button-ghost.am-button-active {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-button-ghost.am-button-active::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid rgba(255, 110, 162, 0.6);\\n    border-radius: 10px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-button-ghost.am-button-disabled {\\n  color: rgba(51, 51, 51, 0.1);\\n  border: 1PX solid rgba(51, 51, 51, 0.1);\\n  border-radius: 5px;\\n  opacity: 1;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-button-ghost.am-button-disabled {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-button-ghost.am-button-disabled::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid rgba(51, 51, 51, 0.1);\\n    border-radius: 10px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-button-warning {\\n  color: #fff;\\n  background-color: #e94f4f;\\n}\\n.am-button-warning.am-button-active {\\n  color: rgba(255, 255, 255, 0.3);\\n  background-color: #d24747;\\n}\\n.am-button-warning.am-button-disabled {\\n  color: rgba(255, 255, 255, 0.6);\\n  opacity: 0.4;\\n}\\n.am-button-inline {\\n  display: inline-block;\\n  padding: 0 15px;\\n}\\n.am-button-inline.am-button-icon {\\n  display: inline-flex;\\n}\\n.am-button-small {\\n  font-size: 13px;\\n  height: 30px;\\n  line-height: 30px;\\n  padding: 0 15px;\\n}\\n.am-button-icon {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n}\\n.am-button > .am-button-icon {\\n  margin-right: 0.5em;\\n}\\n.am-calendar .animate {\\n  animation-duration: 0.3s;\\n  animation-fill-mode: both;\\n}\\n@keyframes fadeIn {\\n  0% {\\n    opacity: 0;\\n  }\\n  to {\\n    opacity: 1;\\n  }\\n}\\n@keyframes fadeOut {\\n  0% {\\n    opacity: 1;\\n  }\\n  to {\\n    opacity: 0;\\n  }\\n}\\n.am-calendar .fade-enter {\\n  animation-name: fadeIn;\\n}\\n.am-calendar .fade-leave {\\n  animation-name: fadeOut;\\n}\\n@keyframes slideInUp {\\n  0% {\\n    transform: translate3d(0, 100%, 0);\\n    visibility: visible;\\n  }\\n  to {\\n    transform: translateZ(0);\\n  }\\n}\\n@keyframes slideInDown {\\n  0% {\\n    transform: translateZ(0);\\n    visibility: visible;\\n  }\\n  to {\\n    transform: translate3d(0, 100%, 0);\\n  }\\n}\\n@keyframes slideInLeft {\\n  0% {\\n    transform: translate3d(100%, 0, 0);\\n    visibility: visible;\\n  }\\n  to {\\n    transform: translateZ(0);\\n  }\\n}\\n@keyframes slideInRight {\\n  0% {\\n    transform: translateZ(0);\\n    visibility: visible;\\n  }\\n  to {\\n    transform: translate3d(100%, 0, 0);\\n  }\\n}\\n.am-calendar .slideV-enter {\\n  animation-name: slideInUp;\\n}\\n.am-calendar .slideV-leave {\\n  animation-name: slideInDown;\\n}\\n.am-calendar .slideH-enter {\\n  animation-name: slideInLeft;\\n}\\n.am-calendar .slideH-leave {\\n  animation-name: slideInRight;\\n}\\n.am-calendar .mask {\\n  position: fixed;\\n  width: 100%;\\n  height: 100%;\\n  top: 0;\\n  left: 0;\\n  z-index: 999;\\n  background: rgba(0, 0, 0, 0.5);\\n}\\n.am-calendar .content {\\n  position: fixed;\\n  display: flex;\\n  flex-direction: column;\\n  width: 100%;\\n  height: 100%;\\n  top: 0;\\n  left: 0;\\n  z-index: 999;\\n  background: #fff;\\n}\\n.am-calendar .header {\\n  margin: 5px;\\n  display: flex;\\n  flex-shrink: 0;\\n  align-items: center;\\n}\\n.am-calendar .header .title {\\n  text-align: center;\\n  width: 100%;\\n  font-size: 16px;\\n  font-weight: bold;\\n}\\n.am-calendar .header .left {\\n  position: absolute;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  padding: 0 8px;\\n  height: 24px;\\n  left: 5px;\\n  top: 5px;\\n  color: #068EEF;\\n}\\n.am-calendar .header .right {\\n  position: absolute;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  padding: 0 8px;\\n  height: 24px;\\n  right: 5px;\\n  top: 5px;\\n  color: #068EEF;\\n  font-size: 14px;\\n}\\n.am-calendar .timePicker {\\n  border-top: 1PX #ccc solid;\\n}\\n.am-calendar .week-panel {\\n  background: #fff;\\n  display: flex;\\n  flex-shrink: 0;\\n  padding: 0 2px;\\n  border-bottom: 1PX #ddd solid;\\n}\\n.am-calendar .week-panel .cell {\\n  height: 24px;\\n  display: flex;\\n  width: 14.28571429%;\\n  justify-content: center;\\n  align-items: center;\\n  color: #333;\\n  font-size: 14px;\\n}\\n.am-calendar .week-panel .cell-grey {\\n  color: #bbb;\\n}\\n.am-calendar .date-picker {\\n  display: flex;\\n  flex-direction: column;\\n  background: #eee;\\n  padding-bottom: env(safe-area-inset-bottom);\\n  flex: 1;\\n  min-height: 0;\\n}\\n.am-calendar .date-picker .wrapper {\\n  height: auto;\\n  position: relative;\\n  flex: 1;\\n  min-height: 0;\\n}\\n.am-calendar .date-picker .months {\\n  background: #fff;\\n}\\n.am-calendar .date-picker .load-tip {\\n  position: absolute;\\n  display: flex;\\n  justify-content: center;\\n  align-items: flex-end;\\n  left: 0;\\n  right: 0;\\n  padding: 10px 0;\\n  top: -40px;\\n  color: #bbb;\\n}\\n.am-calendar .confirm-panel {\\n  display: flex;\\n  flex-shrink: 0;\\n  align-items: center;\\n  background: #f7f7f7;\\n  padding: 8px 15px;\\n  border-top: #ddd 1PX solid;\\n}\\n.am-calendar .confirm-panel .info {\\n  font-size: 12px;\\n}\\n.am-calendar .confirm-panel .info p {\\n  margin: 0;\\n}\\n.am-calendar .confirm-panel .info p + p {\\n  margin-top: 8px;\\n}\\n.am-calendar .confirm-panel .info .grey {\\n  color: #bbb;\\n}\\n.am-calendar .confirm-panel .button {\\n  text-align: center;\\n  width: 80px;\\n  margin: 0 0 0 auto;\\n  padding: 8px 0;\\n  border-radius: 5px;\\n  color: #fff;\\n  font-size: 18px;\\n  background: #ff6ea2;\\n}\\n.am-calendar .confirm-panel .button-disable {\\n  color: #bbb;\\n  background: #ddd;\\n}\\n.am-calendar .confirm-panel .button-full {\\n  width: 100%;\\n  text-align: center;\\n}\\n.am-calendar .time-picker {\\n  flex-shrink: 0;\\n  text-align: center;\\n  background: #fff;\\n}\\n.am-calendar .time-picker .title {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  height: 44px;\\n  font-size: 16px;\\n  border-top: 1PX #ddd solid;\\n  border-bottom: 1PX #ddd solid;\\n}\\n.am-calendar .single-month {\\n  padding: 0;\\n}\\n.am-calendar .single-month .month-title {\\n  margin: 0;\\n  padding: 21px 0 6px 15px;\\n}\\n.am-calendar .single-month .row {\\n  display: flex;\\n  align-items: baseline;\\n}\\n.am-calendar .single-month .row .cell {\\n  display: flex;\\n  flex-direction: column;\\n  width: 14.28571429%;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper {\\n  display: flex;\\n  height: 35px;\\n  width: 100%;\\n  justify-content: center;\\n  align-items: center;\\n  margin-bottom: 2px;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .date {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  width: 35px;\\n  height: 35px;\\n  flex-shrink: 0;\\n  color: #333;\\n  font-size: 17px;\\n  font-weight: bold;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .disable {\\n  color: #bbb;\\n  background: #eee;\\n  border: none;\\n  border-radius: 100%;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .grey {\\n  color: #bbb;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .important {\\n  border: 1PX #ddd solid;\\n  border-radius: 100%;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .left,\\n.am-calendar .single-month .row .cell .date-wrapper .right {\\n  border: none;\\n  width: 100%;\\n  height: 35px;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .date-selected {\\n  border: none;\\n  background: #ff6ea2;\\n  color: #fff;\\n  font-size: 17px;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .selected-start {\\n  border-radius: 100% 0 0 100%;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .selected-single {\\n  border-radius: 100%;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .selected-middle {\\n  border-radius: 0;\\n}\\n.am-calendar .single-month .row .cell .date-wrapper .selected-end {\\n  border-radius: 0 100% 100% 0;\\n}\\n.am-calendar .single-month .row .cell .info {\\n  height: 15px;\\n  width: 100%;\\n  padding: 0 5px;\\n  font-size: 10px;\\n  color: #888;\\n  white-space: nowrap;\\n  text-overflow: ellipsis;\\n  overflow: hidden;\\n  text-align: center;\\n}\\n.am-calendar .single-month .row .cell .date-selected {\\n  color: #ff6ea2;\\n}\\n.am-calendar .single-month .row + .row {\\n  margin-top: 6px;\\n}\\n.am-calendar .single-month .row-xl + .row-xl {\\n  margin-top: 21px;\\n}\\n.am-calendar .shortcut-panel {\\n  display: flex;\\n  flex-direction: row;\\n  flex-shrink: 0;\\n  justify-content: space-between;\\n  align-items: center;\\n  padding: 0 30px;\\n  border-top: #ddd 1PX solid;\\n  height: 42px;\\n}\\n.am-calendar .shortcut-panel .item {\\n  display: inline-block;\\n  color: #ff6ea2;\\n  font-size: 16px;\\n}\\n.am-card {\\n  min-height: 96px;\\n  padding-bottom: 6px;\\n  display: flex;\\n  flex-direction: column;\\n  background-color: #fff;\\n}\\n.am-card:not(.am-card-full) {\\n  border: 1PX solid #ddd;\\n  border-radius: 5px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-card:not(.am-card-full) {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-card:not(.am-card-full)::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ddd;\\n    border-radius: 10px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-card.am-card-full {\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-card.am-card-full {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-card.am-card-full::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-card.am-card-full::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-card.am-card-full {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-card.am-card-full::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-card.am-card-full::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-card-header {\\n  display: flex;\\n  align-items: center;\\n  font-size: 17px;\\n  padding: 9px 15px;\\n}\\n.am-card-header-content {\\n  flex: 1;\\n  text-align: left;\\n  color: #333;\\n  display: flex;\\n  align-items: center;\\n}\\n.am-card-header-content img {\\n  margin-right: 5px;\\n}\\n.am-card-header-extra {\\n  flex: 1;\\n  text-align: right;\\n  font-size: 17px;\\n  color: #888;\\n}\\n.am-card-body {\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n  padding: 15px 15px 6px;\\n  font-size: 15px;\\n  color: #333;\\n  min-height: 40px;\\n  flex: 1;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-card-body {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-card-body::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-card-body::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-card-footer {\\n  font-size: 14px;\\n  color: #888;\\n  padding: 0 15px;\\n  display: flex;\\n}\\n.am-card-footer-content {\\n  flex: 1;\\n}\\n.am-card-footer-extra {\\n  flex: 1;\\n  text-align: right;\\n}\\n.am-carousel {\\n  position: relative;\\n}\\n.am-carousel-wrap {\\n  font-size: 18px;\\n  color: #333;\\n  background: none;\\n  text-align: center;\\n  zoom: 1;\\n  width: 100%;\\n}\\n.am-carousel-wrap-dot {\\n  display: inline-block;\\n  zoom: 1;\\n}\\n.am-carousel-wrap-dot > span {\\n  display: block;\\n  width: 8px;\\n  height: 8px;\\n  margin: 0 3px;\\n  border-radius: 50%;\\n  background: #ccc;\\n}\\n.am-carousel-wrap-dot-active > span {\\n  background: #888;\\n}\\n.am-checkbox {\\n  position: relative;\\n  display: inline-block;\\n  vertical-align: middle;\\n  width: 21px;\\n  height: 21px;\\n}\\n.am-checkbox-inner {\\n  position: absolute;\\n  right: 0;\\n  width: 21px;\\n  height: 21px;\\n  border: 1px solid #ccc;\\n  border-radius: 50%;\\n  transform: rotate(0deg);\\n  box-sizing: border-box;\\n}\\n.am-checkbox-inner:after {\\n  position: absolute;\\n  display: none;\\n  top: 1.5px;\\n  right: 6px;\\n  z-index: 999;\\n  width: 5px;\\n  height: 11px;\\n  border-style: solid;\\n  border-width: 0 1px 1px 0;\\n  content: ' ';\\n  transform: rotate(45deg);\\n}\\n.am-checkbox-input {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  opacity: 0;\\n  width: 100%;\\n  height: 100%;\\n  z-index: 2;\\n  border: 0 none;\\n  appearance: none;\\n}\\n.am-checkbox.am-checkbox-checked .am-checkbox-inner {\\n  border-color: #ff6ea2;\\n  background: #ff6ea2;\\n}\\n.am-checkbox.am-checkbox-checked .am-checkbox-inner:after {\\n  display: block;\\n  border-color: #fff;\\n}\\n.am-checkbox.am-checkbox-disabled {\\n  opacity: 0.3;\\n}\\n.am-checkbox.am-checkbox-disabled.am-checkbox-checked .am-checkbox-inner {\\n  border-color: #888;\\n  background: none;\\n}\\n.am-checkbox.am-checkbox-disabled.am-checkbox-checked .am-checkbox-inner:after {\\n  border-color: #888;\\n}\\n.am-list .am-list-item.am-checkbox-item .am-list-thumb {\\n  width: 21px;\\n  height: 21px;\\n}\\n.am-list .am-list-item.am-checkbox-item .am-list-thumb .am-checkbox {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  width: 100%;\\n  height: 44px;\\n}\\n.am-list .am-list-item.am-checkbox-item .am-list-thumb .am-checkbox-inner {\\n  left: 15px;\\n  top: 12px;\\n}\\n.am-list .am-list-item.am-checkbox-item.am-checkbox-item-disabled .am-list-content {\\n  color: #bbb;\\n}\\n.am-checkbox-agree {\\n  position: relative;\\n  display: flex;\\n  align-items: stretch;\\n  margin-left: 15px;\\n  padding-top: 9px;\\n  padding-bottom: 9px;\\n}\\n.am-checkbox-agree .am-checkbox {\\n  position: absolute;\\n  left: 0;\\n  top: 0;\\n  width: 30px;\\n  height: 100%;\\n}\\n.am-checkbox-agree .am-checkbox-inner {\\n  left: 0;\\n  top: 12px;\\n}\\n.am-checkbox-agree .am-checkbox-agree-label {\\n  display: inline-block;\\n  font-size: 15px;\\n  color: #333;\\n  line-height: 1.5;\\n  margin-left: 30px;\\n  margin-top: 1PX;\\n}\\n.am-drawer {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  overflow: hidden;\\n}\\n.am-drawer-sidebar {\\n  z-index: 4;\\n  position: absolute;\\n  transition: transform 0.3s ease-out;\\n  will-change: transform;\\n  overflow-y: auto;\\n}\\n.am-drawer-draghandle {\\n  z-index: 1;\\n  position: absolute;\\n  background-color: rgba(50, 50, 50, 0.1);\\n}\\n.am-drawer-overlay {\\n  z-index: 3;\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  opacity: 0;\\n  visibility: hidden;\\n  transition: opacity 0.5s ease-out;\\n  background-color: rgba(0, 0, 0, 0.4);\\n}\\n.am-drawer-content {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  overflow: auto;\\n  transition: left 0.3s ease-out, right 0.3s ease-out;\\n}\\n.am-drawer.am-drawer-left .am-drawer-sidebar,\\n.am-drawer.am-drawer-right .am-drawer-sidebar,\\n.am-drawer.am-drawer-left .am-drawer-draghandle,\\n.am-drawer.am-drawer-right .am-drawer-draghandle {\\n  top: 0;\\n  bottom: 0;\\n}\\n.am-drawer.am-drawer-left .am-drawer-draghandle,\\n.am-drawer.am-drawer-right .am-drawer-draghandle {\\n  width: 10px;\\n  height: 100%;\\n}\\n.am-drawer.am-drawer-top .am-drawer-sidebar,\\n.am-drawer.am-drawer-bottom .am-drawer-sidebar,\\n.am-drawer.am-drawer-top .am-drawer-draghandle,\\n.am-drawer.am-drawer-bottom .am-drawer-draghandle {\\n  left: 0;\\n  right: 0;\\n}\\n.am-drawer.am-drawer-top .am-drawer-draghandle,\\n.am-drawer.am-drawer-bottom .am-drawer-draghandle {\\n  width: 100%;\\n  height: 10px;\\n}\\n.am-drawer.am-drawer-left .am-drawer-sidebar {\\n  left: 0;\\n  transform: translateX(-100%);\\n}\\n.am-drawer-open.am-drawer.am-drawer-left .am-drawer-sidebar {\\n  box-shadow: 1PX 1PX 2px rgba(0, 0, 0, 0.15);\\n}\\n.am-drawer.am-drawer-left .am-drawer-draghandle {\\n  left: 0;\\n}\\n.am-drawer.am-drawer-right .am-drawer-sidebar {\\n  right: 0;\\n  transform: translateX(100%);\\n}\\n.am-drawer-open.am-drawer.am-drawer-right .am-drawer-sidebar {\\n  box-shadow: -1PX 1PX 2px rgba(0, 0, 0, 0.15);\\n}\\n.am-drawer.am-drawer-right .am-drawer-draghandle {\\n  right: 0;\\n}\\n.am-drawer.am-drawer-top .am-drawer-sidebar {\\n  top: 0;\\n  transform: translateY(-100%);\\n}\\n.am-drawer-open.am-drawer.am-drawer-top .am-drawer-sidebar {\\n  box-shadow: 1PX 1PX 2px rgba(0, 0, 0, 0.15);\\n}\\n.am-drawer.am-drawer-top .am-drawer-draghandle {\\n  top: 0;\\n}\\n.am-drawer.am-drawer-bottom .am-drawer-sidebar {\\n  bottom: 0;\\n  transform: translateY(100%);\\n}\\n.am-drawer-open.am-drawer.am-drawer-bottom .am-drawer-sidebar {\\n  box-shadow: 1PX -1PX 2px rgba(0, 0, 0, 0.15);\\n}\\n.am-drawer.am-drawer-bottom .am-drawer-draghandle {\\n  bottom: 0;\\n}\\n/* flexbox */\\n.am-flexbox {\\n  text-align: left;\\n  overflow: hidden;\\n  display: flex;\\n  align-items: center;\\n}\\n.am-flexbox.am-flexbox-dir-row {\\n  flex-direction: row;\\n}\\n.am-flexbox.am-flexbox-dir-row-reverse {\\n  flex-direction: row-reverse;\\n}\\n.am-flexbox.am-flexbox-dir-column {\\n  flex-direction: column;\\n}\\n.am-flexbox.am-flexbox-dir-column .am-flexbox-item {\\n  margin-left: 0;\\n}\\n.am-flexbox.am-flexbox-dir-column-reverse {\\n  flex-direction: column-reverse;\\n}\\n.am-flexbox.am-flexbox-dir-column-reverse .am-flexbox-item {\\n  margin-left: 0;\\n}\\n.am-flexbox.am-flexbox-nowrap {\\n  flex-wrap: nowrap;\\n}\\n.am-flexbox.am-flexbox-wrap {\\n  flex-wrap: wrap;\\n}\\n.am-flexbox.am-flexbox-wrap-reverse {\\n  flex-wrap: wrap-reverse;\\n}\\n.am-flexbox.am-flexbox-justify-start {\\n  justify-content: flex-start;\\n}\\n.am-flexbox.am-flexbox-justify-end {\\n  justify-content: flex-end;\\n}\\n.am-flexbox.am-flexbox-justify-center {\\n  justify-content: center;\\n}\\n.am-flexbox.am-flexbox-justify-between {\\n  justify-content: space-between;\\n}\\n.am-flexbox.am-flexbox-justify-around {\\n  justify-content: space-around;\\n}\\n.am-flexbox.am-flexbox-align-start {\\n  align-items: flex-start;\\n}\\n.am-flexbox.am-flexbox-align-end {\\n  align-items: flex-end;\\n}\\n.am-flexbox.am-flexbox-align-center {\\n  align-items: center;\\n}\\n.am-flexbox.am-flexbox-align-stretch {\\n  align-items: stretch;\\n}\\n.am-flexbox.am-flexbox-align-baseline {\\n  align-items: baseline;\\n}\\n.am-flexbox.am-flexbox-align-content-start {\\n  align-content: flex-start;\\n}\\n.am-flexbox.am-flexbox-align-content-end {\\n  align-content: flex-end;\\n}\\n.am-flexbox.am-flexbox-align-content-center {\\n  align-content: center;\\n}\\n.am-flexbox.am-flexbox-align-content-between {\\n  align-content: space-between;\\n}\\n.am-flexbox.am-flexbox-align-content-around {\\n  align-content: space-around;\\n}\\n.am-flexbox.am-flexbox-align-content-stretch {\\n  align-content: stretch;\\n}\\n.am-flexbox .am-flexbox-item {\\n  box-sizing: border-box;\\n  flex: 1;\\n  margin-left: 8px;\\n  min-width: 10px;\\n}\\n.am-flexbox .am-flexbox-item:first-child {\\n  margin-left: 0;\\n}\\n/* flexbox */\\n.am-grid .am-flexbox {\\n  background: #fff;\\n}\\n.am-grid .am-flexbox .am-flexbox-item {\\n  margin-left: 0;\\n}\\n.am-grid .am-flexbox .am-flexbox-item.am-grid-item {\\n  position: relative;\\n}\\n.am-grid .am-flexbox .am-flexbox-item.am-grid-item-active .am-grid-item-content {\\n  background-color: #ddd;\\n}\\n.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content {\\n  text-align: center;\\n  width: 100%;\\n  height: 100%;\\n  padding: 15px 0;\\n}\\n.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content {\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content .am-grid-icon {\\n  max-width: 100%;\\n}\\n.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content .am-grid-text {\\n  margin-top: 9px;\\n  font-size: 12px;\\n  color: #333;\\n  text-align: center;\\n}\\n.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content.column-num-3 .am-grid-text {\\n  font-size: 16px;\\n}\\n.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content.column-num-2 .am-grid-text {\\n  margin-top: 15px;\\n  font-size: 18px;\\n}\\n.am-grid.am-grid-line {\\n  position: relative;\\n}\\n.am-grid.am-grid-line:not(.am-grid-carousel) {\\n  border-top: 1PX solid #ddd;\\n  border-right: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line:not(.am-grid-carousel) {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-grid.am-grid-line:not(.am-grid-carousel)::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line:not(.am-grid-carousel)::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line:not(.am-grid-carousel) {\\n    border-right: none;\\n  }\\n  html:not([data-scale]) .am-grid.am-grid-line:not(.am-grid-carousel)::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: 0;\\n    bottom: auto;\\n    left: auto;\\n    width: 1PX;\\n    height: 100%;\\n    background: #ddd;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line:not(.am-grid-carousel)::after {\\n    transform: scaleX(0.33);\\n  }\\n}\\n.am-grid.am-grid-line .am-flexbox {\\n  position: relative;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-grid.am-grid-line .am-flexbox .am-flexbox-item {\\n  position: relative;\\n}\\n.am-grid.am-grid-line .am-flexbox .am-flexbox-item:first-child {\\n  border-left: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox .am-flexbox-item:first-child {\\n    border-left: none;\\n  }\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox .am-flexbox-item:first-child::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 1PX;\\n    height: 100%;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox .am-flexbox-item:first-child::before {\\n    transform: scaleX(0.33);\\n  }\\n}\\n.am-grid.am-grid-line .am-flexbox .am-flexbox-item:not(:last-child) {\\n  border-right: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox .am-flexbox-item:not(:last-child) {\\n    border-right: none;\\n  }\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox .am-flexbox-item:not(:last-child)::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: 0;\\n    bottom: auto;\\n    left: auto;\\n    width: 1PX;\\n    height: 100%;\\n    background: #ddd;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line .am-flexbox .am-flexbox-item:not(:last-child)::after {\\n    transform: scaleX(0.33);\\n  }\\n}\\n.am-grid.am-grid-line.am-grid-carousel .am-grid-carousel-page {\\n  border-top: 1PX solid #ddd;\\n  border-right: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line.am-grid-carousel .am-grid-carousel-page {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-grid.am-grid-line.am-grid-carousel .am-grid-carousel-page::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line.am-grid-carousel .am-grid-carousel-page::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line.am-grid-carousel .am-grid-carousel-page {\\n    border-right: none;\\n  }\\n  html:not([data-scale]) .am-grid.am-grid-line.am-grid-carousel .am-grid-carousel-page::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: 0;\\n    bottom: auto;\\n    left: auto;\\n    width: 1PX;\\n    height: 100%;\\n    background: #ddd;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-grid.am-grid-line.am-grid-carousel .am-grid-carousel-page::after {\\n    transform: scaleX(0.33);\\n  }\\n}\\n.am-grid .am-carousel .am-carousel-wrap-dot > span {\\n  background: #dcdee3;\\n}\\n.am-grid .am-carousel .am-carousel-wrap-dot-active > span {\\n  background: #0ae;\\n}\\n.am-grid.am-grid-square .am-grid-item:before {\\n  display: block;\\n  content: ' ';\\n  padding-bottom: 100%;\\n}\\n.am-grid.am-grid-square .am-grid-item .am-grid-item-content {\\n  position: absolute;\\n  top: 50%;\\n  transform: translateY(-50%);\\n}\\n.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content {\\n  height: 100%;\\n}\\n.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {\\n  margin-top: 9px;\\n  width: 28%!important;\\n}\\n.am-icon {\\n  fill: currentColor;\\n  background-size: cover;\\n  width: 22px;\\n  height: 22px;\\n}\\n.am-icon-xxs {\\n  width: 15px;\\n  height: 15px;\\n}\\n.am-icon-xs {\\n  width: 18px;\\n  height: 18px;\\n}\\n.am-icon-sm {\\n  width: 21px;\\n  height: 21px;\\n}\\n.am-icon-md {\\n  width: 22px;\\n  height: 22px;\\n}\\n.am-icon-lg {\\n  width: 36px;\\n  height: 36px;\\n}\\n.am-icon-loading {\\n  animation: cirle-anim 1s linear infinite;\\n}\\n@keyframes cirle-anim {\\n  100% {\\n    transform: rotate(360deg);\\n  }\\n}\\n.am-image-picker-list {\\n  padding: 9px 8px 0;\\n  margin-bottom: 15px;\\n}\\n.am-image-picker-list .am-flexbox {\\n  margin-bottom: 6px;\\n}\\n.am-image-picker-list .am-flexbox .am-flexbox-item {\\n  position: relative;\\n  margin-right: 5px;\\n  margin-left: 0;\\n}\\n.am-image-picker-list .am-flexbox .am-flexbox-item:after {\\n  display: block;\\n  content: ' ';\\n  padding-bottom: 100%;\\n}\\n.am-image-picker-list .am-image-picker-item {\\n  position: absolute;\\n  top: 50%;\\n  transform: translateY(-50%);\\n  width: 100%;\\n  height: 100%;\\n}\\n.am-image-picker-list .am-image-picker-item .am-image-picker-item-remove {\\n  width: 15px;\\n  height: 15px;\\n  position: absolute;\\n  right: 6px;\\n  top: 6px;\\n  text-align: right;\\n  vertical-align: top;\\n  z-index: 2;\\n  background-size: 15px auto;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'16'%20height%3D'16'%20viewBox%3D'0%200%2016%2016'%20version%3D'1.1'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cg%20id%3D'Page-1'%20stroke%3D'none'%20stroke-width%3D'1'%20fill%3D'none'%20fill-rule%3D'evenodd'%3E%3Ccircle%20id%3D'Oval-98'%20fill-opacity%3D'0.4'%20fill%3D'%23404040'%20cx%3D'8'%20cy%3D'8'%20r%3D'8'%3E%3C%2Fcircle%3E%3Cpath%20d%3D'M11.8979743%2C11.8990375%20L11.8979743%2C11.8990375%20C11.7633757%2C12.0336542%2011.5447877%2C12.0336542%2011.4101891%2C11.8990375%20L8%2C8.48838931%20L4.5887341%2C11.8990375%20C4.45413554%2C12.0336542%204.23554748%2C12.0336542%204.10094892%2C11.8990375%20L4.10094892%2C11.8990375%20C3.96635036%2C11.7644208%203.96635036%2C11.5458033%204.10094892%2C11.4111866%20L7.51221482%2C8.00053847%20L4.10202571%2C4.58881335%20C3.96742715%2C4.45419667%203.96742715%2C4.23557919%204.10202571%2C4.10096251%20L4.10202571%2C4.10096251%20C4.23662427%2C3.96634583%204.45521233%2C3.96634583%204.58981089%2C4.10096251%20L8%2C7.51268762%20L11.4112659%2C4.10203944%20C11.5458645%2C3.96742276%2011.7644525%2C3.96742276%2011.8990511%2C4.10203944%20L11.8990511%2C4.10203944%20C12.0336496%2C4.23665612%2012.0336496%2C4.45527361%2011.8990511%2C4.58989029%20L8.48778518%2C8.00053847%20L11.8979743%2C11.4122636%20C12.0325729%2C11.5468803%2012.0325729%2C11.7644208%2011.8979743%2C11.8990375%20L11.8979743%2C11.8990375%20Z'%20id%3D'Shape'%20fill%3D'%23FFFFFF'%20transform%3D'translate(8.000000%2C%208.000000)%20scale(1%2C%20-1)%20translate(-8.000000%2C%20-8.000000)%20'%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E);\\n}\\n.am-image-picker-list .am-image-picker-item .am-image-picker-item-content {\\n  height: 100%;\\n  width: 100%;\\n  border-radius: 3px;\\n  background-size: cover;\\n}\\n.am-image-picker-list .am-image-picker-item img {\\n  width: 100%;\\n}\\n.am-image-picker-list .am-image-picker-upload-btn {\\n  box-sizing: border-box;\\n  border-radius: 3px;\\n  border: 1PX solid #ddd;\\n  background-color: #fff;\\n}\\n.am-image-picker-list .am-image-picker-upload-btn:before,\\n.am-image-picker-list .am-image-picker-upload-btn:after {\\n  width: 1PX;\\n  height: 25px;\\n  content: \\\" \\\";\\n  position: absolute;\\n  top: 50%;\\n  left: 50%;\\n  transform: translate(-50%, -50%);\\n  background-color: #ccc;\\n}\\n.am-image-picker-list .am-image-picker-upload-btn:after {\\n  width: 25px;\\n  height: 1PX;\\n}\\n.am-image-picker-list .am-image-picker-upload-btn-active {\\n  background-color: #ddd;\\n}\\n.am-image-picker-list .am-image-picker-upload-btn input {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  bottom: 0;\\n  right: 0;\\n  opacity: 0;\\n}\\n.am-list-item .am-input-control .fake-input-container {\\n  height: 30px;\\n  line-height: 30px;\\n  position: relative;\\n}\\n.am-list-item .am-input-control .fake-input-container .fake-input {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  width: 100%;\\n  height: 100%;\\n  padding-right: 2px;\\n  margin-right: 3px;\\n  text-decoration: rtl;\\n  text-align: right;\\n  color: #000;\\n  font-size: 17px;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n}\\n.am-list-item .am-input-control .fake-input-container .fake-input.fake-input-disabled {\\n  color: #bbb;\\n}\\n.am-list-item .am-input-control .fake-input-container .fake-input.focus {\\n  transition: color 0.2s;\\n}\\n.am-list-item .am-input-control .fake-input-container .fake-input.focus::before {\\n  content: \\\"\\\";\\n}\\n.am-list-item .am-input-control .fake-input-container .fake-input.focus::after {\\n  content: \\\"\\\";\\n  position: absolute;\\n  right: 1.5px;\\n  top: 10%;\\n  height: 80%;\\n  border-right: 1.5px solid #ff6ea2;\\n  animation: keyboard-cursor infinite 1s step-start;\\n}\\n.am-list-item .am-input-control .fake-input-container .fake-input-placeholder {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  width: 100%;\\n  height: 100%;\\n  color: #bbb;\\n  text-align: right;\\n}\\n.am-list-item .am-input-control .fake-input-container-left .fake-input {\\n  text-align: left;\\n}\\n.am-list-item .am-input-control .fake-input-container-left .fake-input.focus:after {\\n  position: static;\\n}\\n.am-list-item .am-input-control .fake-input-container-left .fake-input-placeholder {\\n  text-align: left;\\n}\\n.am-number-keyboard-wrapper {\\n  position: fixed;\\n  bottom: 0;\\n  left: 0;\\n  right: 0;\\n  width: 100%;\\n  z-index: 10000;\\n  font-family: 'PingFang SC';\\n  background-color: #f6f6f7;\\n  transition-duration: 0.2s;\\n  transition-property: transform display;\\n  transform: translateZ(0);\\n  padding-bottom: env(safe-area-inset-bottom);\\n}\\n.am-number-keyboard-wrapper.am-number-keyboard-wrapper-hide {\\n  bottom: -500px;\\n}\\n.am-number-keyboard-wrapper table {\\n  width: 100%;\\n  padding: 0;\\n  margin: 0;\\n  border-collapse: collapse;\\n  border-top: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-number-keyboard-wrapper table::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-number-keyboard-wrapper table tr {\\n  width: 100%;\\n  padding: 0;\\n  margin: 0;\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item {\\n  width: 25%;\\n  padding: 0;\\n  margin: 0;\\n  height: 50px;\\n  text-align: center;\\n  font-size: 25.5px;\\n  color: #2a2b2c;\\n  position: relative;\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item:not(.keyboard-confirm) {\\n  border-left: 1PX solid #ddd;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item:not(.keyboard-confirm) {\\n    border-left: none;\\n  }\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item:not(.keyboard-confirm)::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 1PX;\\n    height: 100%;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item:not(.keyboard-confirm)::before {\\n    transform: scaleX(0.33);\\n  }\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item:not(.keyboard-confirm) {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item:not(.keyboard-confirm)::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item:not(.keyboard-confirm)::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item.am-number-keyboard-item-active {\\n  background-color: #ddd;\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-confirm {\\n  color: #fff;\\n  font-size: 21px;\\n  background-color: #ff6ea2;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-confirm {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-confirm::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-confirm::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-confirm.am-number-keyboard-item-active {\\n  background-color: #0e80d2;\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-confirm.am-number-keyboard-item-disabled {\\n  background-color: #0e80d2;\\n  color: rgba(255, 255, 255, 0.45);\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-delete {\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22204%22%20height%3D%22148%22%20viewBox%3D%220%200%20153.000000%20111.000000%22%3E%3Cpath%20d%3D%22M46.9%204.7c-2.5%202.6-14.1%2015.5-25.8%2028.6L-.1%2057l25.6%2027%2025.7%2027.1%2047.4-.3%2047.4-.3%203.2-3.3%203.3-3.2V7l-3.3-3.2L146%20.5%2098.7.2%2051.5-.1l-4.6%204.8zm97.9%203.5c1.7%201.7%201.7%2092.9%200%2094.6-.9.9-12.6%201.2-46.3%201.2H53.4L31.2%2080.4%209%2056.9l5.1-5.7c2.8-3.1%2012.8-14.4%2022.2-24.9L53.5%207h45c33.8%200%2045.4.3%2046.3%201.2z%22%2F%3E%3Cpath%20d%3D%22M69.5%2031c-1.9%202.1-1.7%202.2%209.3%2013.3L90%2055.5%2078.8%2066.7%2067.5%2078l2.3%202.2%202.2%202.3%2011.3-11.3L94.5%2060l11.2%2011.2L117%2082.5l2.2-2.3%202.3-2.2-11.3-11.3L99%2055.5l11.2-11.2L121.5%2033l-2.3-2.2-2.2-2.3-11.3%2011.3L94.5%2051l-11-11c-6-6-11.2-11-11.6-11-.3%200-1.4.9-2.4%202z%22%2F%3E%3C%2Fsvg%3E);\\n  background-size: 25.5px 18.5px;\\n  background-position: 50% 50%;\\n  background-repeat: no-repeat;\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item.keyboard-hide {\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22260%22%20height%3D%22188%22%20viewBox%3D%220%200%20195.000000%20141.000000%22%3E%3Cpath%20d%3D%22M0%2057v57h195V0H0v57zm183%200v45H12V12h171v45z%22%2F%3E%3Cpath%20d%3D%22M21%2031.5V39h15V24H21v7.5zM48%2031.5V39h15V24H48v7.5zM75%2031.5V39h15V24H75v7.5zM102%2031.5V39h15V24h-15v7.5zM129%2031.5V39h15V24h-15v7.5zM156%2031.5V39h15V24h-15v7.5zM36%2055.5V63h15V48H36v7.5zM63%2055.5V63h15V48H63v7.5zM90%2055.5V63h15V48H90v7.5zM117%2055.5V63h15V48h-15v7.5zM144%2055.5V63h15V48h-15v7.5zM27%2079.5V87h15V72H27v7.5zM48%2079.5V87h96V72H48v7.5zM150%2079.5V87h15V72h-15v7.5zM81%20124.5c0%20.8.7%201.5%201.5%201.5s1.5.7%201.5%201.5.7%201.5%201.5%201.5%201.5.7%201.5%201.5.7%201.5%201.5%201.5%201.5.7%201.5%201.5.7%201.5%201.5%201.5%201.5.7%201.5%201.5.7%201.5%201.5%201.5%201.5.7%201.5%201.5.7%201.5%201.5%201.5%201.5-.7%201.5-1.5.7-1.5%201.5-1.5%201.5-.7%201.5-1.5.7-1.5%201.5-1.5%201.5-.7%201.5-1.5.7-1.5%201.5-1.5%201.5-.7%201.5-1.5.7-1.5%201.5-1.5%201.5-.7%201.5-1.5.7-1.5%201.5-1.5%201.5-.7%201.5-1.5c0-1.3-2.5-1.5-16.5-1.5s-16.5.2-16.5%201.5z%22%2F%3E%3C%2Fsvg%3E);\\n  background-size: 32.5px 23.5px;\\n  background-position: 50% 50%;\\n  background-repeat: no-repeat;\\n}\\n.am-number-keyboard-wrapper table tr .am-number-keyboard-item-disabled {\\n  color: #bbb;\\n}\\n@keyframes keyboard-cursor {\\n  0% {\\n    opacity: 0;\\n  }\\n  50% {\\n    opacity: 1;\\n  }\\n  to {\\n    opacity: 0;\\n  }\\n}\\n.am-list-item.am-input-item {\\n  height: 44px;\\n  padding-left: 15px;\\n}\\n.am-list-item:not(:last-child) .am-list-line {\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-list-item .am-input-label {\\n  color: #333;\\n  font-size: 17px;\\n  margin-left: 0;\\n  margin-right: 5px;\\n  text-align: left;\\n  white-space: nowrap;\\n  overflow: hidden;\\n  padding: 2px 0;\\n}\\n.am-list-item .am-input-label.am-input-label-2 {\\n  width: 34px;\\n}\\n.am-list-item .am-input-label.am-input-label-3 {\\n  width: 51px;\\n}\\n.am-list-item .am-input-label.am-input-label-4 {\\n  width: 68px;\\n}\\n.am-list-item .am-input-label.am-input-label-5 {\\n  width: 85px;\\n}\\n.am-list-item .am-input-label.am-input-label-6 {\\n  width: 102px;\\n}\\n.am-list-item .am-input-label.am-input-label-7 {\\n  width: 119px;\\n}\\n.am-list-item .am-input-control {\\n  font-size: 17px;\\n  flex: 1;\\n}\\n.am-list-item .am-input-control input {\\n  color: #333;\\n  font-size: 17px;\\n  appearance: none;\\n  width: 100%;\\n  padding: 2px 0;\\n  border: 0;\\n  background-color: transparent;\\n  line-height: 1;\\n  box-sizing: border-box;\\n}\\n.am-list-item .am-input-control input::placeholder {\\n  color: #bbb;\\n  line-height: 1.2;\\n}\\n.am-list-item .am-input-control input:disabled {\\n  color: #bbb;\\n  background-color: #fff;\\n}\\n.am-list-item .am-input-clear {\\n  display: none;\\n  width: 21px;\\n  height: 21px;\\n  border-radius: 50%;\\n  overflow: hidden;\\n  font-style: normal;\\n  color: #fff;\\n  background-color: #ccc;\\n  background-repeat: no-repeat;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20fill%3D'%23fff'%20viewBox%3D'0%200%2030%2030'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E);\\n  background-size: 21px auto;\\n  background-position: 2px 2px;\\n}\\n.am-list-item .am-input-clear-active {\\n  background-color: #ff6ea2;\\n}\\n.am-list-item.am-input-focus .am-input-clear {\\n  display: block;\\n}\\n.am-list-item .am-input-extra {\\n  flex: initial;\\n  min-width: 0;\\n  max-height: 21px;\\n  overflow: hidden;\\n  padding-right: 0;\\n  line-height: 1;\\n  color: #888;\\n  font-size: 15px;\\n  margin-left: 5px;\\n}\\n.am-list-item.am-input-error .am-input-control input {\\n  color: #f50;\\n}\\n.am-list-item.am-input-error .am-input-error-extra {\\n  height: 21px;\\n  width: 21px;\\n  margin-left: 6px;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'18'%20height%3D'18'%20viewBox%3D'0%200%2018%2018'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cg%20stroke%3D'none'%20stroke-width%3D'1'%20fill%3D'none'%20fill-rule%3D'evenodd'%3E%3Cg%20transform%3D'translate(-300.000000%2C%20-1207.000000)'%20fill%3D'%23FF5500'%3E%3Cg%20id%3D'exclamation-circle-o'%20transform%3D'translate(300.000000%2C%201207.000000)'%3E%3Cpath%20d%3D'M9%2C16.734375%20C10.0441406%2C16.734375%2011.0566406%2C16.5304688%2012.009375%2C16.1279297%20C12.9304688%2C15.7376953%2013.7566406%2C15.1804687%2014.4685547%2C14.4703125%20C15.1787109%2C13.7601563%2015.7376953%2C12.9322266%2016.1261719%2C12.0111328%20C16.5304688%2C11.0566406%2016.734375%2C10.0441406%2016.734375%2C9%20C16.734375%2C7.95585938%2016.5304688%2C6.94335938%2016.1279297%2C5.990625%20C15.7376953%2C5.06953125%2015.1804687%2C4.24335938%2014.4703125%2C3.53144531%20C13.7601563%2C2.82128906%2012.9322266%2C2.26230469%2012.0111328%2C1.87382813%20C11.0566406%2C1.46953125%2010.0441406%2C1.265625%209%2C1.265625%20C7.95585938%2C1.265625%206.94335938%2C1.46953125%205.990625%2C1.87207031%20C5.06953125%2C2.26230469%204.24335938%2C2.81953125%203.53144531%2C3.5296875%20C2.82128906%2C4.23984375%202.26230469%2C5.06777344%201.87382813%2C5.98886719%20C1.46953125%2C6.94335938%201.265625%2C7.95585938%201.265625%2C9%20C1.265625%2C10.0441406%201.46953125%2C11.0566406%201.87207031%2C12.009375%20C2.26230469%2C12.9304688%202.81953125%2C13.7566406%203.5296875%2C14.4685547%20C4.23984375%2C15.1787109%205.06777344%2C15.7376953%205.98886719%2C16.1261719%20C6.94335938%2C16.5304688%207.95585938%2C16.734375%209%2C16.734375%20L9%2C16.734375%20Z%20M9%2C18%20C4.02890625%2C18%200%2C13.9710937%200%2C9%20C0%2C4.02890625%204.02890625%2C0%209%2C0%20C13.9710937%2C0%2018%2C4.02890625%2018%2C9%20C18%2C13.9710937%2013.9710937%2C18%209%2C18%20L9%2C18%20L9%2C18%20Z%20M9%2C6.75%20C8.61152344%2C6.75%208.296875%2C7.06464844%208.296875%2C7.453125%20L8.296875%2C13.9394531%20C8.296875%2C14.3279297%208.61152344%2C14.6425781%209%2C14.6425781%20C9.38847656%2C14.6425781%209.703125%2C14.3279297%209.703125%2C13.9394531%20L9.703125%2C7.453125%20C9.703125%2C7.06464844%209.38847656%2C6.75%209%2C6.75%20L9%2C6.75%20Z%20M8.20898438%2C4.83398438%20C8.20898438%2C5.27085024%208.56313413%2C5.625%209%2C5.625%20C9.43686587%2C5.625%209.79101562%2C5.27085024%209.79101562%2C4.83398438%20C9.79101562%2C4.39711851%209.43686587%2C4.04296875%209%2C4.04296875%20C8.56313413%2C4.04296875%208.20898438%2C4.39711851%208.20898438%2C4.83398438%20L8.20898438%2C4.83398438%20Z'%20id%3D'Shape'%20transform%3D'translate(9.000000%2C%209.000000)%20scale(1%2C%20-1)%20translate(-9.000000%2C%20-9.000000)%20'%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);\\n  background-size: 21px auto;\\n}\\n.am-list-item.am-input-disabled .am-input-label {\\n  color: #bbb;\\n}\\n.sr-only {\\n  position: absolute;\\n  width: 1px;\\n  height: 1px;\\n  padding: 0;\\n  margin: -1px;\\n  overflow: hidden;\\n  clip: rect(0, 0, 0, 0);\\n  white-space: nowrap;\\n  border: 0;\\n}\\n.am-list-header {\\n  padding: 15px 15px 9px 15px;\\n  font-size: 14px;\\n  color: #888;\\n  width: 100%;\\n  box-sizing: border-box;\\n}\\n.am-list-footer {\\n  padding: 9px 15px 15px 15px;\\n  font-size: 14px;\\n  color: #888;\\n}\\n.am-list-body {\\n  position: relative;\\n  background-color: #fff;\\n  border-top: 1PX solid #ddd;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-list-body {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-list-body::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-list-body::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-list-body {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-list-body::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-list-body::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-list-body div:not(:last-child) .am-list-line {\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-list-body div:not(:last-child) .am-list-line {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-list-body div:not(:last-child) .am-list-line::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-list-body div:not(:last-child) .am-list-line::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-list-item {\\n  position: relative;\\n  display: flex;\\n  padding-left: 15px;\\n  min-height: 44px;\\n  background-color: #fff;\\n  vertical-align: middle;\\n  overflow: hidden;\\n  transition: background-color 200ms;\\n  align-items: center;\\n  /* list左图片显示*/\\n}\\n.am-list-item .am-list-ripple {\\n  position: absolute;\\n  background: transparent;\\n  display: inline-block;\\n  overflow: hidden;\\n  will-change: box-shadow, transform;\\n  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);\\n  outline: none;\\n  cursor: pointer;\\n  border-radius: 100%;\\n  transform: scale(0);\\n}\\n.am-list-item .am-list-ripple.am-list-ripple-animate {\\n  background-color: hsla(0, 0%, 62%, 0.2);\\n  animation: ripple 1s linear;\\n}\\n.am-list-item.am-list-item-top .am-list-line {\\n  align-items: flex-start;\\n}\\n.am-list-item.am-list-item-top .am-list-line .am-list-arrow {\\n  margin-top: 2px;\\n}\\n.am-list-item.am-list-item-middle .am-list-line {\\n  align-items: center;\\n}\\n.am-list-item.am-list-item-bottom .am-list-line {\\n  align-items: flex-end;\\n}\\n.am-list-item.am-list-item-error .am-list-line .am-list-extra {\\n  color: #f50;\\n}\\n.am-list-item.am-list-item-error .am-list-line .am-list-extra .am-list-brief {\\n  color: #f50;\\n}\\n.am-list-item.am-list-item-active {\\n  background-color: #ddd;\\n}\\n.am-list-item.am-list-item-disabled .am-list-line .am-list-content,\\n.am-list-item.am-list-item-disabled .am-list-line .am-list-extra {\\n  color: #bbb;\\n}\\n.am-list-item img {\\n  width: 22px;\\n  height: 22px;\\n  vertical-align: middle;\\n}\\n.am-list-item .am-list-thumb:first-child {\\n  margin-right: 15px;\\n}\\n.am-list-item .am-list-thumb:last-child {\\n  margin-left: 8px;\\n}\\n.am-list-item .am-list-line {\\n  position: relative;\\n  display: flex;\\n  flex: 1;\\n  align-self: stretch;\\n  padding-right: 15px;\\n  overflow: hidden;\\n  /* list左侧主内容*/\\n  /* list右补充内容*/\\n  /* 辅助性文字*/\\n  /* list右侧箭头*/\\n}\\n.am-list-item .am-list-line .am-list-content {\\n  flex: 1;\\n  color: #333;\\n  font-size: 17px;\\n  line-height: 1.5;\\n  text-align: left;\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n  padding-top: 7px;\\n  padding-bottom: 7px;\\n}\\n.am-list-item .am-list-line .am-list-extra {\\n  flex-basis: 36%;\\n  color: #888;\\n  font-size: 16px;\\n  line-height: 1.5;\\n  text-align: right;\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n  padding-top: 7px;\\n  padding-bottom: 7px;\\n}\\n.am-list-item .am-list-line .am-list-title {\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n}\\n.am-list-item .am-list-line .am-list-brief {\\n  color: #888;\\n  font-size: 15px;\\n  line-height: 1.5;\\n  margin-top: 6px;\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n}\\n.am-list-item .am-list-line .am-list-arrow {\\n  display: block;\\n  width: 15px;\\n  height: 15px;\\n  margin-left: 8px;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2226%22%20viewBox%3D%220%200%2016%2026%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22UI-KIT_%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20id%3D%229.9%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6%22%20transform%3D%22translate(-5809.000000%2C%20-8482.000000)%22%20fill%3D%22%23C7C7CC%22%3E%3Cpolygon%20id%3D%22Disclosure-Indicator%22%20points%3D%225811%208482%205809%208484%205820.5%208495%205809%208506%205811%208508%205825%208495%22%3E%3C%2Fpolygon%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);\\n  background-size: contain;\\n  background-repeat: no-repeat;\\n  background-position: 50% 50%;\\n  visibility: hidden;\\n}\\n.am-list-item .am-list-line .am-list-arrow-horizontal {\\n  visibility: visible;\\n}\\n.am-list-item .am-list-line .am-list-arrow-vertical {\\n  visibility: visible;\\n  transform: rotate(90deg);\\n}\\n.am-list-item .am-list-line .am-list-arrow-vertical-up {\\n  visibility: visible;\\n  transform: rotate(270deg);\\n}\\n.am-list-item .am-list-line-multiple {\\n  padding: 12.5px 15px 12.5px 0;\\n}\\n.am-list-item .am-list-line-multiple .am-list-content {\\n  padding-top: 0;\\n  padding-bottom: 0;\\n}\\n.am-list-item .am-list-line-multiple .am-list-extra {\\n  padding-top: 0;\\n  padding-bottom: 0;\\n}\\n.am-list-item .am-list-line-wrap .am-list-content {\\n  white-space: normal;\\n}\\n.am-list-item .am-list-line-wrap .am-list-extra {\\n  white-space: normal;\\n}\\n.am-list-item select {\\n  position: relative;\\n  display: block;\\n  width: 100%;\\n  height: 100%;\\n  padding: 0;\\n  border: 0;\\n  font-size: 17px;\\n  appearance: none;\\n  background-color: transparent;\\n}\\n@keyframes ripple {\\n  100% {\\n    opacity: 0;\\n    transform: scale(2.5);\\n  }\\n}\\n.am-indexed-list-section-body.am-list-body,\\n.am-indexed-list-section-body.am-list-body .am-list-item:last-child .am-list-line {\\n  border-bottom: 0;\\n}\\n.am-indexed-list-section-body.am-list-body:after,\\n.am-indexed-list-section-body.am-list-body .am-list-item:last-child .am-list-line:after {\\n  display: none !important;\\n}\\n.am-indexed-list-section-header.am-list-body,\\n.am-indexed-list-section-header.am-list-body .am-list-item .am-list-line {\\n  border-bottom: 0;\\n}\\n.am-indexed-list-section-header.am-list-body:after,\\n.am-indexed-list-section-header.am-list-body .am-list-item .am-list-line:after {\\n  display: none !important;\\n}\\n.am-indexed-list-section-header .am-list-item {\\n  height: 30px;\\n  min-height: 30px;\\n  background-color: #f5f5f9;\\n}\\n.am-indexed-list-section-header .am-list-item .am-list-line {\\n  height: 30px;\\n  min-height: 30px;\\n}\\n.am-indexed-list-section-header .am-list-item .am-list-content {\\n  font-size: 14px !important;\\n  color: #888 !important;\\n}\\n.am-indexed-list-quick-search-bar {\\n  position: fixed;\\n  top: 0;\\n  right: 0;\\n  z-index: 0;\\n  text-align: center;\\n  color: #ff6ea2;\\n  font-size: 16px;\\n  list-style: none;\\n  padding: 0;\\n}\\n.am-indexed-list-quick-search-bar li {\\n  padding: 0 5px;\\n}\\n.am-indexed-list-quick-search-bar-over {\\n  background-color: rgba(0, 0, 0, 0.4);\\n}\\n.am-indexed-list-qsindicator {\\n  position: absolute;\\n  left: 50%;\\n  top: 50%;\\n  margin: -15px auto auto -30px;\\n  width: 60px;\\n  height: 30px;\\n  background: transparent;\\n  opacity: 0.7;\\n  color: #0af;\\n  font-size: 20px;\\n  border-radius: 30px;\\n  z-index: 1999;\\n  text-align: center;\\n  line-height: 30px;\\n}\\n.am-indexed-list-qsindicator-hide {\\n  display: none;\\n}\\n.am-menu {\\n  background-color: #f5f5f9;\\n}\\n.am-menu .am-menu-select-container {\\n  flex-grow: 2;\\n}\\n.am-menu .am-menu-select-container .am-menu-select-container-submenu {\\n  align-self: stretch;\\n}\\n.am-menu .am-multi-select-btns {\\n  height: 47px;\\n  width: 100%;\\n}\\n.am-menu .am-multi-select-btns .am-multi-select-btns-btn {\\n  width: 50%;\\n  height: 100%;\\n  border: 1PX solid #ddd;\\n  border-radius: 0;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-menu .am-multi-select-btns .am-multi-select-btns-btn {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-menu .am-multi-select-btns .am-multi-select-btns-btn::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ddd;\\n    border-radius: 0;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-menu .am-flexbox .am-flexbox-item {\\n  margin-left: 0;\\n  -webkit-overflow-scrolling: touch;\\n  overflow-y: scroll;\\n}\\n.am-menu .am-flexbox .am-flexbox-item .am-list {\\n  padding: 0;\\n}\\n.am-menu .am-flexbox .am-flexbox-item .am-list .am-list-item .am-list-line .am-list-content {\\n  font-size: 16px;\\n}\\n.am-menu .am-flexbox .am-flexbox-item .am-list .am-list-item .am-list-line .am-list-extra .am-checkbox-wrapper .am-checkbox {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  width: 100%;\\n  height: 100%;\\n  overflow: visible;\\n}\\n.am-menu .am-flexbox .am-flexbox-item .am-list .am-list-item .am-list-line .am-list-extra .am-checkbox-wrapper .am-checkbox .am-checkbox-inner {\\n  top: 12px;\\n  right: 15px;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child {\\n  background-color: #f7f7f7;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-body {\\n  background-color: #f7f7f7;\\n  border-bottom: 0;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-body:after {\\n  display: none !important;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item {\\n  background-color: #f7f7f7;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item .am-list-line {\\n  border-bottom: 0;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item .am-list-line:after {\\n  display: none !important;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item .am-list-line .am-list-content {\\n  color: #333;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item:last-child {\\n  border-bottom: 0;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item:last-child:after {\\n  display: none !important;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:first-child .am-list .am-list-item.am-menu-selected {\\n  background-color: #fff;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:last-child {\\n  background-color: #fff;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:last-child .am-list .am-list-item {\\n  background-color: #fff;\\n  border-bottom: 0;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:last-child .am-list .am-list-item:after {\\n  display: none !important;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:last-child .am-list .am-list-item .am-list-line .am-list-extra {\\n  flex: 0;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:last-child .am-list .am-list-item.am-sub-menu-item-selected .am-list-line .am-list-content {\\n  color: #ff6ea2;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:last-child .am-list .am-list-item.am-sub-menu-item-disabled .am-list-line .am-list-content {\\n  color: #bbb;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item .am-list-line {\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item .am-list-line {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item .am-list-line::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item .am-list-line::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item:last-child {\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item:last-child {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item:last-child::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item:last-child::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item:last-child .am-list-line {\\n  border-bottom: 0;\\n}\\n.am-menu .am-flexbox .am-flexbox-item:only-child .am-list .am-list-item:last-child .am-list-line:after {\\n  display: none !important;\\n}\\n.am-modal {\\n  position: relative;\\n}\\n.am-modal:not(.am-modal-transparent):not(.am-modal-popup) {\\n  width: 100%;\\n  height: 100%;\\n}\\n.am-modal-mask {\\n  position: fixed;\\n  top: 0;\\n  right: 0;\\n  left: 0;\\n  bottom: 0;\\n  height: 100%;\\n  z-index: 999;\\n  background-color: rgba(0, 0, 0, 0.4);\\n}\\n.am-modal-mask-hidden {\\n  display: none;\\n}\\n.am-modal-wrap {\\n  position: fixed;\\n  overflow: auto;\\n  top: 0;\\n  right: 0;\\n  bottom: 0;\\n  left: 0;\\n  height: 100%;\\n  z-index: 999;\\n  -webkit-overflow-scrolling: touch;\\n  outline: 0;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  transform: translateZ(1px);\\n}\\n.am-modal-wrap-popup {\\n  display: block;\\n}\\n.am-modal-transparent {\\n  width: 270px;\\n}\\n.am-modal-transparent .am-modal-content {\\n  border-radius: 7px;\\n  padding-top: 15px;\\n}\\n.am-modal-transparent .am-modal-content .am-modal-body {\\n  padding: 0 15px 15px;\\n}\\n.am-modal-popup {\\n  position: fixed;\\n  left: 0;\\n  width: 100%;\\n}\\n.am-modal-popup-slide-down {\\n  top: 0;\\n}\\n.am-modal-popup-slide-up {\\n  bottom: 0;\\n}\\n.am-modal-popup .am-modal-content {\\n  padding-bottom: env(safe-area-inset-bottom);\\n}\\n.am-modal-title {\\n  margin: 0;\\n  font-size: 18px;\\n  line-height: 1;\\n  color: #333;\\n  text-align: center;\\n}\\n.am-modal-header {\\n  padding: 6px 15px 15px;\\n}\\n.am-modal-content {\\n  position: relative;\\n  background-color: #fff;\\n  border: 0;\\n  background-clip: padding-box;\\n  text-align: center;\\n  height: 100%;\\n  overflow: hidden;\\n}\\n.am-modal-close {\\n  border: 0;\\n  padding: 0;\\n  background-color: transparent;\\n  outline: none;\\n  position: absolute;\\n  right: 15px;\\n  z-index: 999;\\n  height: 21px;\\n  width: 21px;\\n}\\n.am-modal-close-x {\\n  display: inline-block;\\n  width: 15px;\\n  height: 15px;\\n  background-repeat: no-repeat;\\n  background-size: cover;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'30'%20height%3D'30'%20viewBox%3D'0%200%2030%2030'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%20%3Cdefs%3E%3C%2Fdefs%3E%20%3Cg%20id%3D'ALL-ICON'%20stroke%3D'none'%20stroke-width%3D'1'%20fill%3D'none'%20fill-rule%3D'evenodd'%3E%20%3Cg%20id%3D'Rectangle-283-%2B-Rectangle-283'%20fill%3D'%23888888'%3E%20%3Crect%20id%3D'Rectangle-283'%20transform%3D'translate(14.849242%2C%2014.849242)%20rotate(-315.000000)%20translate(-14.849242%2C%20-14.849242)%20'%20x%3D'-5.1507576'%20y%3D'13.8492424'%20width%3D'40'%20height%3D'2'%3E%3C%2Frect%3E%20%3Crect%20id%3D'Rectangle-283'%20transform%3D'translate(14.849242%2C%2014.849242)%20scale(-1%2C%201)%20rotate(-315.000000)%20translate(-14.849242%2C%20-14.849242)%20'%20x%3D'-5.1507576'%20y%3D'13.8492424'%20width%3D'40'%20height%3D'2'%3E%3C%2Frect%3E%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3C%2Fsvg%3E);\\n}\\n.am-modal-body {\\n  font-size: 15px;\\n  color: #888;\\n  height: 100%;\\n  line-height: 1.5;\\n  overflow: auto;\\n}\\n.am-modal-button-group-h {\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n  display: flex;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-modal-button-group-h {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-modal-button-group-h::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-modal-button-group-h::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-modal-button-group-h .am-modal-button {\\n  -webkit-touch-callout: none;\\n  flex: 1;\\n  box-sizing: border-box;\\n  text-align: center;\\n  text-decoration: none;\\n  outline: none;\\n  color: #ff6ea2;\\n  font-size: 18px;\\n  height: 50px;\\n  line-height: 50px;\\n  display: block;\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n}\\n.am-modal-button-group-h .am-modal-button:first-child {\\n  color: #333;\\n}\\n.am-modal-button-group-h .am-modal-button:last-child {\\n  position: relative;\\n  border-left: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-modal-button-group-h .am-modal-button:last-child {\\n    border-left: none;\\n  }\\n  html:not([data-scale]) .am-modal-button-group-h .am-modal-button:last-child::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 1PX;\\n    height: 100%;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-modal-button-group-h .am-modal-button:last-child::before {\\n    transform: scaleX(0.33);\\n  }\\n}\\n.am-modal-button-group-v .am-modal-button {\\n  -webkit-touch-callout: none;\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n  box-sizing: border-box;\\n  text-align: center;\\n  text-decoration: none;\\n  outline: none;\\n  color: #ff6ea2;\\n  font-size: 18px;\\n  height: 50px;\\n  line-height: 50px;\\n  display: block;\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-modal-button-group-v .am-modal-button {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-modal-button-group-v .am-modal-button::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-modal-button-group-v .am-modal-button::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-modal-button-active {\\n  background-color: #ddd;\\n}\\n.am-modal-input-container {\\n  margin-top: 9px;\\n  border: 1PX solid #ddd;\\n  border-radius: 3px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-modal-input-container {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-modal-input-container::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ddd;\\n    border-radius: 6px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-modal-input {\\n  height: 36px;\\n  line-height: 1;\\n}\\n.am-modal-input:nth-child(2) {\\n  position: relative;\\n  border-top: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-modal-input:nth-child(2) {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-modal-input:nth-child(2)::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-modal-input:nth-child(2)::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-modal-input input {\\n  position: relative;\\n  border: 0;\\n  width: 98%;\\n  height: 34px;\\n  top: 1PX;\\n  box-sizing: border-box;\\n  margin: 0;\\n}\\n.am-modal-input input::placeholder {\\n  font-size: 14px;\\n  color: #ccc;\\n  padding-left: 8px;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content {\\n  border-radius: 0;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-header {\\n  padding: 9px 24px 12px;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-header .am-modal-title {\\n  text-align: left;\\n  font-size: 21px;\\n  color: #333;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body {\\n  color: #333;\\n  text-align: left;\\n  padding: 0 24px 15px;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body .am-modal-input-container {\\n  border: 0;\\n  border-bottom: 1PX solid #ddd;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body .am-modal-input-container:before {\\n  display: none !important;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body .am-modal-input-container {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body .am-modal-input-container::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body .am-modal-input-container::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body .am-modal-input-container .am-modal-input:first-child {\\n  border-top: 0;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-body .am-modal-input-container .am-modal-input:first-child:before {\\n  display: none !important;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer {\\n  padding-bottom: 12px;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-h {\\n  overflow: hidden;\\n  border-top: 0;\\n  justify-content: flex-end;\\n  padding: 0 12px;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-h:before {\\n  display: none !important;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-h .am-modal-button {\\n  flex: initial;\\n  margin-left: 3px;\\n  padding: 0 15px;\\n  height: 48px;\\n  box-sizing: border-box;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-h .am-modal-button:first-child {\\n  color: #777;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-h .am-modal-button:last-child {\\n  border-left: 0;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-h .am-modal-button:last-child:before {\\n  display: none !important;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-v.am-modal-button-group-normal {\\n  display: flex;\\n  justify-content: flex-end;\\n  overflow: hidden;\\n  padding: 0 12px;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-v.am-modal-button-group-normal .am-modal-button {\\n  border-top: 0;\\n  padding: 0 15px;\\n  margin-left: 3px;\\n  height: 48px;\\n  box-sizing: border-box;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-v.am-modal-button-group-normal .am-modal-button:before {\\n  display: none !important;\\n}\\n.am-modal.am-modal-transparent.am-modal-android .am-modal-content .am-modal-footer .am-modal-button-group-operation .am-modal-button {\\n  text-align: start;\\n  padding-left: 15px;\\n}\\n.am-modal.am-modal-operation .am-modal-content {\\n  border-radius: 7px;\\n  height: auto;\\n  padding-top: 0;\\n}\\n.am-modal.am-modal-operation .am-modal-content .am-modal-body {\\n  padding: 0!important;\\n}\\n.am-modal.am-modal-operation .am-modal-content .am-modal-button {\\n  color: #333;\\n  text-align: left;\\n  padding-left: 15px;\\n}\\n.am-modal-alert-content,\\n.am-modal-propmt-content {\\n  zoom: 1;\\n  overflow: hidden;\\n}\\n.am-navbar {\\n  display: flex;\\n  align-items: center;\\n  height: 45px;\\n  background-color: #ff6ea2;\\n  color: #fff;\\n}\\n.am-navbar-left,\\n.am-navbar-title,\\n.am-navbar-right {\\n  flex: 1;\\n  height: 100%;\\n  display: flex;\\n  align-items: center;\\n}\\n.am-navbar-left {\\n  padding-left: 15px;\\n  font-size: 16px;\\n}\\n.am-navbar-left-icon {\\n  margin-right: 5px;\\n  display: inherit;\\n}\\n.am-navbar-title {\\n  justify-content: center;\\n  font-size: 18px;\\n  white-space: nowrap;\\n}\\n.am-navbar-right {\\n  justify-content: flex-end;\\n  font-size: 16px;\\n  margin-right: 15px;\\n}\\n.am-navbar-light {\\n  background-color: #fff;\\n  color: #ff6ea2;\\n}\\n.am-navbar-light .am-navbar-title {\\n  color: #333;\\n}\\n.am-notice-bar {\\n  background-color: #fefcec;\\n  height: 36px;\\n  overflow: hidden;\\n  font-size: 14px;\\n  line-height: 36px;\\n  color: #f76a24;\\n  display: flex;\\n}\\n.am-notice-bar-content {\\n  flex: 1;\\n  width: 100%;\\n  margin: auto 15px;\\n  width: auto;\\n  overflow: hidden;\\n  text-overflow: ellipsis;\\n  white-space: nowrap;\\n}\\n.am-notice-bar-icon {\\n  margin-left: 15px;\\n  display: flex;\\n  align-items: center;\\n}\\n.am-notice-bar-icon .am-notice-bar-trips {\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2238%22%20height%3D%2233%22%20viewBox%3D%220%200%2038%2033%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Etrips%3C%2Ftitle%3E%3Cg%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M17.838%2028.8c-.564-.468-1.192-.983-1.836-1.496-4.244-3.385-5.294-3.67-6.006-3.67-.014%200-.027.005-.04.005-.015%200-.028-.005-.042-.005H3.562c-.734%200-.903-.203-.903-.928V10.085c0-.49.058-.8.66-.8h5.782c.693%200%201.758-.28%206.4-3.628.828-.597%201.637-1.197%202.336-1.723V28.8zM19.682.19c-.463-.22-1.014-.158-1.417.157-.02.016-1.983%201.552-4.152%203.125C10.34%206.21%209.243%206.664%209.02%206.737H3.676c-.027%200-.053.003-.08.004H1.183c-.608%200-1.1.486-1.1%201.085V25.14c0%20.598.492%201.084%201.1%201.084h8.71c.22.08%201.257.55%204.605%203.24%201.947%201.562%203.694%203.088%203.712%203.103.25.22.568.333.89.333.186%200%20.373-.038.55-.116.48-.213.79-.684.79-1.204V1.38c0-.506-.294-.968-.758-1.19z%22%20mask%3D%22url(%23mask-2)%22%2F%3E%3Cpath%20d%3D%22M31.42%2016.475c0-3.363-1.854-6.297-4.606-7.876-.125-.066-.42-.192-.625-.192-.612%200-1.108.488-1.108%201.09%200%20.404.22.764.55.952%202.128%201.19%203.565%203.442%203.565%206.025%200%202.627-1.486%204.913-3.677%206.087-.318.19-.53.54-.53.934%200%20.602.496%201.09%201.107%201.09.26.002.568-.15.568-.15%202.835-1.556%204.754-4.538%204.754-7.96%22%20mask%3D%22url(%23mask-4)%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M30.14%203.057c-.205-.122-.41-.22-.658-.22-.608%200-1.1.485-1.1%201.084%200%20.433.26.78.627.977%204.043%202.323%206.762%206.636%206.762%2011.578%200%204.938-2.716%209.248-6.755%2011.572-.354.19-.66.55-.66.993%200%20.6.494%201.084%201.102%201.084.243%200%20.438-.092.65-.213%204.692-2.695%207.848-7.7%207.848-13.435%200-5.723-3.142-10.718-7.817-13.418%22%20mask%3D%22url(%23mask-6)%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);\\n}\\n.am-notice-bar-icon + div {\\n  margin-left: 5px;\\n}\\n.am-notice-bar-operation {\\n  display: flex;\\n  align-items: center;\\n  padding-right: 8px;\\n}\\n.am-pagination-wrap {\\n  font-size: 18px;\\n  color: #333;\\n  background: none;\\n  text-align: center;\\n}\\n.am-pagination-wrap .active {\\n  color: #ff6ea2;\\n}\\n.am-pagination-wrap-btn {\\n  text-align: center;\\n}\\n.am-pagination-wrap-btn-prev {\\n  text-align: left;\\n}\\n.am-pagination-wrap-btn-next {\\n  text-align: right;\\n}\\n.am-pagination-wrap-dot {\\n  display: inline-block;\\n  zoom: 1;\\n}\\n.am-pagination-wrap-dot > span {\\n  display: block;\\n  width: 8px;\\n  height: 8px;\\n  margin-right: 5px;\\n  border-radius: 50%;\\n  background: #ccc;\\n}\\n.am-pagination-wrap-dot-active > span {\\n  background: #888;\\n}\\n.am-picker-popup {\\n  left: 0;\\n  bottom: 0;\\n  position: fixed;\\n  width: 100%;\\n  background-color: #fff;\\n  padding-bottom: env(safe-area-inset-bottom);\\n}\\n.am-picker-popup-wrap {\\n  position: fixed;\\n  overflow: auto;\\n  top: 0;\\n  right: 0;\\n  bottom: 0;\\n  left: 0;\\n  z-index: 1000;\\n  -webkit-overflow-scrolling: touch;\\n  outline: 0;\\n  transform: translateZ(1px);\\n}\\n.am-picker-popup-mask {\\n  position: fixed;\\n  top: 0;\\n  right: 0;\\n  left: 0;\\n  bottom: 0;\\n  background-color: rgba(0, 0, 0, 0.4);\\n  height: 100%;\\n  z-index: 1000;\\n  transform: translateZ(1px);\\n}\\n.am-picker-popup-mask-hidden {\\n  display: none;\\n}\\n.am-picker-popup-header {\\n  background-image: -webkit-linear-gradient(top, #e7e7e7, #e7e7e7, transparent, transparent);\\n  background-image: linear-gradient(to bottom, #e7e7e7, #e7e7e7, transparent, transparent);\\n  background-position: bottom;\\n  background-size: 100% 1PX;\\n  background-repeat: no-repeat;\\n  display: flex;\\n  align-items: center;\\n  position: relative;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-picker-popup-header {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-picker-popup-header::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-picker-popup-header::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-picker-popup-header .am-picker-popup-header-right {\\n  text-align: right;\\n}\\n.am-picker-popup-item {\\n  color: #ff6ea2;\\n  font-size: 17px;\\n  padding: 9px 15px;\\n  height: 42px;\\n  box-sizing: border-box;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n}\\n.am-picker-popup-item-active {\\n  background-color: #ddd;\\n}\\n.am-picker-popup-title {\\n  flex: 1;\\n  text-align: center;\\n  color: #333;\\n}\\n.am-picker-popup .am-picker-popup-close {\\n  display: none;\\n}\\n.am-picker {\\n  flex: 1;\\n}\\n.am-picker-col {\\n  display: block;\\n  position: relative;\\n  height: 238px;\\n  overflow: hidden;\\n  width: 100%;\\n}\\n.am-picker-col-content {\\n  position: absolute;\\n  left: 0;\\n  top: 0;\\n  width: 100%;\\n  z-index: 1;\\n  padding: 102px 0;\\n}\\n.am-picker-col-item {\\n  touch-action: manipulation;\\n  text-align: center;\\n  font-size: 16px;\\n  height: 34px;\\n  line-height: 34px;\\n  color: #333;\\n  white-space: nowrap;\\n  text-overflow: ellipsis;\\n}\\n.am-picker-col-item-selected {\\n  font-size: 17px;\\n}\\n.am-picker-col-mask {\\n  position: absolute;\\n  left: 0;\\n  top: 0;\\n  height: 100%;\\n  margin: 0 auto;\\n  width: 100%;\\n  z-index: 3;\\n  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));\\n  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)), linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));\\n  background-position: top, bottom;\\n  background-size: 100% 102px;\\n  background-repeat: no-repeat;\\n}\\n.am-picker-col-indicator {\\n  box-sizing: border-box;\\n  width: 100%;\\n  height: 34px;\\n  position: absolute;\\n  left: 0;\\n  top: 102px;\\n  z-index: 3;\\n  border-top: 1PX solid #ddd;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-picker-col-indicator {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-picker-col-indicator::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-picker-col-indicator::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-picker-col-indicator {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-picker-col-indicator::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-picker-col-indicator::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-picker {\\n  display: flex;\\n  align-items: center;\\n}\\n.am-picker-item {\\n  flex: 1;\\n  text-align: center;\\n}\\n.am-popover {\\n  position: absolute;\\n  z-index: 1999;\\n}\\n.am-popover-hidden {\\n  display: none;\\n}\\n.am-popover-mask {\\n  position: fixed;\\n  top: 0;\\n  right: 0;\\n  left: 0;\\n  bottom: 0;\\n  background-color: rgba(0, 0, 0, 0.4);\\n  height: 100%;\\n  z-index: 999;\\n}\\n.am-popover-mask-hidden {\\n  display: none;\\n}\\n.am-popover-arrow {\\n  position: absolute;\\n  width: 7px;\\n  height: 7px;\\n  border-radius: 1PX;\\n  background-color: #fff;\\n  transform: rotate(45deg);\\n  z-index: 0;\\n  box-shadow: 0 0 2px rgba(0, 0, 0, 0.21);\\n}\\n.am-popover-placement-top .am-popover-arrow,\\n.am-popover-placement-topLeft .am-popover-arrow,\\n.am-popover-placement-topRight .am-popover-arrow {\\n  transform: rotate(225deg);\\n  bottom: -3.5px;\\n}\\n.am-popover-placement-top .am-popover-arrow {\\n  left: 50%;\\n}\\n.am-popover-placement-topLeft .am-popover-arrow {\\n  left: 8px;\\n}\\n.am-popover-placement-topRight .am-popover-arrow {\\n  right: 8px;\\n}\\n.am-popover-placement-right .am-popover-arrow,\\n.am-popover-placement-rightTop .am-popover-arrow,\\n.am-popover-placement-rightBottom .am-popover-arrow {\\n  transform: rotate(-45deg);\\n  left: -3.5px;\\n}\\n.am-popover-placement-right .am-popover-arrow {\\n  top: 50%;\\n}\\n.am-popover-placement-rightTop .am-popover-arrow {\\n  top: 8px;\\n}\\n.am-popover-placement-rightBottom .am-popover-arrow {\\n  bottom: 8px;\\n}\\n.am-popover-placement-left .am-popover-arrow,\\n.am-popover-placement-leftTop .am-popover-arrow,\\n.am-popover-placement-leftBottom .am-popover-arrow {\\n  transform: rotate(135deg);\\n  right: -3.5px;\\n}\\n.am-popover-placement-left .am-popover-arrow {\\n  top: 50%;\\n}\\n.am-popover-placement-leftTop .am-popover-arrow {\\n  top: 8px;\\n}\\n.am-popover-placement-leftBottom .am-popover-arrow {\\n  bottom: 8px;\\n}\\n.am-popover-placement-bottom .am-popover-arrow,\\n.am-popover-placement-bottomLeft .am-popover-arrow,\\n.am-popover-placement-bottomRight .am-popover-arrow {\\n  top: -3.5px;\\n}\\n.am-popover-placement-bottom .am-popover-arrow {\\n  left: 50%;\\n}\\n.am-popover-placement-bottomLeft .am-popover-arrow {\\n  left: 8px;\\n}\\n.am-popover-placement-bottomRight .am-popover-arrow {\\n  right: 8px;\\n}\\n.am-popover-inner {\\n  font-size: 15px;\\n  color: #333;\\n  background-color: #fff;\\n  border-radius: 3px;\\n  box-shadow: 0 0 2px rgba(0, 0, 0, 0.21);\\n  overflow: hidden;\\n}\\n.am-popover-inner-wrapper {\\n  position: relative;\\n  background-color: #fff;\\n}\\n.am-popover .am-popover-item {\\n  padding: 0 8px;\\n}\\n.am-popover .am-popover-item-container {\\n  position: relative;\\n  display: flex;\\n  align-items: center;\\n  height: 39px;\\n  box-sizing: border-box;\\n  padding: 0 8px;\\n}\\n.am-popover .am-popover-item:not(:first-child) .am-popover-item-container {\\n  border-top: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-popover .am-popover-item:not(:first-child) .am-popover-item-container {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-popover .am-popover-item:not(:first-child) .am-popover-item-container::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-popover .am-popover-item:not(:first-child) .am-popover-item-container::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-popover .am-popover-item.am-popover-item-active .am-popover-item-container {\\n  border-top: 0;\\n}\\n.am-popover .am-popover-item.am-popover-item-active .am-popover-item-container:before {\\n  display: none !important;\\n}\\n.am-popover .am-popover-item.am-popover-item-active + .am-popover-item .am-popover-item-container {\\n  border-top: 0;\\n}\\n.am-popover .am-popover-item.am-popover-item-active + .am-popover-item .am-popover-item-container:before {\\n  display: none !important;\\n}\\n.am-popover .am-popover-item.am-popover-item-active {\\n  background-color: #ddd;\\n}\\n.am-popover .am-popover-item.am-popover-item-active.am-popover-item-fix-active-arrow {\\n  position: relative;\\n}\\n.am-popover .am-popover-item.am-popover-item-disabled {\\n  color: #bbb;\\n}\\n.am-popover .am-popover-item.am-popover-item-disabled.am-popover-item-active {\\n  background-color: transparent;\\n}\\n.am-popover .am-popover-item-icon {\\n  margin-right: 8px;\\n  width: 18px;\\n  height: 18px;\\n}\\n.am-progress-outer {\\n  background-color: #ddd;\\n  display: block;\\n}\\n.am-progress-fixed-outer {\\n  position: fixed;\\n  width: 100%;\\n  top: 0;\\n  left: 0;\\n  z-index: 2000;\\n}\\n.am-progress-hide-outer {\\n  background-color: transparent;\\n}\\n.am-progress-bar {\\n  border: 2px solid #ff6ea2;\\n  transition: all 0.3s linear 0s;\\n}\\n.am-pull-to-refresh-content {\\n  transform-origin: left top 0;\\n}\\n.am-pull-to-refresh-content-wrapper {\\n  overflow: hidden;\\n}\\n.am-pull-to-refresh-transition {\\n  transition: transform 0.3s;\\n}\\n.am-pull-to-refresh-indicator {\\n  color: grey;\\n  text-align: center;\\n  height: 25px;\\n}\\n.am-pull-to-refresh-down .am-pull-to-refresh-indicator {\\n  margin-top: -25px;\\n}\\n.am-pull-to-refresh-up .am-pull-to-refresh-indicator {\\n  margin-bottom: -25px;\\n}\\n.am-radio {\\n  position: relative;\\n  display: inline-block;\\n  vertical-align: middle;\\n  width: 15px;\\n  height: 15px;\\n}\\n.am-radio-inner {\\n  position: absolute;\\n  right: 0;\\n  width: 15px;\\n  height: 15px;\\n  box-sizing: border-box;\\n  transform: rotate(0deg);\\n}\\n.am-radio-inner:after {\\n  position: absolute;\\n  display: none;\\n  top: -2.5px;\\n  right: 5px;\\n  z-index: 999;\\n  width: 7px;\\n  height: 14px;\\n  border-style: solid;\\n  border-width: 0 1.5px 1.5px 0;\\n  content: ' ';\\n  transform: rotate(45deg);\\n}\\n.am-radio-input {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  opacity: 0;\\n  width: 100%;\\n  height: 100%;\\n  z-index: 2;\\n  border: 0 none;\\n  appearance: none;\\n}\\n.am-radio.am-radio-checked .am-radio-inner {\\n  border-width: 0;\\n}\\n.am-radio.am-radio-checked .am-radio-inner:after {\\n  display: block;\\n  border-color: #ff6ea2;\\n}\\n.am-radio.am-radio-disabled.am-radio-checked .am-radio-inner:after {\\n  display: block;\\n  border-color: #bbb;\\n}\\n.am-list .am-list-item.am-radio-item .am-list-line .am-list-extra {\\n  flex: 0;\\n}\\n.am-list .am-list-item.am-radio-item .am-list-line .am-list-extra .am-radio {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  right: 0;\\n  bottom: 0;\\n  width: 100%;\\n  height: 44px;\\n  overflow: visible;\\n}\\n.am-list .am-list-item.am-radio-item .am-list-line .am-list-extra .am-radio-inner {\\n  right: 15px;\\n  top: 15px;\\n}\\n.am-list .am-list-item.am-radio-item.am-radio-item-disabled .am-list-content {\\n  color: #bbb;\\n}\\n.am-result {\\n  position: relative;\\n  text-align: center;\\n  width: 100%;\\n  padding-top: 30px;\\n  padding-bottom: 21px;\\n  background-color: #fff;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-result {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-result::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-result::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-result .am-result-pic {\\n  width: 60px;\\n  height: 60px;\\n  margin: 0 auto;\\n  line-height: 60px;\\n  background-size: 60px 60px;\\n}\\n.am-result .am-result-title,\\n.am-result .am-result-message {\\n  font-size: 21px;\\n  color: #333;\\n  padding-left: 15px;\\n  padding-right: 15px;\\n}\\n.am-result .am-result-title {\\n  margin-top: 15px;\\n  line-height: 1;\\n}\\n.am-result .am-result-message {\\n  margin-top: 9px;\\n  line-height: 1.5;\\n  font-size: 16px;\\n  color: #888;\\n}\\n.am-result .am-result-button {\\n  padding: 0 15px;\\n  margin-top: 15px;\\n}\\n/* 默认搜索bar */\\n.am-search {\\n  position: relative;\\n  display: flex;\\n  align-items: center;\\n  height: 44px;\\n  padding: 0 8px;\\n  overflow: hidden;\\n  background-color: #efeff4;\\n}\\n.am-search-input {\\n  flex: 1;\\n  position: relative;\\n  width: 100%;\\n  height: 28px;\\n  overflow: hidden;\\n  background-color: #fff;\\n  background-clip: padding-box;\\n  border-radius: 3px;\\n}\\n.am-search-input .am-search-synthetic-ph,\\n.am-search-input input[type=\\\"search\\\"] {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n}\\n.am-search-input .am-search-synthetic-ph {\\n  box-sizing: content-box;\\n  z-index: 1;\\n  height: 28px;\\n  line-height: 28px;\\n  width: 100%;\\n  transition: width 0.3s;\\n  display: block;\\n  text-align: center;\\n}\\n.am-search-input .am-search-synthetic-ph-icon {\\n  display: inline-block;\\n  margin-right: 5px;\\n  width: 15px;\\n  height: 15px;\\n  overflow: hidden;\\n  vertical-align: -2.5px;\\n  background-repeat: no-repeat;\\n  background-size: 15px auto;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'38'%20height%3D'36'%20viewBox%3D'0%200%2038%2036'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M29.05%2025.23a15.81%2015.81%200%200%200%203.004-9.294c0-8.8-7.17-15.934-16.017-15.934C7.192.002.02%207.136.02%2015.936c0%208.802%207.172%2015.937%2016.017%2015.937%204.148%200%207.928-1.569%2010.772-4.143l8.873%208.232%202.296-2.45-8.927-8.282zM16.2%2028.933c-7.19%200-13.04-5.788-13.04-12.903%200-7.113%205.85-12.904%2013.04-12.904%207.19%200%2012.9%205.79%2012.9%2012.904%200%207.115-5.71%2012.903-12.9%2012.903z'%20fill%3D'%23bbb'%20fill-rule%3D'evenodd'%2F%3E%3C%2Fsvg%3E);\\n}\\n.am-search-input .am-search-synthetic-ph-placeholder {\\n  color: #bbb;\\n  font-size: 15px;\\n}\\n.am-search-input input[type=\\\"search\\\"] {\\n  z-index: 2;\\n  opacity: 0;\\n  width: 100%;\\n  text-align: left;\\n  display: block;\\n  color: #333;\\n  height: 28px;\\n  font-size: 15px;\\n  background-color: transparent;\\n  border: 0;\\n}\\n.am-search-input input[type=\\\"search\\\"]::placeholder {\\n  background: none;\\n  text-align: left;\\n  color: transparent;\\n}\\n.am-search-input input[type=\\\"search\\\"]::-webkit-search-cancel-button {\\n  -webkit-appearance: none;\\n}\\n.am-search-input .am-search-clear {\\n  box-sizing: content-box;\\n  position: absolute;\\n  display: none;\\n  z-index: 3;\\n  width: 15px;\\n  height: 15px;\\n  padding: 6.5px;\\n  border-radius: 50%;\\n  top: 0;\\n  right: 0;\\n  background-color: transparent;\\n  background-position: center;\\n  background-repeat: no-repeat;\\n  background-size: 15px 15px;\\n  transition: all 0.3s;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2028'%3E%3Ccircle%20cx%3D'14'%20cy%3D'14'%20r%3D'14'%20fill%3D'%23ccc'%2F%3E%3Cline%20stroke%3D'%23ffffff'%20stroke-width%3D'2'%20stroke-miterlimit%3D'10'%20x1%3D'8'%20y1%3D'8'%20x2%3D'20'%20y2%3D'20'%2F%3E%3Cline%20fill%3D'none'%20stroke%3D'%23ffffff'%20stroke-width%3D'2'%20stroke-miterlimit%3D'10'%20x1%3D'20'%20y1%3D'8'%20x2%3D'8'%20y2%3D'20'%2F%3E%3C%2Fsvg%3E);\\n}\\n.am-search-input .am-search-clear-active {\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2028'%3E%3Ccircle%20cx%3D'14'%20cy%3D'14'%20r%3D'14'%20fill%3D'%23ff6ea2'%2F%3E%3Cline%20stroke%3D'%23ffffff'%20stroke-width%3D'2'%20stroke-miterlimit%3D'10'%20x1%3D'8'%20y1%3D'8'%20x2%3D'20'%20y2%3D'20'%2F%3E%3Cline%20fill%3D'none'%20stroke%3D'%23ffffff'%20stroke-width%3D'2'%20stroke-miterlimit%3D'10'%20x1%3D'20'%20y1%3D'8'%20x2%3D'8'%20y2%3D'20'%2F%3E%3C%2Fsvg%3E);\\n}\\n.am-search-input .am-search-clear-show {\\n  display: block;\\n}\\n.am-search-cancel {\\n  flex: none;\\n  opacity: 0;\\n  padding-left: 8px;\\n  height: 44px;\\n  line-height: 44px;\\n  font-size: 16px;\\n  color: #ff6ea2;\\n  text-align: right;\\n}\\n.am-search-cancel-anim {\\n  transition: margin-right 0.3s, opacity 0.3s;\\n  transition-delay: 0.1s;\\n}\\n.am-search-cancel-show {\\n  opacity: 1;\\n}\\n.am-search.am-search-start .am-search-input input[type=\\\"search\\\"] {\\n  opacity: 1;\\n  padding: 0 28px 0 35px;\\n}\\n.am-search.am-search-start .am-search-input input[type=\\\"search\\\"]::placeholder {\\n  color: transparent;\\n}\\n.am-search.am-search-start .am-search-input .am-search-synthetic-ph {\\n  padding-left: 15px;\\n  width: auto;\\n}\\n.am-segment {\\n  display: flex;\\n  border-radius: 5px;\\n  overflow: hidden;\\n  min-height: 27px;\\n  opacity: 1;\\n}\\n.am-segment.am-segment-disabled {\\n  opacity: 0.5;\\n}\\n.am-segment-item {\\n  display: flex;\\n  flex: 1;\\n  justify-content: center;\\n  align-items: center;\\n  color: #ff6ea2;\\n  font-size: 14px;\\n  line-height: 1;\\n  transition: background 0.2s;\\n  position: relative;\\n  border: 1PX solid #ff6ea2;\\n  width: 100%;\\n  box-sizing: border-box;\\n  border-left-width: 0;\\n}\\n.am-segment-item-tintcolor {\\n  border-color: #ff6ea2;\\n}\\n.am-segment-item:first-child {\\n  border-left-width: 1PX;\\n  border-radius: 5px 0 0 5px;\\n}\\n.am-segment-item:last-child {\\n  border-radius: 0 5px 5px 0;\\n}\\n.am-segment-item-selected {\\n  background: #ff6ea2;\\n  color: #fff;\\n}\\n.am-segment-item-active .am-segment-item-inner {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  height: 100%;\\n  width: 100%;\\n  opacity: 0.1;\\n  transition: background 0.2s;\\n  background-color: #ff6ea2;\\n}\\n.am-slider {\\n  position: relative;\\n}\\n.am-slider-rail {\\n  position: absolute;\\n  width: 100%;\\n  background-color: #ddd;\\n  height: 2px;\\n  box-sizing: border-box;\\n}\\n.am-slider-track {\\n  position: absolute;\\n  left: 0;\\n  height: 2px;\\n  border-radius: 2px;\\n  background-color: #ff6ea2;\\n}\\n.am-slider-handle {\\n  position: absolute;\\n  margin-left: -12px;\\n  margin-top: -10px;\\n  width: 22px;\\n  height: 22px;\\n  cursor: pointer;\\n  border-radius: 50%;\\n  border: 2px solid #ff6ea2;\\n  background-color: #fff;\\n  box-sizing: border-box;\\n}\\n.am-slider-handle:focus {\\n  background-color: #ff8bb5;\\n}\\n.am-slider-mark {\\n  position: absolute;\\n  top: 20px;\\n  left: 0;\\n  width: 100%;\\n  font-size: 12px;\\n}\\n.am-slider-mark-text {\\n  position: absolute;\\n  display: inline-block;\\n  vertical-align: middle;\\n  text-align: center;\\n  cursor: pointer;\\n  color: #333;\\n}\\n.am-slider-mark-text-active {\\n  opacity: 0.3;\\n}\\n.am-slider-step {\\n  position: absolute;\\n  width: 100%;\\n  height: 4px;\\n  background: transparent;\\n}\\n.am-slider-dot {\\n  position: absolute;\\n  bottom: -5px;\\n  margin-left: -4px;\\n  width: 12px;\\n  height: 12px;\\n  border: 2px solid #ddd;\\n  background-color: #fff;\\n  cursor: pointer;\\n  border-radius: 50%;\\n  vertical-align: middle;\\n}\\n.am-slider-dot:first-child {\\n  margin-left: -4px;\\n}\\n.am-slider-dot:last-child {\\n  margin-left: -4px;\\n}\\n.am-slider-dot-active {\\n  border-color: #ff6ea2;\\n}\\n.am-slider-disabled {\\n  opacity: 0.3;\\n}\\n.am-slider-disabled .am-slider-track {\\n  height: 2px;\\n}\\n.am-slider-disabled .am-slider-handle,\\n.am-slider-disabled .am-slider-mark-text,\\n.am-slider-disabled .am-slider-dot {\\n  cursor: not-allowed;\\n  box-shadow: none;\\n}\\n.am-stepper {\\n  position: relative;\\n  margin: 0;\\n  padding: 2px 0;\\n  display: inline-block;\\n  box-sizing: content-box;\\n  width: 63px;\\n  height: 35px;\\n  line-height: 35px;\\n  font-size: 14px;\\n  vertical-align: middle;\\n  overflow: hidden;\\n}\\n.am-stepper-handler-wrap {\\n  position: absolute;\\n  width: 100%;\\n  font-size: 24px;\\n}\\n.am-stepper-handler,\\n.am-stepper-handler-up-inner,\\n.am-stepper-handler-down-inner {\\n  width: 30px;\\n  height: 30px;\\n  line-height: 30px;\\n}\\n.am-stepper-handler {\\n  text-align: center;\\n  border: 1PX solid #ddd;\\n  border-radius: 5px;\\n  overflow: hidden;\\n  color: #333;\\n  position: absolute;\\n  display: inline-block;\\n  box-sizing: content-box;\\n}\\n.am-stepper-handler-active {\\n  z-index: 2;\\n  background-color: #ddd;\\n}\\n.am-stepper-handler-up-inner,\\n.am-stepper-handler-down-inner {\\n  user-select: none;\\n  right: 2px;\\n  color: #333;\\n}\\n.am-stepper-input-wrap {\\n  display: none;\\n  width: 100%;\\n  height: 30px;\\n  line-height: 30px;\\n  text-align: center;\\n  overflow: hidden;\\n}\\n.am-stepper-input {\\n  display: none;\\n  width: 60px;\\n  font-size: 16px;\\n  color: #333;\\n  text-align: center;\\n  border: 0;\\n  padding: 0;\\n  background: none;\\n  vertical-align: middle;\\n}\\n.am-stepper-input[disabled] {\\n  opacity: 1;\\n  color: #333;\\n}\\n.am-stepper.showNumber {\\n  width: 138px;\\n}\\n.am-stepper.showNumber .am-stepper-input-wrap {\\n  display: inline-block;\\n}\\n.am-stepper.showNumber .am-stepper-input {\\n  display: inline-block;\\n}\\n.am-stepper.showNumber .am-stepper-handler-down-disabled {\\n  right: -1PX;\\n}\\n.am-stepper-handler-up {\\n  cursor: pointer;\\n  right: 0;\\n}\\n.am-stepper-handler-up-inner:before {\\n  text-align: center;\\n  content: \\\"+\\\";\\n}\\n.am-stepper-handler-down {\\n  cursor: pointer;\\n  left: 0;\\n}\\n.am-stepper-handler-down-inner:before {\\n  text-align: center;\\n  content: \\\"-\\\";\\n}\\n.am-stepper-handler-down-disabled,\\n.am-stepper-handler-up-disabled {\\n  opacity: 0.3;\\n}\\n.am-stepper-handler-up-disabled .am-stepper-handler-active {\\n  background: none;\\n}\\n.am-stepper-disabled .am-stepper-handler-down,\\n.am-stepper-disabled .am-stepper-handler-up {\\n  opacity: 0.3;\\n  background: none;\\n}\\n.am-stepper-disabled .am-stepper-handler {\\n  opacity: 0.3;\\n}\\n.am-stepper-disabled .am-stepper-input-wrap {\\n  opacity: 0.3;\\n}\\n.am-steps {\\n  font-size: 0;\\n  width: 100%;\\n  line-height: 1.5;\\n  display: flex;\\n}\\n.am-steps,\\n.am-steps * {\\n  box-sizing: border-box;\\n}\\n.am-steps-item {\\n  position: relative;\\n  display: inline-block;\\n  vertical-align: top;\\n  flex: 1;\\n  overflow: hidden;\\n}\\n.am-steps-item:last-child {\\n  flex: none;\\n}\\n.am-steps-item:last-child .am-steps-item-tail,\\n.am-steps-item:last-child .am-steps-item-title:after {\\n  display: none;\\n}\\n.am-steps-item-icon,\\n.am-steps-item-content {\\n  display: inline-block;\\n  vertical-align: top;\\n}\\n.am-steps-item-icon {\\n  border: 1px solid #bbb;\\n  width: 22px;\\n  height: 22px;\\n  line-height: 22px;\\n  border-radius: 22px;\\n  text-align: center;\\n  font-size: 14px;\\n  margin-right: 8px;\\n  transition: background-color 0.3s, border-color 0.3s;\\n}\\n.am-steps-item-icon > .am-steps-icon {\\n  line-height: 1;\\n  top: -1px;\\n  color: #ff6ea2;\\n  position: relative;\\n}\\n.am-steps-item-icon > .am-steps-icon .am-icon {\\n  font-size: 12px;\\n  position: relative;\\n  float: left;\\n}\\n.am-steps-item-tail {\\n  position: absolute;\\n  left: 0;\\n  width: 100%;\\n  top: 12px;\\n  padding: 0 10px;\\n}\\n.am-steps-item-tail:after {\\n  content: '';\\n  display: inline-block;\\n  background: #ddd;\\n  height: 1px;\\n  border-radius: 1px;\\n  width: 100%;\\n  transition: background 0.3s;\\n  position: relative;\\n  left: -2px;\\n}\\n.am-steps-item-content {\\n  margin-top: 3px;\\n}\\n.am-steps-item-title {\\n  font-size: 16px;\\n  margin-bottom: 4px;\\n  color: #333;\\n  font-weight: bold;\\n  display: inline-block;\\n  padding-right: 10px;\\n  position: relative;\\n}\\n.am-steps-item-description {\\n  font-size: 15px;\\n  color: #bbb;\\n}\\n.am-steps-item-wait .am-steps-item-icon {\\n  border-color: #ccc;\\n  background-color: #fff;\\n}\\n.am-steps-item-wait .am-steps-item-icon > .am-steps-icon {\\n  color: #ccc;\\n}\\n.am-steps-item-wait .am-steps-item-icon > .am-steps-icon .am-steps-icon-dot {\\n  background: #ccc;\\n}\\n.am-steps-item-wait .am-steps-item-title {\\n  color: #333;\\n}\\n.am-steps-item-wait .am-steps-item-title:after {\\n  background-color: #ddd;\\n}\\n.am-steps-item-wait .am-steps-item-description {\\n  color: #333;\\n}\\n.am-steps-item-wait .am-steps-item-tail:after {\\n  background-color: #ddd;\\n}\\n.am-steps-item-process .am-steps-item-icon {\\n  border-color: #ff6ea2;\\n  background-color: #fff;\\n}\\n.am-steps-item-process .am-steps-item-icon > .am-steps-icon {\\n  color: #ff6ea2;\\n}\\n.am-steps-item-process .am-steps-item-icon > .am-steps-icon .am-steps-icon-dot {\\n  background: #ff6ea2;\\n}\\n.am-steps-item-process .am-steps-item-title {\\n  color: #333;\\n}\\n.am-steps-item-process .am-steps-item-title:after {\\n  background-color: #ddd;\\n}\\n.am-steps-item-process .am-steps-item-description {\\n  color: #333;\\n}\\n.am-steps-item-process .am-steps-item-tail:after {\\n  background-color: #ddd;\\n}\\n.am-steps-item-process .am-steps-item-icon {\\n  background: #ff6ea2;\\n}\\n.am-steps-item-process .am-steps-item-icon > .am-steps-icon {\\n  color: #fff;\\n}\\n.am-steps-item-finish .am-steps-item-icon {\\n  border-color: #ff6ea2;\\n  background-color: #fff;\\n}\\n.am-steps-item-finish .am-steps-item-icon > .am-steps-icon {\\n  color: #ff6ea2;\\n}\\n.am-steps-item-finish .am-steps-item-icon > .am-steps-icon .am-steps-icon-dot {\\n  background: #ff6ea2;\\n}\\n.am-steps-item-finish .am-steps-item-title {\\n  color: #333;\\n}\\n.am-steps-item-finish .am-steps-item-title:after {\\n  background-color: #ff6ea2;\\n}\\n.am-steps-item-finish .am-steps-item-description {\\n  color: #333;\\n}\\n.am-steps-item-finish .am-steps-item-tail:after {\\n  background-color: #ff6ea2;\\n}\\n.am-steps-item-error .am-steps-item-icon {\\n  border-color: #f4333c;\\n  background-color: #fff;\\n}\\n.am-steps-item-error .am-steps-item-icon > .am-steps-icon {\\n  color: #f4333c;\\n}\\n.am-steps-item-error .am-steps-item-icon > .am-steps-icon .am-steps-icon-dot {\\n  background: #f4333c;\\n}\\n.am-steps-item-error .am-steps-item-title {\\n  color: #f4333c;\\n}\\n.am-steps-item-error .am-steps-item-title:after {\\n  background-color: #ddd;\\n}\\n.am-steps-item-error .am-steps-item-description {\\n  color: #f4333c;\\n}\\n.am-steps-item-error .am-steps-item-tail:after {\\n  background-color: #ddd;\\n}\\n.am-steps-item.am-steps-next-error .am-steps-item-title:after {\\n  background: #f4333c;\\n}\\n.am-steps-item.error-tail .am-steps-item-tail:after {\\n  background-color: #f4333c;\\n}\\n.am-steps-horizontal:not(.am-steps-label-vertical) .am-steps-item {\\n  margin-right: 10px;\\n}\\n.am-steps-horizontal:not(.am-steps-label-vertical) .am-steps-item:last-child {\\n  margin-right: 0;\\n}\\n.am-steps-horizontal:not(.am-steps-label-vertical) .am-steps-item-tail {\\n  display: none;\\n}\\n.am-steps-horizontal:not(.am-steps-label-vertical) .am-steps-item-description {\\n  max-width: 100px;\\n}\\n.am-steps-item-custom .am-steps-item-icon {\\n  background: none;\\n  border: 0;\\n  width: auto;\\n  height: auto;\\n}\\n.am-steps-item-custom .am-steps-item-icon > .am-steps-icon {\\n  font-size: 22px;\\n  top: 1px;\\n  width: 22px;\\n  height: 22px;\\n}\\n.am-steps-item-custom.am-steps-item-process .am-steps-item-icon > .am-steps-icon {\\n  color: #ff6ea2;\\n}\\n.am-steps-small .am-steps-item-icon {\\n  width: 18px;\\n  height: 18px;\\n  line-height: 18px;\\n  text-align: center;\\n  border-radius: 18px;\\n  font-size: 14px;\\n  margin-right: 8px;\\n}\\n.am-steps-small .am-steps-item-icon > .am-steps-icon {\\n  font-size: 12px;\\n  transform: scale(0.75);\\n  top: -2px;\\n}\\n.am-steps-small .am-steps-item-content {\\n  margin-top: 0;\\n}\\n.am-steps-small .am-steps-item-title {\\n  font-size: 16px;\\n  margin-bottom: 3px;\\n  color: #333;\\n  font-weight: bold;\\n}\\n.am-steps-small .am-steps-item-description {\\n  font-size: 12px;\\n  color: #bbb;\\n}\\n.am-steps-small .am-steps-item-tail {\\n  top: 8px;\\n  padding: 0 8px;\\n}\\n.am-steps-small .am-steps-item-tail:after {\\n  height: 1px;\\n  border-radius: 1px;\\n  width: 100%;\\n  left: 0;\\n}\\n.am-steps-small .am-steps-item-custom .am-steps-item-icon {\\n  background: none;\\n}\\n.am-steps-small .am-steps-item-custom .am-steps-item-icon > .am-steps-icon {\\n  font-size: 18px;\\n  top: -2px;\\n  transform: none;\\n}\\n.am-steps-vertical {\\n  display: block;\\n}\\n.am-steps-vertical .am-steps-item {\\n  display: block;\\n  overflow: visible;\\n}\\n.am-steps-vertical .am-steps-item-icon {\\n  float: left;\\n}\\n.am-steps-vertical .am-steps-item-icon-inner {\\n  margin-right: 16px;\\n}\\n.am-steps-vertical .am-steps-item-content {\\n  min-height: 48px;\\n  overflow: hidden;\\n  display: block;\\n}\\n.am-steps-vertical .am-steps-item-title {\\n  line-height: 26px;\\n}\\n.am-steps-vertical .am-steps-item-title:after {\\n  display: none;\\n}\\n.am-steps-vertical .am-steps-item-description {\\n  padding-bottom: 12px;\\n}\\n.am-steps-vertical .am-steps-item-tail {\\n  position: absolute;\\n  left: 13px;\\n  top: 0;\\n  height: 100%;\\n  width: 1px;\\n  padding: 30px 0 4px 0;\\n}\\n.am-steps-vertical .am-steps-item-tail:after {\\n  height: 100%;\\n  width: 1px;\\n}\\n.am-steps-vertical.am-steps-small .am-steps-item-tail {\\n  position: absolute;\\n  left: 9px;\\n  top: 0;\\n  padding: 22px 0 4px 0;\\n}\\n.am-steps-vertical.am-steps-small .am-steps-item-title {\\n  line-height: 18px;\\n}\\n.am-steps-label-vertical .am-steps-item {\\n  overflow: visible;\\n}\\n.am-steps-label-vertical .am-steps-item-tail {\\n  padding: 0 24px;\\n  margin-left: 48px;\\n}\\n.am-steps-label-vertical .am-steps-item-content {\\n  display: block;\\n  text-align: center;\\n  margin-top: 8px;\\n  width: 100px;\\n}\\n.am-steps-label-vertical .am-steps-item-icon {\\n  display: inline-block;\\n  margin-left: 36px;\\n}\\n.am-steps-label-vertical .am-steps-item-title {\\n  padding-right: 0;\\n}\\n.am-steps-label-vertical .am-steps-item-title:after {\\n  display: none;\\n}\\n.am-swipe {\\n  overflow: hidden;\\n  position: relative;\\n}\\n.am-swipe-content {\\n  position: relative;\\n  background-color: #fff;\\n}\\n.am-swipe-cover {\\n  position: absolute;\\n  z-index: 2;\\n  background: transparent;\\n  height: 100%;\\n  width: 100%;\\n  top: 0;\\n  display: none;\\n}\\n.am-swipe .am-swipe-content,\\n.am-swipe .am-swipe-actions {\\n  transition: all 250ms;\\n}\\n.am-swipe-swiping .am-swipe-content,\\n.am-swipe-swiping .am-swipe-actions {\\n  transition: none;\\n}\\n.am-swipe-swiping .am-list-item-active {\\n  background-color: #FFF;\\n}\\n.am-swipe-actions {\\n  position: absolute;\\n  top: 0;\\n  bottom: 0;\\n  display: flex;\\n  overflow: hidden;\\n  white-space: nowrap;\\n}\\n.am-swipe-actions-left {\\n  left: 0;\\n}\\n.am-swipe-actions-right {\\n  right: 0;\\n}\\n.am-swipe-btn {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  overflow: hidden;\\n}\\n.am-swipe-btn-text {\\n  padding: 0 8px;\\n}\\n.am-switch {\\n  display: inline-block;\\n  vertical-align: middle;\\n  box-sizing: border-box;\\n  position: relative;\\n  cursor: pointer;\\n  align-self: center;\\n}\\n.am-switch .checkbox {\\n  width: 51px;\\n  height: 31px;\\n  border-radius: 31px;\\n  box-sizing: border-box;\\n  background: #e5e5e5;\\n  z-index: 0;\\n  margin: 0;\\n  padding: 0;\\n  appearance: none;\\n  border: 0;\\n  cursor: pointer;\\n  position: relative;\\n  transition: all 300ms;\\n}\\n.am-switch .checkbox:before {\\n  content: ' ';\\n  position: absolute;\\n  left: 2px;\\n  top: 2px;\\n  width: 47px;\\n  height: 27px;\\n  border-radius: 27px;\\n  box-sizing: border-box;\\n  background: #fff;\\n  z-index: 1;\\n  transition: all 200ms;\\n  transform: scale(1);\\n}\\n.am-switch .checkbox:after {\\n  content: ' ';\\n  width: 27px;\\n  height: 27px;\\n  border-radius: 27px;\\n  background: #fff;\\n  position: absolute;\\n  z-index: 2;\\n  top: 2px;\\n  left: 2px;\\n  transform: translateX(0);\\n  transition: all 200ms;\\n  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 2px 11.5px 0 rgba(0, 0, 0, 0.08), -1px 2px 2px 0 rgba(0, 0, 0, 0.1);\\n}\\n.am-switch .checkbox.checkbox-disabled {\\n  z-index: 3;\\n}\\n.am-switch input[type=\\\"checkbox\\\"] {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  opacity: 0;\\n  width: 100%;\\n  height: 100%;\\n  z-index: 2;\\n  border: 0 none;\\n  appearance: none;\\n}\\n.am-switch input[type=\\\"checkbox\\\"]:checked + .checkbox {\\n  background: #4dd865;\\n}\\n.am-switch input[type=\\\"checkbox\\\"]:checked + .checkbox:before {\\n  transform: scale(0);\\n}\\n.am-switch input[type=\\\"checkbox\\\"]:checked + .checkbox:after {\\n  transform: translateX(20px);\\n}\\n.am-switch input[type=\\\"checkbox\\\"]:disabled + .checkbox {\\n  opacity: 0.3;\\n}\\n.am-switch.am-switch-android .checkbox {\\n  width: 72px;\\n  height: 23px;\\n  border-radius: 3px;\\n  background: #a7aaa6;\\n}\\n.am-switch.am-switch-android .checkbox:before {\\n  display: none;\\n}\\n.am-switch.am-switch-android .checkbox:after {\\n  width: 35px;\\n  height: 21px;\\n  border-radius: 2px;\\n  box-shadow: none;\\n  left: 1PX;\\n  top: 1PX;\\n}\\n.am-switch.am-switch-android input[type=\\\"checkbox\\\"]:checked + .checkbox {\\n  background: #ff6ea2;\\n}\\n.am-switch.am-switch-android input[type=\\\"checkbox\\\"]:checked + .checkbox:before {\\n  transform: scale(0);\\n}\\n.am-switch.am-switch-android input[type=\\\"checkbox\\\"]:checked + .checkbox:after {\\n  transform: translateX(35px);\\n}\\n.am-tab-bar {\\n  height: 100%;\\n  overflow: hidden;\\n}\\n.am-tab-bar-bar {\\n  position: relative;\\n  box-sizing: border-box;\\n  height: 50px;\\n  border-top: 1PX solid #ddd;\\n  width: 100%;\\n  display: flex;\\n  transition-duration: 0.2s;\\n  transition-property: height bottom;\\n  z-index: 100;\\n  justify-content: space-around;\\n  align-items: center;\\n  bottom: 0;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tab-bar-bar {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-tab-bar-bar::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-tab-bar-bar::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-tab-bar-bar-hidden-top {\\n  bottom: 50px;\\n  height: 0;\\n}\\n.am-tab-bar-bar-hidden-bottom {\\n  bottom: -50px;\\n  height: 0;\\n}\\n.am-tab-bar-bar .am-tab-bar-tab {\\n  flex: 1;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  flex-direction: column;\\n  text-align: center;\\n  width: 100%;\\n}\\n.am-tab-bar-bar .am-tab-bar-tab-image {\\n  width: 22px;\\n  height: 22px;\\n  vertical-align: middle;\\n}\\n.am-tab-bar-bar .am-tab-bar-tab-title {\\n  font-size: 10px;\\n  margin: 3px 0 0 0;\\n  line-height: 1;\\n  text-align: center;\\n}\\n.am-tab-bar-bar .am-tab-bar-tab-icon {\\n  display: flex;\\n  justify-content: center;\\n}\\n.am-tab-bar-bar .am-tab-bar-tab-icon .tab-badge :last-child {\\n  margin-top: 4px;\\n  left: 22px;\\n}\\n.am-tab-bar-bar .am-tab-bar-tab-icon .tab-dot :last-child {\\n  margin-top: 4px;\\n  left: 22px;\\n}\\n.am-tab-bar-item {\\n  height: 100%;\\n}\\n.am-tabs {\\n  box-sizing: border-box;\\n  display: flex;\\n  flex: 1;\\n  position: relative;\\n  overflow: hidden;\\n  height: 100%;\\n  width: 100%;\\n}\\n.am-tabs * {\\n  box-sizing: border-box;\\n}\\n.am-tabs-content-wrap {\\n  display: flex;\\n  flex: 1;\\n  width: 100%;\\n  height: 100%;\\n  min-height: 0;\\n}\\n.am-tabs-content-wrap-animated {\\n  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1), top 0.3s cubic-bezier(0.35, 0, 0.25, 1);\\n  will-change: transform, left, top;\\n}\\n.am-tabs-pane-wrap {\\n  width: 100%;\\n  flex-shrink: 0;\\n  overflow-y: auto;\\n}\\n.am-tabs-tab-bar-wrap {\\n  flex-shrink: 0;\\n}\\n.am-tabs-horizontal .am-tabs-pane-wrap-active {\\n  height: auto;\\n}\\n.am-tabs-horizontal .am-tabs-pane-wrap-inactive {\\n  height: 0;\\n  overflow: visible;\\n}\\n.am-tabs-vertical .am-tabs-content-wrap {\\n  flex-direction: column;\\n}\\n.am-tabs-vertical .am-tabs-tab-bar-wrap {\\n  height: 100%;\\n}\\n.am-tabs-vertical .am-tabs-pane-wrap {\\n  height: 100%;\\n}\\n.am-tabs-vertical .am-tabs-pane-wrap-active {\\n  overflow: auto;\\n}\\n.am-tabs-vertical .am-tabs-pane-wrap-inactive {\\n  overflow: hidden;\\n}\\n.am-tabs-top,\\n.am-tabs-bottom {\\n  flex-direction: column;\\n}\\n.am-tabs-left,\\n.am-tabs-right {\\n  flex-direction: row;\\n}\\n.am-tabs-default-bar {\\n  position: relative;\\n  display: flex;\\n  flex-shrink: 0;\\n  flex-direction: row;\\n  width: 100%;\\n  height: 100%;\\n  overflow: visible;\\n  z-index: 1;\\n}\\n.am-tabs-default-bar-tab {\\n  position: relative;\\n  display: flex;\\n  flex-shrink: 0;\\n  justify-content: center;\\n  align-items: center;\\n  font-size: 15px;\\n  height: 43.5px;\\n  line-height: 43.5px;\\n}\\n.am-tabs-default-bar-tab .am-badge .am-badge-text {\\n  top: -13px;\\n  transform: translateX(-5px);\\n}\\n.am-tabs-default-bar-tab .am-badge .am-badge-dot {\\n  top: -6px;\\n  transform: translateX(0);\\n}\\n.am-tabs-default-bar-tab-active {\\n  color: #ff6ea2;\\n}\\n.am-tabs-default-bar-underline {\\n  position: absolute;\\n  border: 1px #ff6ea2 solid;\\n  transform: translate3d(0, 0, 0);\\n}\\n.am-tabs-default-bar-animated .am-tabs-default-bar-content {\\n  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);\\n  will-change: transform;\\n}\\n.am-tabs-default-bar-animated .am-tabs-default-bar-underline {\\n  transition: top 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1), color 0.3s cubic-bezier(0.35, 0, 0.25, 1), width 0.3s cubic-bezier(0.35, 0, 0.25, 1);\\n  will-change: top, left, width, color;\\n}\\n.am-tabs-default-bar-top,\\n.am-tabs-default-bar-bottom {\\n  flex-direction: row;\\n}\\n.am-tabs-default-bar-top .am-tabs-default-bar-content,\\n.am-tabs-default-bar-bottom .am-tabs-default-bar-content {\\n  display: flex;\\n  width: 100%;\\n  flex-direction: row;\\n}\\n.am-tabs-default-bar-top .am-tabs-default-bar-prevpage,\\n.am-tabs-default-bar-bottom .am-tabs-default-bar-prevpage {\\n  pointer-events: none;\\n  position: absolute;\\n  top: 0;\\n  display: block;\\n  width: 59px;\\n  height: 100%;\\n  content: ' ';\\n  z-index: 999;\\n  left: 0;\\n  background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0));\\n}\\n.am-tabs-default-bar-top .am-tabs-default-bar-nextpage,\\n.am-tabs-default-bar-bottom .am-tabs-default-bar-nextpage {\\n  pointer-events: none;\\n  position: absolute;\\n  top: 0;\\n  display: block;\\n  width: 59px;\\n  height: 100%;\\n  content: ' ';\\n  z-index: 999;\\n  right: 0;\\n  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);\\n}\\n.am-tabs-default-bar-top .am-tabs-default-bar-tab,\\n.am-tabs-default-bar-bottom .am-tabs-default-bar-tab {\\n  padding: 8px 0;\\n}\\n.am-tabs-default-bar-top .am-tabs-default-bar-underline,\\n.am-tabs-default-bar-bottom .am-tabs-default-bar-underline {\\n  bottom: 0;\\n}\\n.am-tabs-default-bar-top .am-tabs-default-bar-tab {\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-tabs-default-bar-bottom .am-tabs-default-bar-tab {\\n  border-top: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-bottom .am-tabs-default-bar-tab {\\n    border-top: none;\\n  }\\n  html:not([data-scale]) .am-tabs-default-bar-bottom .am-tabs-default-bar-tab::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 50%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-bottom .am-tabs-default-bar-tab::before {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-tabs-default-bar-left,\\n.am-tabs-default-bar-right {\\n  flex-direction: column;\\n}\\n.am-tabs-default-bar-left .am-tabs-default-bar-content,\\n.am-tabs-default-bar-right .am-tabs-default-bar-content {\\n  display: flex;\\n  height: 100%;\\n  flex-direction: column;\\n}\\n.am-tabs-default-bar-left .am-tabs-default-bar-tab,\\n.am-tabs-default-bar-right .am-tabs-default-bar-tab {\\n  padding: 0 8px;\\n}\\n.am-tabs-default-bar-left .am-tabs-default-bar-underline {\\n  right: 0;\\n}\\n.am-tabs-default-bar-left .am-tabs-default-bar-tab {\\n  border-right: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-left .am-tabs-default-bar-tab {\\n    border-right: none;\\n  }\\n  html:not([data-scale]) .am-tabs-default-bar-left .am-tabs-default-bar-tab::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: 0;\\n    bottom: auto;\\n    left: auto;\\n    width: 1PX;\\n    height: 100%;\\n    background: #ddd;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-left .am-tabs-default-bar-tab::after {\\n    transform: scaleX(0.33);\\n  }\\n}\\n.am-tabs-default-bar-right .am-tabs-default-bar-underline {\\n  left: 0;\\n}\\n.am-tabs-default-bar-right .am-tabs-default-bar-tab {\\n  border-left: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-right .am-tabs-default-bar-tab {\\n    border-left: none;\\n  }\\n  html:not([data-scale]) .am-tabs-default-bar-right .am-tabs-default-bar-tab::before {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: 0;\\n    right: auto;\\n    bottom: auto;\\n    left: 0;\\n    width: 1PX;\\n    height: 100%;\\n    transform-origin: 100% 50%;\\n    transform: scaleX(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-tabs-default-bar-right .am-tabs-default-bar-tab::before {\\n    transform: scaleX(0.33);\\n  }\\n}\\n.am-tag {\\n  display: inline-block;\\n  position: relative;\\n  font-size: 14px;\\n  text-align: center;\\n  padding: 0 15px;\\n  height: 25px;\\n  line-height: 25px;\\n  box-sizing: border-box;\\n}\\n.am-tag.am-tag-small {\\n  height: 15px;\\n  line-height: 15px;\\n  padding: 0 5px;\\n  font-size: 10px;\\n}\\n.am-tag-normal {\\n  background-color: #fff;\\n  color: #888;\\n  border: 1PX solid #ddd;\\n  border-radius: 3px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tag-normal {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-tag-normal::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ddd;\\n    border-radius: 6px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-tag-active {\\n  background-color: #fff;\\n  color: #ff6ea2;\\n  border: 1PX solid #ff6ea2;\\n  border-radius: 3px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tag-active {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-tag-active::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ff6ea2;\\n    border-radius: 6px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-tag-disabled {\\n  color: #bbb;\\n  background-color: #ddd;\\n  border: 1PX solid #ddd;\\n  border-radius: 3px;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-tag-disabled {\\n    position: relative;\\n    border: none;\\n  }\\n  html:not([data-scale]) .am-tag-disabled::before {\\n    content: '';\\n    position: absolute;\\n    left: 0;\\n    top: 0;\\n    width: 200%;\\n    height: 200%;\\n    border: 1PX solid #ddd;\\n    border-radius: 6px;\\n    transform-origin: 0 0;\\n    transform: scale(0.5);\\n    box-sizing: border-box;\\n    pointer-events: none;\\n  }\\n}\\n.am-tag-close {\\n  position: absolute;\\n  top: -9px;\\n  left: -10px;\\n  color: #bbb;\\n}\\n.am-tag-close-active {\\n  color: #888;\\n}\\n.am-tag-close .am-icon {\\n  background-color: #fff;\\n  border-radius: 9px;\\n}\\n.am-list .am-list-item.am-textarea-item {\\n  display: flex;\\n  align-items: flex-start;\\n  box-sizing: border-box;\\n  min-height: 44px;\\n  padding-left: 15px;\\n  padding-right: 15px;\\n  border-bottom: 1PX solid #ddd;\\n}\\n@media (min-resolution: 2dppx) {\\n  html:not([data-scale]) .am-list .am-list-item.am-textarea-item {\\n    border-bottom: none;\\n  }\\n  html:not([data-scale]) .am-list .am-list-item.am-textarea-item::after {\\n    content: '';\\n    position: absolute;\\n    background-color: #ddd;\\n    display: block;\\n    z-index: 1;\\n    top: auto;\\n    right: auto;\\n    bottom: 0;\\n    left: 0;\\n    width: 100%;\\n    height: 1PX;\\n    transform-origin: 50% 100%;\\n    transform: scaleY(0.5);\\n  }\\n}\\n@media (min-resolution: 2dppx) and (min-resolution: 3dppx) {\\n  html:not([data-scale]) .am-list .am-list-item.am-textarea-item::after {\\n    transform: scaleY(0.33);\\n  }\\n}\\n.am-list .am-list-item.am-textarea-item.am-textarea-item-single-line {\\n  align-items: center;\\n}\\n.am-list .am-list-item.am-textarea-item.am-textarea-item-single-line .am-textarea-label {\\n  align-self: center;\\n}\\n.am-list .am-list-item.am-textarea-item.am-textarea-item-single-line .am-textarea-control {\\n  padding-top: 0;\\n  padding-bottom: 0;\\n}\\n.am-list .am-list-item.am-textarea-item.am-textarea-item-single-line .am-textarea-control textarea {\\n  line-height: 25.5px;\\n}\\n.am-list .am-list-item.am-textarea-item.am-textarea-item-single-line .am-textarea-clear {\\n  margin-top: 0;\\n}\\n.am-list .am-list-item.am-textarea-item.am-textarea-item-single-line.am-textarea-error .am-textarea-error-extra {\\n  margin-top: 0;\\n}\\n.am-textarea-label {\\n  align-self: flex-start;\\n  color: #333;\\n  text-align: left;\\n  min-height: 44px;\\n  font-size: 17px;\\n  line-height: 44px;\\n  margin-left: 0;\\n  margin-right: 5px;\\n  white-space: nowrap;\\n  overflow: hidden;\\n}\\n.am-textarea-label.am-textarea-label-2 {\\n  width: 34px;\\n}\\n.am-textarea-label.am-textarea-label-3 {\\n  width: 51px;\\n}\\n.am-textarea-label.am-textarea-label-4 {\\n  width: 68px;\\n}\\n.am-textarea-label.am-textarea-label-5 {\\n  width: 85px;\\n}\\n.am-textarea-label.am-textarea-label-6 {\\n  width: 102px;\\n}\\n.am-textarea-label.am-textarea-label-7 {\\n  width: 119px;\\n}\\n.am-textarea-control {\\n  flex: 1;\\n  padding-top: 10px;\\n  padding-bottom: 9px;\\n}\\n.am-textarea-control textarea {\\n  color: #333;\\n  font-size: 17px;\\n  line-height: 25.5px;\\n  appearance: none;\\n  width: 100%;\\n  padding: 0;\\n  border: 0;\\n  background-color: transparent;\\n  overflow: visible;\\n  display: block;\\n  resize: none;\\n  word-break: break-word;\\n  word-wrap: break-word;\\n}\\n.am-textarea-control textarea::placeholder {\\n  color: #bbb;\\n}\\n.am-textarea-control textarea:disabled {\\n  color: #bbb;\\n  background-color: #fff;\\n}\\n.am-textarea-clear {\\n  display: none;\\n  width: 21px;\\n  height: 21px;\\n  margin-top: 12px;\\n  border-radius: 50%;\\n  overflow: hidden;\\n  font-style: normal;\\n  color: #fff;\\n  background-color: #ccc;\\n  background-repeat: no-repeat;\\n  background-size: 21px auto;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20fill%3D'%23fff'%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z'%2F%3E%3Cpath%20d%3D'M0%200h24v24H0z'%20fill%3D'none'%2F%3E%3C%2Fsvg%3E);\\n}\\n.am-textarea-clear-active {\\n  background-color: #ff6ea2;\\n}\\n.am-textarea-focus .am-textarea-clear {\\n  display: block;\\n}\\n.am-textarea-has-count {\\n  padding-bottom: 14px;\\n}\\n.am-textarea-count {\\n  position: absolute;\\n  bottom: 6px;\\n  right: 5px;\\n  color: #bbb;\\n  font-size: 14px;\\n}\\n.am-textarea-count span {\\n  color: #333;\\n}\\n.am-textarea-error .am-textarea-control textarea {\\n  color: #f50;\\n}\\n.am-textarea-error .am-textarea-error-extra {\\n  margin-top: 12px;\\n  width: 21px;\\n  height: 21px;\\n  margin-left: 8px;\\n  background-size: 21px 21px;\\n  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D'18'%20height%3D'18'%20viewBox%3D'0%200%2018%2018'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cg%20stroke%3D'none'%20stroke-width%3D'1'%20fill%3D'none'%20fill-rule%3D'evenodd'%3E%3Cg%20transform%3D'translate(-300.000000%2C%20-1207.000000)'%20fill%3D'%23FF5500'%3E%3Cg%20id%3D'exclamation-circle-o'%20transform%3D'translate(300.000000%2C%201207.000000)'%3E%3Cpath%20d%3D'M9%2C16.734375%20C10.0441406%2C16.734375%2011.0566406%2C16.5304688%2012.009375%2C16.1279297%20C12.9304688%2C15.7376953%2013.7566406%2C15.1804687%2014.4685547%2C14.4703125%20C15.1787109%2C13.7601563%2015.7376953%2C12.9322266%2016.1261719%2C12.0111328%20C16.5304688%2C11.0566406%2016.734375%2C10.0441406%2016.734375%2C9%20C16.734375%2C7.95585938%2016.5304688%2C6.94335938%2016.1279297%2C5.990625%20C15.7376953%2C5.06953125%2015.1804687%2C4.24335938%2014.4703125%2C3.53144531%20C13.7601563%2C2.82128906%2012.9322266%2C2.26230469%2012.0111328%2C1.87382813%20C11.0566406%2C1.46953125%2010.0441406%2C1.265625%209%2C1.265625%20C7.95585938%2C1.265625%206.94335938%2C1.46953125%205.990625%2C1.87207031%20C5.06953125%2C2.26230469%204.24335938%2C2.81953125%203.53144531%2C3.5296875%20C2.82128906%2C4.23984375%202.26230469%2C5.06777344%201.87382813%2C5.98886719%20C1.46953125%2C6.94335938%201.265625%2C7.95585938%201.265625%2C9%20C1.265625%2C10.0441406%201.46953125%2C11.0566406%201.87207031%2C12.009375%20C2.26230469%2C12.9304688%202.81953125%2C13.7566406%203.5296875%2C14.4685547%20C4.23984375%2C15.1787109%205.06777344%2C15.7376953%205.98886719%2C16.1261719%20C6.94335938%2C16.5304688%207.95585938%2C16.734375%209%2C16.734375%20L9%2C16.734375%20Z%20M9%2C18%20C4.02890625%2C18%200%2C13.9710937%200%2C9%20C0%2C4.02890625%204.02890625%2C0%209%2C0%20C13.9710937%2C0%2018%2C4.02890625%2018%2C9%20C18%2C13.9710937%2013.9710937%2C18%209%2C18%20L9%2C18%20L9%2C18%20Z%20M9%2C6.75%20C8.61152344%2C6.75%208.296875%2C7.06464844%208.296875%2C7.453125%20L8.296875%2C13.9394531%20C8.296875%2C14.3279297%208.61152344%2C14.6425781%209%2C14.6425781%20C9.38847656%2C14.6425781%209.703125%2C14.3279297%209.703125%2C13.9394531%20L9.703125%2C7.453125%20C9.703125%2C7.06464844%209.38847656%2C6.75%209%2C6.75%20L9%2C6.75%20Z%20M8.20898438%2C4.83398438%20C8.20898438%2C5.27085024%208.56313413%2C5.625%209%2C5.625%20C9.43686587%2C5.625%209.79101562%2C5.27085024%209.79101562%2C4.83398438%20C9.79101562%2C4.39711851%209.43686587%2C4.04296875%209%2C4.04296875%20C8.56313413%2C4.04296875%208.20898438%2C4.39711851%208.20898438%2C4.83398438%20L8.20898438%2C4.83398438%20Z'%20id%3D'Shape'%20transform%3D'translate(9.000000%2C%209.000000)%20scale(1%2C%20-1)%20translate(-9.000000%2C%20-9.000000)%20'%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);\\n}\\n.am-textarea-disabled .am-textarea-label {\\n  color: #bbb;\\n}\\n.am-list-body .am-list-item:last-child {\\n  border-bottom: 0;\\n}\\n.am-list-body .am-list-item:last-child:after {\\n  display: none !important;\\n}\\n.am-toast {\\n  position: fixed;\\n  width: 100%;\\n  z-index: 1999;\\n  font-size: 14px;\\n  text-align: center;\\n}\\n.am-toast > span {\\n  max-width: 50%;\\n}\\n.am-toast.am-toast-mask {\\n  height: 100%;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  left: 0;\\n  top: 0;\\n  transform: translateZ(1px);\\n}\\n.am-toast.am-toast-nomask {\\n  position: fixed;\\n  max-width: 50%;\\n  width: auto;\\n  left: 50%;\\n  top: 50%;\\n  transform: translateZ(1px);\\n}\\n.am-toast.am-toast-nomask .am-toast-notice {\\n  transform: translateX(-50%) translateY(-50%);\\n}\\n.am-toast-notice-content .am-toast-text {\\n  min-width: 60px;\\n  border-radius: 3px;\\n  color: #fff;\\n  background-color: rgba(58, 58, 58, 0.9);\\n  line-height: 1.5;\\n  padding: 9px 15px;\\n}\\n.am-toast-notice-content .am-toast-text.am-toast-text-icon {\\n  border-radius: 5px;\\n  padding: 15px 15px;\\n}\\n.am-toast-notice-content .am-toast-text.am-toast-text-icon .am-toast-text-info {\\n  margin-top: 6px;\\n}\\n.am-whitespace.am-whitespace-xs {\\n  height: 3px;\\n}\\n.am-whitespace.am-whitespace-sm {\\n  height: 6px;\\n}\\n.am-whitespace.am-whitespace-md {\\n  height: 9px;\\n}\\n.am-whitespace.am-whitespace-lg {\\n  height: 15px;\\n}\\n.am-whitespace.am-whitespace-xl {\\n  height: 21px;\\n}\\n.am-wingblank {\\n  margin-left: 8px;\\n  margin-right: 8px;\\n}\\n.am-wingblank.am-wingblank-sm {\\n  margin-left: 5px;\\n  margin-right: 5px;\\n}\\n.am-wingblank.am-wingblank-md {\\n  margin-left: 8px;\\n  margin-right: 8px;\\n}\\n.am-wingblank.am-wingblank-lg {\\n  margin-left: 15px;\\n  margin-right: 15px;\\n}\\n\",\"isStyle\":true,\"id\":25}],\"id\":24},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"type\":\"text/javascript\",\"charset\":\"utf-8\",\"async\":\"\",\"src\":\"https://st.xingbeibaoxian.com/p/insurance-h5/static/js/2.1692944370137.9949a111.chunk.js\"},\"childNodes\":[],\"id\":26}],\"id\":4},{\"type\":2,\"tagName\":\"body\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"noscript\",\"attributes\":{},\"childNodes\":[{\"type\":3,\"textContent\":\"You need to enable JavaScript to run this app.\",\"id\":29}],\"id\":28},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"root\"},\"childNodes\":[],\"id\":30},{\"type\":2,\"tagName\":\"script\",\"attributes\":{},\"childNodes\":[{\"type\":3,\"textContent\":\"SCRIPT_PLACEHOLDER\",\"id\":32}],\"id\":31},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.haiziwang.com/static/tracker/4.0.0/tracker.js\"},\"childNodes\":[],\"id\":33},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://res.wx.qq.com/open/js/jweixin-1.4.0.js\"},\"childNodes\":[],\"id\":34},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"type\":\"text/javascript\",\"src\":\"https://st.xingbeibaoxian.com/p/insurance-h5/static/js/main.1692944370137.7fba21d4.js\"},\"childNodes\":[],\"id\":35}],\"id\":27}],\"id\":3}],\"id\":1},\"initialOffset\":{\"left\":0,\"top\":0}},\"timestamp\":1693403001248}]",
+			"sort": 178,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.662+0000"
+		},
+		{
+			"id": "64ef4779dc22313b820345f2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":17,\"attributes\":{\"content\":\"121012383\"}}],\"removes\":[],\"adds\":[{\"parentId\":30,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_37gbrrweFkjzDGPfrEcM66 \"},\"childNodes\":[],\"id\":36}},{\"parentId\":36,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"j6Nx525MCZ76ZhlZ0WYu \"},\"childNodes\":[],\"id\":37}},{\"parentId\":37,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://cmspic-10004025.image.myqcloud.com/ea28d500-0a99-11ea-9fab-c76507ce9f90_size_280x280\"},\"childNodes\":[],\"id\":38}}]},\"timestamp\":1693403001286}]",
+			"sort": 179,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.633+0000"
+		},
+		{
+			"id": "64ef47793fc0fa5a7db3a3c2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":6,\"id\":7}],\"adds\":[{\"parentId\":6,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"产品详情\",\"id\":39}}]},\"timestamp\":1693403001298}]",
+			"sort": 180,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.642+0000"
+		},
+		{
+			"id": "64ef4779dc22313b820345f4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":43,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"}}],\"removes\":[],\"adds\":[{\"parentId\":27,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":40}},{\"parentId\":40,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast am-toast-mask\"},\"childNodes\":[],\"id\":41}},{\"parentId\":41,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":42}},{\"parentId\":42,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"},\"childNodes\":[],\"id\":43}},{\"parentId\":43,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"a\",\"attributes\":{\"tabindex\":\"0\",\"class\":\"am-toast-notice-close\"},\"childNodes\":[],\"id\":44}},{\"parentId\":44,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"am-toast-notice-close-x\"},\"childNodes\":[],\"id\":45}},{\"parentId\":27,\"nextId\":28,\"node\":{\"type\":3,\"textContent\":\"\\n\",\"id\":46}},{\"parentId\":43,\"nextId\":44,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice-content\"},\"childNodes\":[],\"id\":47}},{\"parentId\":47,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text am-toast-text-icon\",\"role\":\"alert\",\"aria-live\":\"assertive\"},\"childNodes\":[],\"id\":48}},{\"parentId\":48,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text-info\"},\"childNodes\":[],\"id\":49}},{\"parentId\":49,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"加载中\",\"id\":50}},{\"parentId\":27,\"nextId\":46,\"node\":{\"type\":2,\"tagName\":\"svg\",\"attributes\":{\"xmlns\":\"http://www.w3.org/2000/svg\",\"xmlns:xlink\":\"http://www.w3.org/1999/xlink\",\"id\":\"__ANTD_MOBILE_SVG_SPRITE_NODE__\",\"style\":\"display:none;overflow:hidden;width:0;height:0\"},\"childNodes\":[],\"isSVG\":true,\"id\":51}},{\"parentId\":51,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\\n  \",\"id\":52}},{\"parentId\":48,\"nextId\":49,\"node\":{\"type\":2,\"tagName\":\"svg\",\"attributes\":{\"class\":\"am-icon am-icon-loading am-icon-lg\"},\"childNodes\":[],\"isSVG\":true,\"id\":53}},{\"parentId\":53,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"use\",\"attributes\":{\"xlink:href\":\"#loading\"},\"childNodes\":[],\"isSVG\":true,\"id\":54}},{\"parentId\":27,\"nextId\":51,\"node\":{\"type\":3,\"textContent\":\"\\n  \",\"id\":55}},{\"parentId\":51,\"nextId\":52,\"node\":{\"type\":2,\"tagName\":\"defs\",\"attributes\":{},\"childNodes\":[],\"isSVG\":true,\"id\":56}},{\"parentId\":56,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\\n    \",\"id\":57}},{\"parentId\":51,\"nextId\":56,\"node\":{\"type\":3,\"textContent\":\"\\n    \",\"id\":58}},{\"parentId\":56,\"nextId\":57,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"success\",\"viewBox\":\"0 0 72 72\"},\"childNodes\":[],\"isSVG\":true,\"id\":59}},{\"parentId\":59,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill\":\"none\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":60}},{\"parentId\":60,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"stroke\":\"#FFF\",\"stroke-width\":\"2\",\"d\":\"M19 34.54l11.545 11.923L52.815 24\"},\"childNodes\":[],\"isSVG\":true,\"id\":61}},{\"parentId\":56,\"nextId\":59,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"fail\",\"viewBox\":\"0 0 72 72\"},\"childNodes\":[],\"isSVG\":true,\"id\":62}},{\"parentId\":62,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill\":\"none\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":63}},{\"parentId\":63,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M22 22l28.304 28.304m-28.304 0L50.304 22\",\"stroke\":\"#FFF\",\"stroke-width\":\"2\"},\"childNodes\":[],\"isSVG\":true,\"id\":64}},{\"parentId\":60,\"nextId\":61,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M36 72c19.882 0 36-16.118 36-36S55.882 0 36 0 0 16.118 0 36s16.118 36 36 36zm0-2c18.778 0 34-15.222 34-34S54.778 2 36 2 2 17.222 2 36s15.222 34 34 34z\",\"fill\":\"#FFF\"},\"childNodes\":[],\"isSVG\":true,\"id\":65}},{\"parentId\":56,\"nextId\":62,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"dislike\",\"viewBox\":\"0 0 72 72\"},\"childNodes\":[],\"isSVG\":true,\"id\":66}},{\"parentId\":66,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill\":\"none\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":67}},{\"parentId\":67,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M21 51s4.6-7 15-7 15 7 15 7\",\"stroke\":\"#FFF\",\"stroke-width\":\"2\"},\"childNodes\":[],\"isSVG\":true,\"id\":68}},{\"parentId\":63,\"nextId\":64,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M36 72c19.882 0 36-16.118 36-36S55.882 0 36 0 0 16.118 0 36s16.118 36 36 36zm0-2c18.778 0 34-15.222 34-34S54.778 2 36 2 2 17.222 2 36s15.222 34 34 34z\",\"fill\":\"#FFF\"},\"childNodes\":[],\"isSVG\":true,\"id\":69}},{\"parentId\":56,\"nextId\":66,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"minus\",\"viewBox\":\"0 0 30 2\"},\"childNodes\":[],\"isSVG\":true,\"id\":70}},{\"parentId\":70,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M0 0h30v2H0z\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":71}},{\"parentId\":67,\"nextId\":68,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"fill\":\"#FFF\",\"d\":\"M47 22h2v6h-2zm-24 0h2v6h-2z\"},\"childNodes\":[],\"isSVG\":true,\"id\":72}},{\"parentId\":56,\"nextId\":70,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"plus\",\"viewBox\":\"0 0 30 30\"},\"childNodes\":[],\"isSVG\":true,\"id\":73}},{\"parentId\":73,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M14 14H0v2h14v14h2V16h14v-2H16V0h-2v14z\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":74}},{\"parentId\":67,\"nextId\":72,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M36 72c19.882 0 36-16.118 36-36S55.882 0 36 0 0 16.118 0 36s16.118 36 36 36zm0-2c18.778 0 34-15.222 34-34S54.778 2 36 2 2 17.222 2 36s15.222 34 34 34z\",\"fill\":\"#FFF\"},\"childNodes\":[],\"isSVG\":true,\"id\":75}},{\"parentId\":56,\"nextId\":73,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"voice\",\"viewBox\":\"0 0 38 33\"},\"childNodes\":[],\"isSVG\":true,\"id\":76}},{\"parentId\":76,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":77}},{\"parentId\":77,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M30.14 3.057c-.205-.122-.41-.22-.658-.22-.608 0-1.1.485-1.1 1.084 0 .434.26.78.627.978 4.042 2.323 6.76 6.636 6.76 11.578 0 4.938-2.715 9.248-6.754 11.572-.354.19-.66.55-.66.993 0 .6.494 1.085 1.102 1.085.243 0 .438-.092.65-.213 4.692-2.695 7.848-7.7 7.848-13.435 0-5.723-3.142-10.718-7.817-13.418\",\"mask\":\"url(#mask-6)\"},\"childNodes\":[],\"isSVG\":true,\"id\":78}},{\"parentId\":56,\"nextId\":76,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"question-circle\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":79}},{\"parentId\":79,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":80}},{\"parentId\":80,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M22.827 31.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m4-15.48c0 .957-.203 1.822-.61 2.593-.427.792-1.117 1.612-2.073 2.457-.867.734-1.453 1.435-1.754 2.096-.302.7-.453 1.693-.453 2.98a.828.828 0 0 1-.823.854.828.828 0 0 1-.584-.22.877.877 0 0 1-.24-.635c0-1.305.168-2.38.506-3.227.336-.883.93-1.682 1.78-2.4 1.01-.883 1.71-1.692 2.1-2.428.336-.645.503-1.38.503-2.21-.02-.935-.3-1.7-.85-2.288-.655-.717-1.62-1.075-2.897-1.075-1.506 0-2.596.535-3.27 1.6-.46.754-.688 1.645-.688 2.677a.92.92 0 0 1-.266.66.747.747 0 0 1-.56.25.73.73 0 0 1-.584-.194c-.16-.164-.24-.393-.24-.69 0-1.82.585-3.272 1.755-4.357C18.645 11.486 19.928 11 21.434 11h.293c1.452 0 2.638.414 3.56 1.24 1.028.903 1.54 2.163 1.54 3.78z\"},\"childNodes\":[],\"isSVG\":true,\"id\":81}},{\"parentId\":77,\"nextId\":78,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M31.42 16.475c0-3.363-1.854-6.297-4.606-7.876-.125-.067-.42-.193-.625-.193-.613 0-1.11.488-1.11 1.09 0 .404.22.764.55.952 2.13 1.19 3.566 3.44 3.566 6.024 0 2.627-1.486 4.913-3.677 6.087-.32.19-.53.54-.53.935 0 .602.495 1.09 1.106 1.09.26.002.568-.15.568-.15 2.835-1.556 4.754-4.538 4.754-7.96\",\"mask\":\"url(#mask-4)\"},\"childNodes\":[],\"isSVG\":true,\"id\":82}},{\"parentId\":56,\"nextId\":79,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"info-circle\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":83}},{\"parentId\":83,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M22.102 4.16c-9.918 0-17.958 7.147-17.958 15.962 0 4.935 2.522 9.345 6.48 12.273v5.667l.04.012a2.627 2.627 0 1 0 4.5 1.455h.002l5.026-3.54c.628.06 1.265.094 1.91.094 9.92 0 17.96-7.146 17.96-15.96C40.06 11.306 32.02 4.16 22.1 4.16zm-.04 29.902c-.902 0-1.78-.08-2.642-.207l-5.882 4.234c-.024.024-.055.04-.083.06l-.008.005a.51.51 0 0 1-.284.095.525.525 0 0 1-.525-.525l.005-6.375c-3.91-2.516-6.456-6.544-6.456-11.1 0-7.628 7.107-13.812 15.875-13.812s15.875 6.184 15.875 13.812-7.107 13.812-15.875 13.812z\"},\"childNodes\":[],\"isSVG\":true,\"id\":84}},{\"parentId\":80,\"nextId\":81,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M21.186 3c-10.853 0-19.36 8.506-19.36 19.358C1.827 32.494 10.334 41 21.187 41c10.133 0 18.64-8.506 18.64-18.642C39.827 11.506 31.32 3 21.187 3m15.64 19c0 8.823-7.178 16-16 16s-16-7.177-16-16 7.178-16 16-16 16 7.177 16 16z\"},\"childNodes\":[],\"isSVG\":true,\"id\":85}},{\"parentId\":77,\"nextId\":82,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M17.838 28.8c-.564-.468-1.192-.983-1.836-1.496-4.244-3.385-5.294-3.67-6.006-3.67-.014 0-.027.005-.04.005-.015 0-.028-.006-.042-.006H3.562c-.734 0-.903-.203-.903-.928v-12.62c0-.49.057-.8.66-.8H9.1c.694 0 1.76-.28 6.4-3.63.83-.596 1.638-1.196 2.337-1.722V28.8zM19.682.19c-.463-.22-1.014-.158-1.417.157-.02.016-1.983 1.552-4.152 3.125C10.34 6.21 9.243 6.664 9.02 6.737H3.676c-.027 0-.053.003-.08.004H1.183c-.608 0-1.1.487-1.1 1.086V25.14c0 .598.492 1.084 1.1 1.084h8.71c.22.08 1.257.55 4.605 3.24 1.947 1.562 3.694 3.088 3.712 3.103.25.22.568.333.89.333.186 0 .373-.038.55-.116.48-.213.79-.684.79-1.204V1.38c0-.506-.294-.968-.758-1.19z\",\"mask\":\"url(#mask-2)\"},\"childNodes\":[],\"isSVG\":true,\"id\":86}},{\"parentId\":56,\"nextId\":83,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"exclamation-circle\",\"viewBox\":\"0 0 64 64\"},\"childNodes\":[],\"isSVG\":true,\"id\":87}},{\"parentId\":87,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M59.58 40.89L41.193 9.11C39.135 5.382 35.723 3 31.387 3c-3.11 0-6.52 2.382-8.58 6.11L4.42 40.89c-2.788 4.635-3.126 8.81-1.225 12.22C5.015 56.208 7.572 58 13 58h36.773c5.428 0 9.21-1.792 11.03-4.89 1.9-3.41 1.565-7.583-1.224-12.22zm-2.452 11c-.635 1.694-3.802 2.443-7.354 2.443H13c-3.59 0-5.493-.75-6.13-2.444-1.71-2.41-1.374-5.263 0-8.557l18.387-31.777c2.116-3.168 4.394-4.89 6.13-4.89 2.96 0 5.238 1.722 7.354 4.89l18.387 31.777c1.374 3.294 1.713 6.146 0 8.556zm-25.74-33c-.405 0-1.227.835-1.227 2.443v15.89c0 1.608.823 2.444 1.227 2.444 1.628 0 2.452-.836 2.452-2.445v-15.89c0-1.607-.825-2.443-2.453-2.443zm0 23.22c-.405 0-1.227.79-1.227 1.223v2.445c0 .434.823 1.222 1.227 1.222 1.628 0 2.452-.788 2.452-1.222v-2.445c0-.434-.825-1.222-2.453-1.222z\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":88}},{\"parentId\":83,\"nextId\":84,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"29.767\",\"cy\":\"19.63\",\"r\":\"1.938\"},\"childNodes\":[],\"isSVG\":true,\"id\":89}},{\"parentId\":56,\"nextId\":87,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"ellipsis-circle\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":90}},{\"parentId\":90,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":91}},{\"parentId\":91,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"31.546\",\"cy\":\"22.701\",\"r\":\"2.445\"},\"childNodes\":[],\"isSVG\":true,\"id\":92}},{\"parentId\":83,\"nextId\":89,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"21.767\",\"cy\":\"19.63\",\"r\":\"1.938\"},\"childNodes\":[],\"isSVG\":true,\"id\":93}},{\"parentId\":56,\"nextId\":90,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"ellipsis\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":94}},{\"parentId\":94,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"37.863\",\"cy\":\"22\",\"r\":\"4.045\"},\"childNodes\":[],\"isSVG\":true,\"id\":95}},{\"parentId\":91,\"nextId\":92,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"12.23\",\"cy\":\"22.701\",\"r\":\"2.445\"},\"childNodes\":[],\"isSVG\":true,\"id\":96}},{\"parentId\":83,\"nextId\":93,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"13.828\",\"cy\":\"19.63\",\"r\":\"1.938\"},\"childNodes\":[],\"isSVG\":true,\"id\":97}},{\"parentId\":56,\"nextId\":94,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"search\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":98}},{\"parentId\":98,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M32.98 29.255l8.915 8.293L39.603 40l-8.86-8.242a15.952 15.952 0 0 1-10.753 4.147C11.16 35.905 4 28.763 4 19.952 4 11.142 11.16 4 19.99 4s15.99 7.142 15.99 15.952c0 3.472-1.112 6.685-3 9.303zm.05-9.21c0 7.123-5.7 12.918-12.88 12.918-7.176 0-13.015-5.795-13.015-12.918 0-7.12 5.84-12.917 13.017-12.917 7.178 0 12.88 5.797 12.88 12.917z\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":99}},{\"parentId\":94,\"nextId\":95,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"5.913\",\"cy\":\"22\",\"r\":\"4.045\"},\"childNodes\":[],\"isSVG\":true,\"id\":100}},{\"parentId\":91,\"nextId\":96,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"21.888\",\"cy\":\"22.701\",\"r\":\"2.445\"},\"childNodes\":[],\"isSVG\":true,\"id\":101}},{\"parentId\":56,\"nextId\":98,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"loading\",\"viewBox\":\"0 -2 59.75 60.25\"},\"childNodes\":[],\"isSVG\":true,\"id\":102}},{\"parentId\":102,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"fill\":\"none\",\"stroke\":\"#108ee9\",\"stroke-width\":\"3\",\"stroke-linecap\":\"round\",\"stroke-miterlimit\":\"10\",\"d\":\"M56.587 29.766c.37-7.438-1.658-14.7-6.393-19.552\"},\"childNodes\":[],\"isSVG\":true,\"id\":103}},{\"parentId\":94,\"nextId\":100,\"node\":{\"type\":2,\"tagName\":\"circle\",\"attributes\":{\"cx\":\"21.888\",\"cy\":\"22\",\"r\":\"4.045\"},\"childNodes\":[],\"isSVG\":true,\"id\":104}},{\"parentId\":91,\"nextId\":101,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M22.13.11C10.05.11.255 9.902.255 21.983S10.05 43.86 22.13 43.86s21.875-9.795 21.875-21.876S34.21.11 22.13.11zm0 40.7c-10.396 0-18.825-8.43-18.825-18.826S11.735 3.16 22.13 3.16c10.396 0 18.825 8.428 18.825 18.824S32.525 40.81 22.13 40.81z\"},\"childNodes\":[],\"isSVG\":true,\"id\":105}},{\"parentId\":56,\"nextId\":102,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"up\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":106}},{\"parentId\":106,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M23.417 14.23L11.184 26.46l2.12 2.12 10.12-10.117 10.118 10.118 2.12-2.12L23.43 14.228l-.006.005z\"},\"childNodes\":[],\"isSVG\":true,\"id\":107}},{\"parentId\":102,\"nextId\":103,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"fill\":\"#ccc\",\"d\":\"M29.69-.527C14.044-.527 1.36 12.158 1.36 27.806S14.043 56.14 29.69 56.14c15.65 0 28.334-12.686 28.334-28.334S45.34-.527 29.69-.527zm.185 53.75c-14.037 0-25.417-11.38-25.417-25.417S15.838 2.39 29.875 2.39s25.417 11.38 25.417 25.417-11.38 25.416-25.417 25.416z\"},\"childNodes\":[],\"isSVG\":true,\"id\":108}},{\"parentId\":56,\"nextId\":106,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"down\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":109}},{\"parentId\":109,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M22.355 28.237l-11.483-10.9c-.607-.576-1.714-.396-2.48.41l.674-.71c-.763.802-.73 2.07-.282 2.496l11.37 10.793-.04.04 2.088 2.195L23.3 31.52l12.308-11.682c.447-.425.48-1.694-.282-2.496l.674.71c-.766-.806-1.873-.986-2.48-.41L22.355 28.237z\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":110}},{\"parentId\":106,\"nextId\":107,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"clip-path\":\"url(#b)\"},\"childNodes\":[],\"isSVG\":true,\"id\":111}},{\"parentId\":111,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"defs\",\"attributes\":{},\"childNodes\":[],\"isSVG\":true,\"id\":112}},{\"parentId\":112,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"id\":\"c\",\"d\":\"M-903-949H947V996H-903z\"},\"childNodes\":[],\"isSVG\":true,\"id\":113}},{\"parentId\":56,\"nextId\":109,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"right\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":114}},{\"parentId\":114,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M30.6 21.4L18.37 9.165l-2.12 2.12 10.117 10.12-10.118 10.118 2.12 2.12 12.234-12.232-.005-.006z\"},\"childNodes\":[],\"isSVG\":true,\"id\":115}},{\"parentId\":106,\"nextId\":111,\"node\":{\"type\":2,\"tagName\":\"clippath\",\"attributes\":{\"id\":\"b\"},\"childNodes\":[],\"isSVG\":true,\"id\":116}},{\"parentId\":116,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"use\",\"attributes\":{\"xlink:href\":\"#a\"},\"childNodes\":[],\"isSVG\":true,\"id\":117}},{\"parentId\":56,\"nextId\":114,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"left\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":118}},{\"parentId\":118,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M16.247 21.4L28.48 9.165l2.12 2.12-10.117 10.12L30.6 31.524l-2.12 2.12-12.233-12.232.007-.006z\"},\"childNodes\":[],\"isSVG\":true,\"id\":119}},{\"parentId\":114,\"nextId\":115,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"clip-path\":\"url(#b)\"},\"childNodes\":[],\"isSVG\":true,\"id\":120}},{\"parentId\":120,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"defs\",\"attributes\":{},\"childNodes\":[],\"isSVG\":true,\"id\":121}},{\"parentId\":121,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"id\":\"c\",\"d\":\"M-903-949H947V996H-903z\"},\"childNodes\":[],\"isSVG\":true,\"id\":122}},{\"parentId\":106,\"nextId\":116,\"node\":{\"type\":2,\"tagName\":\"defs\",\"attributes\":{},\"childNodes\":[],\"isSVG\":true,\"id\":123}},{\"parentId\":123,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"id\":\"a\",\"d\":\"M-129-845h24v24h-24z\"},\"childNodes\":[],\"isSVG\":true,\"id\":124}},{\"parentId\":56,\"nextId\":118,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"cross-circle-o\",\"viewBox\":\"0 0 48 48\"},\"childNodes\":[],\"isSVG\":true,\"id\":125}},{\"parentId\":125,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm.353-25.77l-7.593-7.593c-.797-.8-1.538-.822-2.263-.207-.724.614-.56 1.617-.124 2.067l7.852 7.847-7.72 7.723c-.727.728-.56 1.646-.066 2.177.493.532 1.553.683 2.31-.174l7.588-7.584 7.644 7.623c.796.798 1.608.724 2.21.145.605-.58.72-1.442-.074-2.24l-7.657-7.67 7.545-7.52c.81-.697.9-1.76.297-2.34-.92-.885-1.85-.338-2.264.078l-7.685 7.667z\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":126}},{\"parentId\":118,\"nextId\":119,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"clip-path\":\"url(#b)\"},\"childNodes\":[],\"isSVG\":true,\"id\":127}},{\"parentId\":127,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"defs\",\"attributes\":{},\"childNodes\":[],\"isSVG\":true,\"id\":128}},{\"parentId\":128,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"id\":\"c\",\"d\":\"M-903-949H947V996H-903z\"},\"childNodes\":[],\"isSVG\":true,\"id\":129}},{\"parentId\":114,\"nextId\":120,\"node\":{\"type\":2,\"tagName\":\"clippath\",\"attributes\":{\"id\":\"b\"},\"childNodes\":[],\"isSVG\":true,\"id\":130}},{\"parentId\":130,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"use\",\"attributes\":{\"xlink:href\":\"#a\",\"overflow\":\"visible\"},\"childNodes\":[],\"isSVG\":true,\"id\":131}},{\"parentId\":106,\"nextId\":123,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"fill\":\"none\",\"d\":\"M-1-1h46v46H-1z\"},\"childNodes\":[],\"isSVG\":true,\"id\":132}},{\"parentId\":56,\"nextId\":125,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"cross-circle\",\"viewBox\":\"0 0 48 48\"},\"childNodes\":[],\"isSVG\":true,\"id\":133}},{\"parentId\":133,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":134}},{\"parentId\":134,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M24.34 22.22l-7.775-7.775a1.5 1.5 0 1 0-2.12 2.12l7.773 7.775-7.774 7.775a1.5 1.5 0 1 0 2.12 2.12l7.775-7.773 7.774 7.774a1.5 1.5 0 1 0 2.12-2.12L26.46 24.34l7.774-7.774a1.5 1.5 0 1 0-2.12-2.12l-7.776 7.773z\"},\"childNodes\":[],\"isSVG\":true,\"id\":135}},{\"parentId\":118,\"nextId\":127,\"node\":{\"type\":2,\"tagName\":\"clippath\",\"attributes\":{\"id\":\"b\"},\"childNodes\":[],\"isSVG\":true,\"id\":136}},{\"parentId\":136,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"use\",\"attributes\":{\"xlink:href\":\"#a\",\"overflow\":\"visible\"},\"childNodes\":[],\"isSVG\":true,\"id\":137}},{\"parentId\":114,\"nextId\":130,\"node\":{\"type\":2,\"tagName\":\"defs\",\"attributes\":{},\"childNodes\":[],\"isSVG\":true,\"id\":138}},{\"parentId\":138,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"id\":\"a\",\"d\":\"M-129-845h24v24h-24z\"},\"childNodes\":[],\"isSVG\":true,\"id\":139}},{\"parentId\":56,\"nextId\":133,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"cross\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":140}},{\"parentId\":140,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"fill-rule\":\"evenodd\",\"d\":\"M24.008 21.852l8.97-8.968L31.092 11l-8.97 8.968L13.157 11l-1.884 1.884 8.968 8.968-9.24 9.24 1.884 1.885 9.24-9.24 9.24 9.24 1.885-1.884-9.24-9.24z\"},\"childNodes\":[],\"isSVG\":true,\"id\":141}},{\"parentId\":134,\"nextId\":135,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm0-3c11.598 0 21-9.402 21-21S35.598 3 24 3 3 12.402 3 24s9.402 21 21 21z\"},\"childNodes\":[],\"isSVG\":true,\"id\":142}},{\"parentId\":118,\"nextId\":136,\"node\":{\"type\":2,\"tagName\":\"defs\",\"attributes\":{},\"childNodes\":[],\"isSVG\":true,\"id\":143}},{\"parentId\":143,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"id\":\"a\",\"d\":\"M-129-845h24v24h-24z\"},\"childNodes\":[],\"isSVG\":true,\"id\":144}},{\"parentId\":56,\"nextId\":140,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"check-circle-o\",\"viewBox\":\"0 0 48 48\"},\"childNodes\":[],\"isSVG\":true,\"id\":145}},{\"parentId\":145,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"g\",\"attributes\":{\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":146}},{\"parentId\":146,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M12.2 23.2L10 25.3l10 9.9L37.2 15 35 13 19.8 30.8z\"},\"childNodes\":[],\"isSVG\":true,\"id\":147}},{\"parentId\":56,\"nextId\":145,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"check-circle\",\"viewBox\":\"0 0 48 48\"},\"childNodes\":[],\"isSVG\":true,\"id\":148}},{\"parentId\":148,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zM13.1 23.2l-2.2 2.1 10 9.9L38.1 15l-2.2-2-15.2 17.8-7.6-7.6z\",\"fill-rule\":\"evenodd\"},\"childNodes\":[],\"isSVG\":true,\"id\":149}},{\"parentId\":146,\"nextId\":147,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"d\":\"M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm0-3c11.598 0 21-9.402 21-21S35.598 3 24 3 3 12.402 3 24s9.402 21 21 21z\"},\"childNodes\":[],\"isSVG\":true,\"id\":150}},{\"parentId\":56,\"nextId\":148,\"node\":{\"type\":2,\"tagName\":\"symbol\",\"attributes\":{\"id\":\"check\",\"viewBox\":\"0 0 44 44\"},\"childNodes\":[],\"isSVG\":true,\"id\":151}},{\"parentId\":151,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"path\",\"attributes\":{\"fill-rule\":\"evenodd\",\"d\":\"M34.538 8L38 11.518 17.808 32 8 22.033l3.462-3.518 6.346 6.45z\"},\"childNodes\":[],\"isSVG\":true,\"id\":152}},{\"parentId\":56,\"nextId\":151,\"node\":{\"type\":3,\"textContent\":\"\\n      \",\"id\":153}}]},\"timestamp\":1693403001424}]",
+			"sort": 181,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.732+0000"
+		},
+		{
+			"id": "64ef47793fc0fa5a7db3a3c3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":43,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter am-fade-enter-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403001449}]",
+			"sort": 182,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.746+0000"
+		},
+		{
+			"id": "64ef47793fc0fa5a7db3a3c4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":27,\"id\":40}],\"adds\":[]},\"timestamp\":1693403001530}]",
+			"sort": 183,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.804+0000"
+		},
+		{
+			"id": "64ef4779dc22313b820345f5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[{\"id\":198,\"value\":\"--\"}],\"attributes\":[{\"id\":203,\"attributes\":{\"value\":\"2024-09-01\"}}],\"removes\":[{\"parentId\":36,\"id\":37}],\"adds\":[{\"parentId\":36,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2e1oH6L5k4_DWDzktsZXNy\"},\"childNodes\":[],\"id\":154}},{\"parentId\":154,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1Ccz_J8sUOtkJh1iFjJzBF\",\"data-event-param\":\"20000|200004|100775|{\\\"skuid\\\":\\\"100775\\\"}\"},\"childNodes\":[],\"id\":155}},{\"parentId\":155,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://cmspic-10004025.image.myqcloud.com/dc0d8880-9bae-11e9-b5bd-89e372c5eee6_size_42x43\"},\"childNodes\":[],\"id\":156}},{\"parentId\":154,\"nextId\":155,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3EoELXVXmwUkM4ePpVFDV3 null\"},\"childNodes\":[],\"id\":157}},{\"parentId\":157,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3ngwa5MSeyo32JHL3ZKptr\"},\"childNodes\":[],\"id\":158}},{\"parentId\":158,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3P9JcTtIRxwXyQ6ECdWWDF\"},\"childNodes\":[],\"id\":159}},{\"parentId\":159,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"a\",\"attributes\":{\"role\":\"button\",\"class\":\"am-button hBA5bhF4R-YXeIaAN4VcH\",\"aria-disabled\":\"false\"},\"childNodes\":[],\"id\":160}},{\"parentId\":160,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":161}},{\"parentId\":161,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"立即投保\",\"id\":162}},{\"parentId\":154,\"nextId\":157,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2YJB_asDL21wlczP1Ju2zY\"},\"childNodes\":[],\"id\":163}},{\"parentId\":163,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"info\"},\"childNodes\":[],\"id\":164}},{\"parentId\":164,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_6e8SKfNg3c3Ax_m38xk6I\"},\"childNodes\":[],\"id\":165}},{\"parentId\":165,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_5l5quVRdj8_z0o0JeWHpK\"},\"childNodes\":[],\"id\":166}},{\"parentId\":166,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"y9UzNMPeFlhb1Z5CCKRPI\"},\"childNodes\":[],\"id\":167}},{\"parentId\":167,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1QWbQznjwvembu0TZaVlt2\"},\"childNodes\":[],\"id\":168}},{\"parentId\":168,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":169}},{\"parentId\":169,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"》\",\"id\":170}},{\"parentId\":157,\"nextId\":158,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1ZF3nZHuYUiU8nRW0jFlnH\"},\"childNodes\":[],\"id\":171}},{\"parentId\":171,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":172}},{\"parentId\":172,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"《平台服务协议》\",\"id\":173}},{\"parentId\":158,\"nextId\":159,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"QBVKV6qKlRbd3NLSB7vsE\"},\"childNodes\":[],\"id\":174}},{\"parentId\":174,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":175}},{\"parentId\":175,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1Au_9k_nwolW3Y8vKWXwt2\"},\"childNodes\":[],\"id\":176}},{\"parentId\":176,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3COxZjEBpfyUIkHOWH658n\"},\"childNodes\":[],\"id\":177}},{\"parentId\":177,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":178}},{\"parentId\":163,\"nextId\":164,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_6VqDq1DEC2d2x6LfOGBrj\"},\"childNodes\":[],\"id\":179}},{\"parentId\":165,\"nextId\":166,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":180}},{\"parentId\":166,\"nextId\":167,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2GqArYY1KVTwU5AKYaiVDT\"},\"childNodes\":[],\"id\":181}},{\"parentId\":181,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":182}},{\"parentId\":167,\"nextId\":168,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_3FvpRyUkxkDyjhgncKcoQf\"},\"childNodes\":[],\"id\":183}},{\"parentId\":183,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"查看\",\"id\":184}},{\"parentId\":168,\"nextId\":169,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"data-event-param\":\"20000|200003|100775|{\\\"skuid\\\":\\\"100775\\\"}\"},\"childNodes\":[],\"id\":185}},{\"parentId\":185,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"《健康告知》\",\"id\":186}},{\"parentId\":169,\"nextId\":170,\"node\":{\"type\":3,\"textContent\":\"星贝学龄安康重疾&恶性肿瘤疾病种类\",\"id\":187}},{\"parentId\":171,\"nextId\":172,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":188}},{\"parentId\":188,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"《保险条款》\",\"id\":189}},{\"parentId\":176,\"nextId\":177,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1p1VgE2BxGSMoir5mv3KeX\"},\"childNodes\":[],\"id\":190}},{\"parentId\":190,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":191}},{\"parentId\":165,\"nextId\":180,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":192}},{\"parentId\":181,\"nextId\":182,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":193}},{\"parentId\":169,\"nextId\":187,\"node\":{\"type\":3,\"textContent\":\"《\",\"id\":194}},{\"parentId\":171,\"nextId\":188,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":195}},{\"parentId\":195,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"《投保须知》\",\"id\":196}},{\"parentId\":190,\"nextId\":191,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3cRSP7z8H3txu-Don10gVu\"},\"childNodes\":[],\"id\":197}},{\"parentId\":197,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"--\",\"id\":198}},{\"parentId\":165,\"nextId\":192,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3MWbO9C7qaGV1rOLrxOXCL\"},\"childNodes\":[],\"id\":199}},{\"parentId\":199,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":200}},{\"parentId\":200,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2s1e-6SXRmmgy4oUvoXFwN\"},\"childNodes\":[],\"id\":201}},{\"parentId\":201,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"L9XjjCvdSjrB1gJjofyLQ\"},\"childNodes\":[],\"id\":202}},{\"parentId\":202,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"input\",\"attributes\":{\"type\":\"text\",\"disabled\":\"\",\"class\":\"_1ReDIx03t91Amqty9VgTeJ\",\"maxlength\":\"30\",\"pattern\":\"\",\"value\":\"2024-09-01\"},\"childNodes\":[],\"id\":203}},{\"parentId\":181,\"nextId\":193,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_207m1w8Rz6xKfhGMBIu8De\"},\"childNodes\":[],\"id\":204}},{\"parentId\":204,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"其他\",\"id\":205}},{\"parentId\":171,\"nextId\":195,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":206}},{\"parentId\":206,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"已阅读并同意\",\"id\":207}},{\"parentId\":190,\"nextId\":197,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3E7NJmbt9E_zWWGiVChMHz\"},\"childNodes\":[],\"id\":208}},{\"parentId\":208,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"¥\",\"id\":209}},{\"parentId\":165,\"nextId\":199,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2GWbqep5Y7Y0OfAkxstSls\"},\"childNodes\":[],\"id\":210}},{\"parentId\":210,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":211}},{\"parentId\":211,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2s1e-6SXRmmgy4oUvoXFwN\"},\"childNodes\":[],\"id\":212}},{\"parentId\":212,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"L9XjjCvdSjrB1gJjofyLQ\"},\"childNodes\":[],\"id\":213}},{\"parentId\":213,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"input\",\"attributes\":{\"type\":\"text\",\"placeholder\":\"请输入被保人姓名\",\"class\":\"_1ReDIx03t91Amqty9VgTeJ\",\"maxlength\":\"20\",\"pattern\":\"\",\"aria-label\":\"请输入被保人姓名\",\"value\":\"\"},\"childNodes\":[],\"id\":214}},{\"parentId\":199,\"nextId\":200,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2GqArYY1KVTwU5AKYaiVDT\"},\"childNodes\":[],\"id\":215}},{\"parentId\":215,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":216}},{\"parentId\":200,\"nextId\":201,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"dwofZrQpDkHI2CGMAwIs2\"},\"childNodes\":[],\"id\":217}},{\"parentId\":217,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":218}},{\"parentId\":218,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_1P8lJtQIE6qBCI_nyaq9R8\",\"extra\":\"请选择\"},\"childNodes\":[],\"id\":219}},{\"parentId\":219,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAGCAMAAADnng5bAAAAD1BMVEVnZ2dmZmaAgIBMaXFmZmb2OX1UAAAABHRSTlOI5gYAYEvz2gAAAC1JREFUeNp9jjkKAEAQwuLs/v/Nc7SCNgYFkUKi3soQ/ohLDNGaLjGMZZyNhxqPagGlLrSSiAAAAABJRU5ErkJggg==\"},\"childNodes\":[],\"id\":220}},{\"parentId\":201,\"nextId\":202,\"node\":{\"type\":2,\"tagName\":\"label\",\"attributes\":{\"class\":\"_2gxDhIXSferrgZEVARXUkV\"},\"childNodes\":[],\"id\":221}},{\"parentId\":221,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"到期日期\",\"id\":222}},{\"parentId\":181,\"nextId\":204,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"AgrD1Do6hs3HrOqmTUpOb\"},\"childNodes\":[],\"id\":223}},{\"parentId\":223,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"4\",\"id\":224}},{\"parentId\":171,\"nextId\":206,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"class\":\"_3RGVGXu7r-T1cLHreJ9pVq\",\"role\":\"checkbox\",\"aria-checked\":\"false\",\"src\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAclBMVEVMaXHR0dHNzc3Pz8/MzMz////MzMzMzMzNzc3Nzc3R0dHPz8/Nzc3MzMzQ0NDb29vNzc3Nzc3MzMzPz8/MzMzNzc3S0tLMzMzMzMzMzMzV1dXNzc3Ozs7Nzc3MzMzNzc3MzMzNzc3Y2NjMzMzNzc3MzMxf3SsUAAAAJXRSTlMAHDgQfQO65/iQCzvFaSYOUfm+QGq4Edm/+wzzXdahotJcDfLRv17Y0QAAAPdJREFUeNqN1FmOgzAQBNCCAAbCvpg1EJKp+19xpBAhIsD2+27JdrursSeXqW2GoWmnReJcVnTcdEWGo3tE5nVVJn2flFWdk9Edv9yAFHGKTRoLMnCxc/PoOyF+hI5P77areVDYOLAFH1uV6/HPwgnrSc/FKqCwcMoSDL7vom/jgu1zfWNEB5ccRp8eUoS4FApmAArGUIhZALLLUyikeScxsoZSzREzKyhVnNGyhFLJFg0TKCVsMLCHUs8Bb76g9OLb6Dizi0/6FkwmzVyMvsXkgw1HRT90puOrD8IWqac2Uvpw6mOuXxj61WO6xI7kOK/rcB4ldv4BRBUbvBaqNEkAAAAASUVORK5CYII=\"},\"childNodes\":[],\"id\":225}},{\"parentId\":190,\"nextId\":208,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":226}},{\"parentId\":165,\"nextId\":210,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":227}},{\"parentId\":227,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2s1e-6SXRmmgy4oUvoXFwN\"},\"childNodes\":[],\"id\":228}},{\"parentId\":228,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"L9XjjCvdSjrB1gJjofyLQ\"},\"childNodes\":[],\"id\":229}},{\"parentId\":229,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"input\",\"attributes\":{\"type\":\"text\",\"placeholder\":\"请输入投保人姓名\",\"class\":\"_1ReDIx03t91Amqty9VgTeJ\",\"maxlength\":\"20\",\"pattern\":\"\",\"aria-label\":\"请输入投保人姓名\",\"value\":\"\"},\"childNodes\":[],\"id\":230}},{\"parentId\":210,\"nextId\":211,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"QxxhfCX0WWw447BcrEMWg\"},\"childNodes\":[],\"id\":231}},{\"parentId\":231,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3PFSp7uMxe607QkSyBtfO9 gND4ScAnCswvGAYEszAAt\"},\"childNodes\":[],\"id\":232}},{\"parentId\":232,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_20EAJBqoRPuSn67HnOMpED\"},\"childNodes\":[],\"id\":233}},{\"parentId\":233,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3ypsKpQ994nTL9D-yG0OJJ\"},\"childNodes\":[],\"id\":234}},{\"parentId\":212,\"nextId\":213,\"node\":{\"type\":2,\"tagName\":\"label\",\"attributes\":{\"class\":\"_2gxDhIXSferrgZEVARXUkV\"},\"childNodes\":[],\"id\":235}},{\"parentId\":235,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"姓名\",\"id\":236}},{\"parentId\":215,\"nextId\":216,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":237}},{\"parentId\":217,\"nextId\":218,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_25XqufBxF3ntG8QSfoSsZr\"},\"childNodes\":[],\"id\":238}},{\"parentId\":238,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"生效日期\",\"id\":239}},{\"parentId\":219,\"nextId\":220,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":240}},{\"parentId\":240,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"2023-09-02\",\"id\":241}},{\"parentId\":227,\"nextId\":228,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2GqArYY1KVTwU5AKYaiVDT\"},\"childNodes\":[],\"id\":242}},{\"parentId\":242,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3s400o44YpZm0ADXU17TRo\"},\"childNodes\":[],\"id\":243}},{\"parentId\":243,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"实名后不可修改，请确保为本人投保\",\"id\":244}},{\"parentId\":228,\"nextId\":229,\"node\":{\"type\":2,\"tagName\":\"label\",\"attributes\":{\"class\":\"_2gxDhIXSferrgZEVARXUkV\"},\"childNodes\":[],\"id\":245}},{\"parentId\":245,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"姓名\",\"id\":246}},{\"parentId\":210,\"nextId\":231,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2GqArYY1KVTwU5AKYaiVDT\"},\"childNodes\":[],\"id\":247}},{\"parentId\":247,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":248}},{\"parentId\":233,\"nextId\":234,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"Ec5tsNp4atRGwnH5vPOIN\",\"role\":\"radio\",\"aria-checked\":\"false\"},\"childNodes\":[],\"id\":249}},{\"parentId\":249,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"子女\",\"id\":250}},{\"parentId\":215,\"nextId\":237,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_207m1w8Rz6xKfhGMBIu8De\"},\"childNodes\":[],\"id\":251}},{\"parentId\":251,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"保障有效期\",\"id\":252}},{\"parentId\":242,\"nextId\":243,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":253}},{\"parentId\":247,\"nextId\":248,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"Z9ioXstH0dv--132PmrW9\"},\"childNodes\":[],\"id\":254}},{\"parentId\":254,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"为谁投保\",\"id\":255}},{\"parentId\":215,\"nextId\":251,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"AgrD1Do6hs3HrOqmTUpOb\"},\"childNodes\":[],\"id\":256}},{\"parentId\":256,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"3\",\"id\":257}},{\"parentId\":242,\"nextId\":253,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_207m1w8Rz6xKfhGMBIu8De\"},\"childNodes\":[],\"id\":258}},{\"parentId\":258,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"投保人信息\",\"id\":259}},{\"parentId\":247,\"nextId\":254,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_207m1w8Rz6xKfhGMBIu8De\"},\"childNodes\":[],\"id\":260}},{\"parentId\":260,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"被保人信息\",\"id\":261}},{\"parentId\":242,\"nextId\":258,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"AgrD1Do6hs3HrOqmTUpOb\"},\"childNodes\":[],\"id\":262}},{\"parentId\":262,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"1\",\"id\":263}},{\"parentId\":247,\"nextId\":260,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"AgrD1Do6hs3HrOqmTUpOb\"},\"childNodes\":[],\"id\":264}},{\"parentId\":264,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"2\",\"id\":265}}]},\"timestamp\":1693403001675}]",
+			"sort": 184,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.998+0000"
+		},
+		{
+			"id": "64ef47793fc0fa5a7db3a3c5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":5,\"text\":\"2024-09-01\",\"isChecked\":false,\"id\":203},\"timestamp\":1693403001693}]",
+			"sort": 185,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:21.967+0000"
+		},
+		{
+			"id": "64ef477adc22313b820345f6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":249,\"attributes\":{\"aria-checked\":\"true\"}},{\"id\":233,\"attributes\":{\"class\":\"_20EAJBqoRPuSn67HnOMpED _3dG_c2TnFituhgEqiEvr1B\"}}],\"removes\":[],\"adds\":[{\"parentId\":227,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2s1e-6SXRmmgy4oUvoXFwN\"},\"childNodes\":[],\"id\":266}},{\"parentId\":266,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"L9XjjCvdSjrB1gJjofyLQ\"},\"childNodes\":[],\"id\":267}},{\"parentId\":267,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"input\",\"attributes\":{\"type\":\"text\",\"placeholder\":\"请输入投保人邮箱\",\"class\":\"_1ReDIx03t91Amqty9VgTeJ\",\"maxlength\":\"30\",\"pattern\":\"\",\"aria-label\":\"请输入投保人邮箱\",\"value\":\"\"},\"childNodes\":[],\"id\":268}},{\"parentId\":211,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2s1e-6SXRmmgy4oUvoXFwN\"},\"childNodes\":[],\"id\":269}},{\"parentId\":269,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"L9XjjCvdSjrB1gJjofyLQ\"},\"childNodes\":[],\"id\":270}},{\"parentId\":270,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"input\",\"attributes\":{\"type\":\"text\",\"placeholder\":\"请输入被保人证件号\",\"class\":\"_1ReDIx03t91Amqty9VgTeJ\",\"maxlength\":\"18\",\"pattern\":\"\",\"aria-label\":\"请输入被保人证件号\",\"value\":\"\"},\"childNodes\":[],\"id\":271}},{\"parentId\":227,\"nextId\":266,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2s1e-6SXRmmgy4oUvoXFwN\"},\"childNodes\":[],\"id\":272}},{\"parentId\":272,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"L9XjjCvdSjrB1gJjofyLQ\"},\"childNodes\":[],\"id\":273}},{\"parentId\":273,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"input\",\"attributes\":{\"type\":\"text\",\"placeholder\":\"请输入投保人手机号\",\"class\":\"_1ReDIx03t91Amqty9VgTeJ\",\"maxlength\":\"11\",\"pattern\":\"\",\"aria-label\":\"请输入投保人手机号\",\"value\":\"\"},\"childNodes\":[],\"id\":274}},{\"parentId\":266,\"nextId\":267,\"node\":{\"type\":2,\"tagName\":\"label\",\"attributes\":{\"class\":\"_2gxDhIXSferrgZEVARXUkV\"},\"childNodes\":[],\"id\":275}},{\"parentId\":275,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":276}},{\"parentId\":269,\"nextId\":270,\"node\":{\"type\":2,\"tagName\":\"label\",\"attributes\":{\"class\":\"_2gxDhIXSferrgZEVARXUkV\"},\"childNodes\":[],\"id\":277}},{\"parentId\":277,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":278}},{\"parentId\":227,\"nextId\":272,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2s1e-6SXRmmgy4oUvoXFwN\"},\"childNodes\":[],\"id\":279}},{\"parentId\":279,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"L9XjjCvdSjrB1gJjofyLQ\"},\"childNodes\":[],\"id\":280}},{\"parentId\":280,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"input\",\"attributes\":{\"type\":\"text\",\"placeholder\":\"请输入投保人证件号\",\"class\":\"_1ReDIx03t91Amqty9VgTeJ\",\"maxlength\":\"18\",\"pattern\":\"\",\"aria-label\":\"请输入投保人证件号\",\"value\":\"\"},\"childNodes\":[],\"id\":281}},{\"parentId\":272,\"nextId\":273,\"node\":{\"type\":2,\"tagName\":\"label\",\"attributes\":{\"class\":\"_2gxDhIXSferrgZEVARXUkV\"},\"childNodes\":[],\"id\":282}},{\"parentId\":282,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":283}},{\"parentId\":275,\"nextId\":276,\"node\":{\"type\":3,\"textContent\":\"邮箱\",\"id\":284}},{\"parentId\":277,\"nextId\":278,\"node\":{\"type\":3,\"textContent\":\"身份证\",\"id\":285}},{\"parentId\":279,\"nextId\":280,\"node\":{\"type\":2,\"tagName\":\"label\",\"attributes\":{\"class\":\"_2gxDhIXSferrgZEVARXUkV\"},\"childNodes\":[],\"id\":286}},{\"parentId\":286,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":287}},{\"parentId\":282,\"nextId\":283,\"node\":{\"type\":3,\"textContent\":\"手机号\",\"id\":288}},{\"parentId\":286,\"nextId\":287,\"node\":{\"type\":3,\"textContent\":\"身份证\",\"id\":289}}]},\"timestamp\":1693403001805}]",
+			"sort": 186,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.097+0000"
+		},
+		{
+			"id": "64ef477a3fc0fa5a7db3a3c6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":293,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"}}],\"removes\":[],\"adds\":[{\"parentId\":27,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":290}},{\"parentId\":290,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast am-toast-mask\"},\"childNodes\":[],\"id\":291}},{\"parentId\":291,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":292}},{\"parentId\":292,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"},\"childNodes\":[],\"id\":293}},{\"parentId\":293,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"a\",\"attributes\":{\"tabindex\":\"0\",\"class\":\"am-toast-notice-close\"},\"childNodes\":[],\"id\":294}},{\"parentId\":294,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"am-toast-notice-close-x\"},\"childNodes\":[],\"id\":295}},{\"parentId\":293,\"nextId\":294,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice-content\"},\"childNodes\":[],\"id\":296}},{\"parentId\":296,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text am-toast-text-icon\",\"role\":\"alert\",\"aria-live\":\"assertive\"},\"childNodes\":[],\"id\":297}},{\"parentId\":297,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text-info\"},\"childNodes\":[],\"id\":298}},{\"parentId\":298,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"加载中\",\"id\":299}},{\"parentId\":297,\"nextId\":298,\"node\":{\"type\":2,\"tagName\":\"svg\",\"attributes\":{\"class\":\"am-icon am-icon-loading am-icon-lg\"},\"childNodes\":[],\"isSVG\":true,\"id\":300}},{\"parentId\":300,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"use\",\"attributes\":{\"xlink:href\":\"#loading\"},\"childNodes\":[],\"isSVG\":true,\"id\":301}}]},\"timestamp\":1693403001928}]",
+			"sort": 187,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.205+0000"
+		},
+		{
+			"id": "64ef477adc22313b820345f7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":293,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter am-fade-enter-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403001962}]",
+			"sort": 188,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.257+0000"
+		},
+		{
+			"id": "64ef477adc22313b820345f9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[{\"id\":244,\"value\":\"已实名\"}],\"attributes\":[{\"id\":243,\"attributes\":{\"class\":\"_3daoYwNw3NGH6Sy8E-cwqe\"}},{\"id\":230,\"attributes\":{\"disabled\":\"\",\"value\":\"杨湾\"}},{\"id\":281,\"attributes\":{\"disabled\":\"\",\"value\":\"420111198812241328\"}},{\"id\":274,\"attributes\":{\"value\":\"18171508688\"}},{\"id\":268,\"attributes\":{\"value\":\"306280216@qq.com\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403002026}]",
+			"sort": 189,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.323+0000"
+		},
+		{
+			"id": "64ef477a3fc0fa5a7db3a3c7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":27,\"id\":290}],\"adds\":[]},\"timestamp\":1693403002038}]",
+			"sort": 190,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.319+0000"
+		},
+		{
+			"id": "64ef477adc22313b820345fa",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":5,\"text\":\"杨湾\",\"isChecked\":false,\"id\":230},\"timestamp\":1693403002049}]",
+			"sort": 191,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.359+0000"
+		},
+		{
+			"id": "64ef477adc22313b820345f8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":5,\"text\":\"420111198812241328\",\"isChecked\":false,\"id\":281},\"timestamp\":1693403002049}]",
+			"sort": 192,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.322+0000"
+		},
+		{
+			"id": "64ef477a3fc0fa5a7db3a3c8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":5,\"text\":\"18171508688\",\"isChecked\":false,\"id\":274},\"timestamp\":1693403002050}]",
+			"sort": 193,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.361+0000"
+		},
+		{
+			"id": "64ef477a3fc0fa5a7db3a3cb",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":5,\"text\":\"306280216@qq.com\",\"isChecked\":false,\"id\":268},\"timestamp\":1693403002051}]",
+			"sort": 194,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.415+0000"
+		},
+		{
+			"id": "64ef477a3fc0fa5a7db3a3c9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":214,\"attributes\":{\"value\":\"吴沐熠\"}},{\"id\":271,\"attributes\":{\"value\":\"420114201502015118\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403002114}]",
+			"sort": 195,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.386+0000"
+		},
+		{
+			"id": "64ef477a3fc0fa5a7db3a3ca",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":5,\"text\":\"吴沐熠\",\"isChecked\":false,\"id\":214},\"timestamp\":1693403002119}]",
+			"sort": 196,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.415+0000"
+		},
+		{
+			"id": "64ef477adc22313b820345fb",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":5,\"text\":\"420114201502015118\",\"isChecked\":false,\"id\":271},\"timestamp\":1693403002120}]",
+			"sort": 197,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.392+0000"
+		},
+		{
+			"id": "64ef477adc22313b820345fc",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":36,\"nextId\":154,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_30qmKsDhTGjhRtIlnxawmV\"},\"childNodes\":[],\"id\":302}},{\"parentId\":302,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_2tiy4qb52_u7G6xaZr0g3o\"},\"childNodes\":[],\"id\":303}},{\"parentId\":303,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":304}},{\"parentId\":304,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"kuo4BQ_30p8XeDD-JfBvd\"},\"childNodes\":[],\"id\":305}},{\"parentId\":305,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":306}},{\"parentId\":306,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":307}},{\"parentId\":307,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":308}},{\"parentId\":302,\"nextId\":303,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3jQebb_N-vYsws9uCXvStL\"},\"childNodes\":[],\"id\":309}},{\"parentId\":309,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"PakOZG_ZxjFpIKRbvpRFA\"},\"childNodes\":[],\"id\":310}},{\"parentId\":310,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"查看保障详情\",\"id\":311}},{\"parentId\":305,\"nextId\":306,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":312}},{\"parentId\":312,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":313}},{\"parentId\":313,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":314}},{\"parentId\":306,\"nextId\":307,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":315}},{\"parentId\":315,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":316}},{\"parentId\":307,\"nextId\":308,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":317}},{\"parentId\":309,\"nextId\":310,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC\"},\"childNodes\":[],\"id\":318}},{\"parentId\":318,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"保障内容\",\"id\":319}},{\"parentId\":305,\"nextId\":312,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":320}},{\"parentId\":320,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":321}},{\"parentId\":321,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":322}},{\"parentId\":312,\"nextId\":313,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":323}},{\"parentId\":323,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":324}},{\"parentId\":313,\"nextId\":314,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":325}},{\"parentId\":325,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"指经中华人民共和国卫生部门评审确定的二级或二级以上的公立医院，但不包括主要作为诊所、康复、护理、休养、静养、戒酒、戒毒等或类似的医疗机构。该医院必须具有符合国家有关医院管理规则设置标准的医疗设备，且全天二十四小时有合格医师及护士驻院提供医疗及护理服务。此外，除外医院包括被保险人在河北青县、河北青龙县、河北东光县、廊坊市固安县、河南信阳、山东禹城、北京平谷区、密云区、辽宁铁岭、四川宜宾市所有医疗机构、四川雅安市雨城区人民医院、山东省莱州市人民医院、莱州市中医院、莱州市郭家店中心卫医院、山东滨州市中心医院，河北省邯郸市馆陶县人民医院。以上地区所有医院发生的治疗费用均不再赔付范围内。对于徐州市区仅限在公立的三级医院就诊，市区其余医院以及徐州市所辖的周边区、县、市医院、社康中心、乡镇卫生院除外；对于南通市区以及周边所辖的区、县、市均限在公立的二级甲等以上医院普通部就诊。在北京平谷区、北京密云区、辽宁铁岭县、河北青县、河北青龙县、廊坊市、山东禹城市以及河南信阳市的所有医院和中国医科大学附属盛京医院发生的医疗费用均不在保险赔偿范围之。\",\"id\":326}},{\"parentId\":315,\"nextId\":316,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":327}},{\"parentId\":327,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":328}},{\"parentId\":307,\"nextId\":317,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":329}},{\"parentId\":305,\"nextId\":320,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":330}},{\"parentId\":330,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":331}},{\"parentId\":331,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":332}},{\"parentId\":320,\"nextId\":321,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":333}},{\"parentId\":333,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":334}},{\"parentId\":321,\"nextId\":322,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":335}},{\"parentId\":335,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"被保险人保险期间内在暴露后需要在防疫站、疾控中心、社区医院或二级以上公立医院接种狂犬疫苗的，0免赔，累计及每次事故责任限额1000元。\",\"id\":336}},{\"parentId\":323,\"nextId\":324,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC _12DRcbxvqnabOix3_yVp23\",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":337}},{\"parentId\":337,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"\"},\"childNodes\":[],\"id\":338}},{\"parentId\":313,\"nextId\":325,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":339}},{\"parentId\":315,\"nextId\":327,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":340}},{\"parentId\":327,\"nextId\":328,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":341}},{\"parentId\":341,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"因门诊留院观察而产生的医疗费用不报销\",\"id\":342}},{\"parentId\":305,\"nextId\":330,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":343}},{\"parentId\":343,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":344}},{\"parentId\":344,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":345}},{\"parentId\":330,\"nextId\":331,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":346}},{\"parentId\":346,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":347}},{\"parentId\":331,\"nextId\":332,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":348}},{\"parentId\":333,\"nextId\":334,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC _12DRcbxvqnabOix3_yVp23\",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":349}},{\"parentId\":349,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"\"},\"childNodes\":[],\"id\":350}},{\"parentId\":321,\"nextId\":335,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":351}},{\"parentId\":323,\"nextId\":337,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":352}},{\"parentId\":337,\"nextId\":338,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":353}},{\"parentId\":353,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"二级及以上公立医院\",\"id\":354}},{\"parentId\":327,\"nextId\":341,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":355}},{\"parentId\":355,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"注意事项\",\"id\":356}},{\"parentId\":305,\"nextId\":343,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":357}},{\"parentId\":357,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":358}},{\"parentId\":358,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":359}},{\"parentId\":343,\"nextId\":344,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":360}},{\"parentId\":360,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":361}},{\"parentId\":344,\"nextId\":345,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":362}},{\"parentId\":346,\"nextId\":347,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":363}},{\"parentId\":363,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":364}},{\"parentId\":331,\"nextId\":348,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":365}},{\"parentId\":333,\"nextId\":349,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":366}},{\"parentId\":349,\"nextId\":350,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":367}},{\"parentId\":367,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"累计限额1000元\",\"id\":368}},{\"parentId\":337,\"nextId\":353,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":369}},{\"parentId\":369,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"医院要求\",\"id\":370}},{\"parentId\":305,\"nextId\":357,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":371}},{\"parentId\":371,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":372}},{\"parentId\":372,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":373}},{\"parentId\":357,\"nextId\":358,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":374}},{\"parentId\":374,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":375}},{\"parentId\":358,\"nextId\":359,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":376}},{\"parentId\":376,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"被保险人满18个月及以上拓展该权益\",\"id\":377}},{\"parentId\":360,\"nextId\":361,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":378}},{\"parentId\":378,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":379}},{\"parentId\":344,\"nextId\":362,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":380}},{\"parentId\":346,\"nextId\":363,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":381}},{\"parentId\":363,\"nextId\":364,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":382}},{\"parentId\":382,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"10万元\",\"id\":383}},{\"parentId\":349,\"nextId\":367,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":384}},{\"parentId\":384,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"狂犬疫苗接种费用\",\"id\":385}},{\"parentId\":305,\"nextId\":371,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":386}},{\"parentId\":386,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":387}},{\"parentId\":387,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":388}},{\"parentId\":371,\"nextId\":372,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":389}},{\"parentId\":389,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":390}},{\"parentId\":372,\"nextId\":373,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":391}},{\"parentId\":374,\"nextId\":375,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC _12DRcbxvqnabOix3_yVp23\",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":392}},{\"parentId\":392,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"\"},\"childNodes\":[],\"id\":393}},{\"parentId\":358,\"nextId\":376,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":394}},{\"parentId\":360,\"nextId\":378,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":395}},{\"parentId\":378,\"nextId\":379,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":396}},{\"parentId\":396,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"10万元\",\"id\":397}},{\"parentId\":363,\"nextId\":382,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":398}},{\"parentId\":398,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"意外伤残保险金\",\"id\":399}},{\"parentId\":305,\"nextId\":386,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_9sOh4ZrMhgHSPh6aTtBG8\"},\"childNodes\":[],\"id\":400}},{\"parentId\":400,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"_3kRM1o07gtxBbUvJqpq4JS\",\"style\":\"height: 0px;\"},\"childNodes\":[],\"id\":401}},{\"parentId\":401,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":402}},{\"parentId\":386,\"nextId\":387,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":403}},{\"parentId\":403,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":404}},{\"parentId\":387,\"nextId\":388,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":405}},{\"parentId\":389,\"nextId\":390,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":406}},{\"parentId\":406,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":407}},{\"parentId\":372,\"nextId\":391,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":408}},{\"parentId\":374,\"nextId\":392,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":409}},{\"parentId\":392,\"nextId\":393,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":410}},{\"parentId\":410,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"100万元\",\"id\":411}},{\"parentId\":378,\"nextId\":396,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":412}},{\"parentId\":412,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"意外身故保险金\",\"id\":413}},{\"parentId\":400,\"nextId\":401,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":414}},{\"parentId\":414,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":415}},{\"parentId\":401,\"nextId\":402,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"X8VL6MFQpkX6ROqDUC55u\"},\"childNodes\":[],\"id\":416}},{\"parentId\":403,\"nextId\":404,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":417}},{\"parentId\":417,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":418}},{\"parentId\":387,\"nextId\":405,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":419}},{\"parentId\":389,\"nextId\":406,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":420}},{\"parentId\":406,\"nextId\":407,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":421}},{\"parentId\":421,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"200万元\",\"id\":422}},{\"parentId\":392,\"nextId\":410,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":423}},{\"parentId\":423,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"质子重离子医疗费补偿\",\"id\":424}},{\"parentId\":414,\"nextId\":415,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"_9Q29U5uIwDUz9mSiVoViC \",\"aria-expanded\":\"false\"},\"childNodes\":[],\"id\":425}},{\"parentId\":425,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"\",\"id\":426}},{\"parentId\":401,\"nextId\":416,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":427}},{\"parentId\":403,\"nextId\":417,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":428}},{\"parentId\":417,\"nextId\":418,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":429}},{\"parentId\":429,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"200万元\",\"id\":430}},{\"parentId\":406,\"nextId\":421,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":431}},{\"parentId\":431,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"重度恶性肿瘤保险金\",\"id\":432}},{\"parentId\":414,\"nextId\":425,\"node\":{\"type\":3,\"textContent\":\" \",\"id\":433}},{\"parentId\":425,\"nextId\":426,\"node\":{\"type\":2,\"tagName\":\"b\",\"attributes\":{},\"childNodes\":[],\"id\":434}},{\"parentId\":434,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"5000元\",\"id\":435}},{\"parentId\":417,\"nextId\":429,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":436}},{\"parentId\":436,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"一般住院医疗保险金\",\"id\":437}},{\"parentId\":425,\"nextId\":434,\"node\":{\"type\":2,\"tagName\":\"em\",\"attributes\":{},\"childNodes\":[],\"id\":438}},{\"parentId\":438,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"门急诊医疗保险金\",\"id\":439}}]},\"timestamp\":1693403002166}]",
+			"sort": 198,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.470+0000"
+		},
+		{
+			"id": "64ef477a3fc0fa5a7db3a3cc",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[{\"id\":198,\"value\":\"780.00\"}],\"attributes\":[],\"removes\":[{\"parentId\":190,\"id\":191}],\"adds\":[{\"parentId\":190,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":440}}]},\"timestamp\":1693403002237}]",
+			"sort": 199,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:22.506+0000"
+		},
+		{
+			"id": "64ef477c3fc0fa5a7db3a3d1",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":165,\"x\":287.50506591796875,\"y\":560.5050659179688},\"timestamp\":1693403003907}]",
+			"sort": 200,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.181+0000"
+		},
+		{
+			"id": "64ef477c3fc0fa5a7db3a3d2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":282.75537109375,\"y\":553.3553466796875,\"id\":165,\"timeOffset\":0}]},\"timestamp\":1693403004010}]",
+			"sort": 201,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.326+0000"
+		},
+		{
+			"id": "64ef477cdc22313b82034601",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403004019}]",
+			"sort": 202,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.291+0000"
+		},
+		{
+			"id": "64ef477cdc22313b82034603",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403004119}]",
+			"sort": 203,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.426+0000"
+		},
+		{
+			"id": "64ef477cdc22313b82034602",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":165,\"x\":296.87939453125,\"y\":481.33251953125},\"timestamp\":1693403004126}]",
+			"sort": 204,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.392+0000"
+		},
+		{
+			"id": "64ef477c3fc0fa5a7db3a3d3",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403004221}]",
+			"sort": 205,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.520+0000"
+		},
+		{
+			"id": "64ef477cdc22313b82034604",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403004322}]",
+			"sort": 206,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.615+0000"
+		},
+		{
+			"id": "64ef477c3fc0fa5a7db3a3d4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403004421}]",
+			"sort": 207,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.715+0000"
+		},
+		{
+			"id": "64ef477cdc22313b82034605",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":296.87939453125,\"y\":481.33251953125,\"id\":165,\"timeOffset\":-385}]},\"timestamp\":1693403004511}]",
+			"sort": 208,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.801+0000"
+		},
+		{
+			"id": "64ef477c3fc0fa5a7db3a3d5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403004522}]",
+			"sort": 209,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.816+0000"
+		},
+		{
+			"id": "64ef477cdc22313b82034606",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403004622}]",
+			"sort": 210,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:24.913+0000"
+		},
+		{
+			"id": "64ef477d3fc0fa5a7db3a3d6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":165,\"x\":290.454833984375,\"y\":560.6800537109375},\"timestamp\":1693403005099}]",
+			"sort": 211,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.417+0000"
+		},
+		{
+			"id": "64ef477ddc22313b82034607",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":288.33001708984375,\"y\":552.4053955078125,\"id\":165,\"timeOffset\":0}]},\"timestamp\":1693403005196}]",
+			"sort": 212,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.473+0000"
+		},
+		{
+			"id": "64ef477d3fc0fa5a7db3a3d7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403005204}]",
+			"sort": 213,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.479+0000"
+		},
+		{
+			"id": "64ef477ddc22313b82034608",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":165,\"x\":292.87969970703125,\"y\":507.0567321777344},\"timestamp\":1693403005263}]",
+			"sort": 214,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.568+0000"
+		},
+		{
+			"id": "64ef477d3fc0fa5a7db3a3d8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403005305}]",
+			"sort": 215,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.584+0000"
+		},
+		{
+			"id": "64ef477ddc22313b82034609",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403005404}]",
+			"sort": 216,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.698+0000"
+		},
+		{
+			"id": "64ef477d3fc0fa5a7db3a3d9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":3,\"id\":27,\"x\":0,\"y\":0},\"timestamp\":1693403005505}]",
+			"sort": 217,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.794+0000"
+		},
+		{
+			"id": "64ef477ddc22313b8203460a",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":6,\"positions\":[{\"x\":292.87969970703125,\"y\":507.0567321777344,\"id\":165,\"timeOffset\":-436}]},\"timestamp\":1693403005697}]",
+			"sort": 218,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:25.972+0000"
+		},
+		{
+			"id": "64ef47833fc0fa5a7db3a3e9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":225,\"x\":28.698009490966797,\"y\":645.077392578125},\"timestamp\":1693403011017}]",
+			"sort": 219,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:31.464+0000"
+		},
+		{
+			"id": "64ef4783dc22313b82034619",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":225,\"x\":28.698009490966797,\"y\":645.077392578125},\"timestamp\":1693403011023}]",
+			"sort": 220,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:31.474+0000"
+		},
+		{
+			"id": "64ef47833fc0fa5a7db3a3e8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":1,\"positions\":[{\"x\":28,\"y\":645,\"id\":225,\"timeOffset\":0}]},\"timestamp\":1693403011036}]",
+			"sort": 221,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:31.438+0000"
+		},
+		{
+			"id": "64ef4783dc22313b82034618",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":1,\"id\":225,\"x\":28,\"y\":645},\"timestamp\":1693403011038}]",
+			"sort": 222,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:31.422+0000"
+		},
+		{
+			"id": "64ef4783dc22313b82034617",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":0,\"id\":225,\"x\":28,\"y\":645},\"timestamp\":1693403011041}]",
+			"sort": 223,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:31.421+0000"
+		},
+		{
+			"id": "64ef4783dc22313b8203461a",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":2,\"id\":225,\"x\":28,\"y\":645},\"timestamp\":1693403011042}]",
+			"sort": 224,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:31.490+0000"
+		},
+		{
+			"id": "64ef47833fc0fa5a7db3a3ea",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":225,\"attributes\":{\"aria-checked\":\"true\",\"src\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAk1BMVEVMaXH/bqT/eKX/bqL/cKP/cKT/b6P/qqr/b6P/cK//bqP/b6P/bqL/bqP/cKX/b6L/bqL/b6P/b6T/b6L/bqL/////b6L/cKP/b6P/x9v/u9P/zuD/yNz/xNn/yt3/vtX/zN7/wdf/0OH/xtr/qcj/ydz/z+D/y93/wtj/xdr/vdX/xdn/wNb/y97/wtf/zd//q8lmjgjgAAAAFHRSTlMAURHZkDv7A7oQxb++813WoqFc8sgynQgAAAEcSURBVHjaldTpcoMgFAXgKxo1blFzoGbf2qR7+/5P1zuNOGiItN8PvQ5nBlEuZBJ1lfp57qdVLcjOy0J0wsyjW5MEA8mE+qIAFkFEhmkMq3hqZGa4Y9alohh3xXrGACOCdl0YdV1jglEJMQ8OHocyOGREIoTNw/FRl6Ggwp45S/mNVkGlNbOSUi7RKik1hnTRfHHmFVpKPrTPY5tq9pzZoeNTrss3KVcNmLpw5h3o5DTX5ZKH9pxSWy4OMMyN6XY8uFVqzbdnmHzzxQ88vFjwZYOelCrjaSN/vaCv6n/Mk2QnDNT936KeeEIMhGLwg9XHWmEgu9kqjbJtFfem+/v2dTeCu6X+0ZzuNncfGO6jx32I2YmivB6HZSHI8APXTFBBWag7AQAAAABJRU5ErkJggg==\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403011059}]",
+			"sort": 225,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:31.494+0000"
+		},
+		{
+			"id": "64ef4784dc22313b8203461b",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":161,\"x\":295.17950439453125,\"y\":694.5009155273438},\"timestamp\":1693403011875}]",
+			"sort": 226,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.199+0000"
+		},
+		{
+			"id": "64ef47843fc0fa5a7db3a3eb",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":160,\"attributes\":{\"class\":\"am-button hBA5bhF4R-YXeIaAN4VcH am-button-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403011883}]",
+			"sort": 227,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.202+0000"
+		},
+		{
+			"id": "64ef4784dc22313b8203461c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":161,\"x\":295.17950439453125,\"y\":694.5009155273438},\"timestamp\":1693403012002}]",
+			"sort": 228,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.278+0000"
+		},
+		{
+			"id": "64ef4784dc22313b8203461e",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":160,\"attributes\":{\"class\":\"am-button hBA5bhF4R-YXeIaAN4VcH\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403012005}]",
+			"sort": 229,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.314+0000"
+		},
+		{
+			"id": "64ef47843fc0fa5a7db3a3ed",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":1,\"positions\":[{\"x\":295,\"y\":694,\"id\":161,\"timeOffset\":0}]},\"timestamp\":1693403012010}]",
+			"sort": 230,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.318+0000"
+		},
+		{
+			"id": "64ef47843fc0fa5a7db3a3ee",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":1,\"id\":161,\"x\":295,\"y\":694},\"timestamp\":1693403012011}]",
+			"sort": 231,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.319+0000"
+		},
+		{
+			"id": "64ef4784dc22313b8203461d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":160,\"attributes\":{\"class\":\"am-button hBA5bhF4R-YXeIaAN4VcH am-button-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403012012}]",
+			"sort": 232,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.292+0000"
+		},
+		{
+			"id": "64ef47843fc0fa5a7db3a3ec",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":0,\"id\":161,\"x\":295,\"y\":694},\"timestamp\":1693403012014}]",
+			"sort": 233,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.314+0000"
+		},
+		{
+			"id": "64ef4784dc22313b82034620",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":160,\"attributes\":{\"class\":\"am-button hBA5bhF4R-YXeIaAN4VcH\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403012015}]",
+			"sort": 234,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.358+0000"
+		},
+		{
+			"id": "64ef4784dc22313b82034621",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":2,\"id\":161,\"x\":295,\"y\":694},\"timestamp\":1693403012016}]",
+			"sort": 235,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.377+0000"
+		},
+		{
+			"id": "64ef47843fc0fa5a7db3a3f0",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":444,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"}}],\"removes\":[],\"adds\":[{\"parentId\":27,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":441}},{\"parentId\":441,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast am-toast-mask\"},\"childNodes\":[],\"id\":442}},{\"parentId\":442,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":443}},{\"parentId\":443,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"},\"childNodes\":[],\"id\":444}},{\"parentId\":444,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"a\",\"attributes\":{\"tabindex\":\"0\",\"class\":\"am-toast-notice-close\"},\"childNodes\":[],\"id\":445}},{\"parentId\":445,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"am-toast-notice-close-x\"},\"childNodes\":[],\"id\":446}},{\"parentId\":444,\"nextId\":445,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice-content\"},\"childNodes\":[],\"id\":447}},{\"parentId\":447,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text am-toast-text-icon\",\"role\":\"alert\",\"aria-live\":\"assertive\"},\"childNodes\":[],\"id\":448}},{\"parentId\":448,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text-info\"},\"childNodes\":[],\"id\":449}},{\"parentId\":448,\"nextId\":449,\"node\":{\"type\":2,\"tagName\":\"svg\",\"attributes\":{\"class\":\"am-icon am-icon-loading am-icon-lg\"},\"childNodes\":[],\"isSVG\":true,\"id\":450}},{\"parentId\":450,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"use\",\"attributes\":{\"xlink:href\":\"#loading\"},\"childNodes\":[],\"isSVG\":true,\"id\":451}}]},\"timestamp\":1693403012025}]",
+			"sort": 236,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.392+0000"
+		},
+		{
+			"id": "64ef4784dc22313b82034622",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":444,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter am-fade-enter-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403012057}]",
+			"sort": 237,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.400+0000"
+		},
+		{
+			"id": "64ef47843fc0fa5a7db3a3f2",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":444,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403012273}]",
+			"sort": 238,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.570+0000"
+		},
+		{
+			"id": "64ef4784dc22313b82034623",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":27,\"id\":441}],\"adds\":[]},\"timestamp\":1693403012286}]",
+			"sort": 239,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.581+0000"
+		},
+		{
+			"id": "64ef47843fc0fa5a7db3a3f4",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":455,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"}}],\"removes\":[],\"adds\":[{\"parentId\":27,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":452}},{\"parentId\":452,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast am-toast-mask\"},\"childNodes\":[],\"id\":453}},{\"parentId\":453,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":454}},{\"parentId\":454,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter\"},\"childNodes\":[],\"id\":455}},{\"parentId\":455,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"a\",\"attributes\":{\"tabindex\":\"0\",\"class\":\"am-toast-notice-close\"},\"childNodes\":[],\"id\":456}},{\"parentId\":456,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{\"class\":\"am-toast-notice-close-x\"},\"childNodes\":[],\"id\":457}},{\"parentId\":455,\"nextId\":456,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-notice-content\"},\"childNodes\":[],\"id\":458}},{\"parentId\":458,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text am-toast-text-icon\",\"role\":\"alert\",\"aria-live\":\"assertive\"},\"childNodes\":[],\"id\":459}},{\"parentId\":459,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"am-toast-text-info\"},\"childNodes\":[],\"id\":460}},{\"parentId\":459,\"nextId\":460,\"node\":{\"type\":2,\"tagName\":\"svg\",\"attributes\":{\"class\":\"am-icon am-icon-loading am-icon-lg\"},\"childNodes\":[],\"isSVG\":true,\"id\":461}},{\"parentId\":461,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"use\",\"attributes\":{\"xlink:href\":\"#loading\"},\"childNodes\":[],\"isSVG\":true,\"id\":462}}]},\"timestamp\":1693403012312}]",
+			"sort": 240,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.610+0000"
+		},
+		{
+			"id": "64ef4784dc22313b82034624",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[{\"id\":455,\"attributes\":{\"class\":\"am-toast-notice am-toast-notice-closable am-fade-enter am-fade-enter-active\"}}],\"removes\":[],\"adds\":[]},\"timestamp\":1693403012344}]",
+			"sort": 241,
+			"pageId": "3",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:32.616+0000"
+		},
+		{
+			"id": "64ef4785dc22313b82034625",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":4,\"data\":{\"href\":\"https://finance.xingbeibaoxian.com/xb-cashier/pay?recomKey=1008908029&shareKey=1008908029&posterId=934&hseshareKey=48e42f23b1a519c9&bizCode=xb&orderid=23083000355130506\",\"width\":360,\"height\":722},\"timestamp\":1693403012875}]",
+			"sort": 242,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:33.167+0000"
+		},
+		{
+			"id": "64ef47853fc0fa5a7db3a3f5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":2,\"data\":{\"node\":{\"type\":0,\"childNodes\":[{\"type\":1,\"name\":\"html\",\"publicId\":\"\",\"systemId\":\"\",\"id\":2},{\"type\":2,\"tagName\":\"html\",\"attributes\":{\"lang\":\"en\"},\"childNodes\":[{\"type\":2,\"tagName\":\"head\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"charset\":\"utf-8\"},\"childNodes\":[],\"id\":5},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"keywords\",\"content\":\"\"},\"childNodes\":[],\"id\":6},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"description\",\"content\":\"\"},\"childNodes\":[],\"id\":7},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"format-detection\",\"content\":\"telephone=no\"},\"childNodes\":[],\"id\":8},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"viewport\",\"content\":\"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\"},\"childNodes\":[],\"id\":9},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"icon\",\"href\":\"data:image/ico;base64,aWNv\"},\"childNodes\":[],\"id\":10},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/css/main.1688046144464.62820d7b.chunk.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":11},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"charset\":\"utf-8\",\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/8.1688046144464.7762453e.chunk.js\"},\"childNodes\":[],\"id\":12}],\"id\":4},{\"type\":2,\"tagName\":\"body\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"article\",\"attributes\":{\"id\":\"root\"},\"childNodes\":[],\"id\":14},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.haiziwang.com/static/tracker/4.0.0/tracker.js\"},\"childNodes\":[],\"id\":15},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://res.wx.qq.com/open/js/jweixin-1.4.0.js\"},\"childNodes\":[],\"id\":16},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/runtime.1688046144464.88573559.js\"},\"childNodes\":[],\"id\":17},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/vendor.1688046144464.88f32a68.chunk.js\"},\"childNodes\":[],\"id\":18},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/main.1688046144464.62820d7b.chunk.js\"},\"childNodes\":[],\"id\":19},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"toast\"},\"childNodes\":[],\"id\":20},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"loader\"},\"childNodes\":[],\"id\":21}],\"id\":13}],\"id\":3}],\"id\":1},\"initialOffset\":{\"left\":0,\"top\":0}},\"timestamp\":1693403012881}]",
+			"sort": 243,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:33.171+0000"
+		},
+		{
+			"id": "64ef47853fc0fa5a7db3a3f6",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":4,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"title\",\"attributes\":{},\"childNodes\":[],\"id\":22}},{\"parentId\":22,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"收银台\",\"id\":23}}]},\"timestamp\":1693403012888}]",
+			"sort": 244,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:33.202+0000"
+		},
+		{
+			"id": "64ef4786dc22313b82034627",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":0,\"data\":{},\"timestamp\":1693403014501}]",
+			"sort": 245,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:34.778+0000"
+		},
+		{
+			"id": "64ef4786dc22313b82034628",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":1,\"data\":{},\"timestamp\":1693403014547}]",
+			"sort": 246,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:34.821+0000"
+		},
+		{
+			"id": "64ef47863fc0fa5a7db3a3f8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":4,\"data\":{\"href\":\"https://finance.xingbeibaoxian.com/xb-cashier/pay?recomKey=1008908029&shareKey=1008908029&posterId=934&hseshareKey=48e42f23b1a519c9&bizCode=xb&orderid=23083000355130506&code=021qTull279bVb4fLOll29hIYB1qTulQ&state=xb-cashier\",\"width\":360,\"height\":722},\"timestamp\":1693403014549}]",
+			"sort": 247,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:34.846+0000"
+		},
+		{
+			"id": "64ef4786dc22313b82034629",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":2,\"data\":{\"node\":{\"type\":0,\"childNodes\":[{\"type\":1,\"name\":\"html\",\"publicId\":\"\",\"systemId\":\"\",\"id\":2},{\"type\":2,\"tagName\":\"html\",\"attributes\":{\"lang\":\"en\"},\"childNodes\":[{\"type\":2,\"tagName\":\"head\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"charset\":\"utf-8\"},\"childNodes\":[],\"id\":5},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"keywords\",\"content\":\"\"},\"childNodes\":[],\"id\":6},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"description\",\"content\":\"\"},\"childNodes\":[],\"id\":7},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"format-detection\",\"content\":\"telephone=no\"},\"childNodes\":[],\"id\":8},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"viewport\",\"content\":\"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\"},\"childNodes\":[],\"id\":9},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"icon\",\"href\":\"data:image/ico;base64,aWNv\"},\"childNodes\":[],\"id\":10},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/css/main.1688046144464.62820d7b.chunk.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":11},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"charset\":\"utf-8\",\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/8.1688046144464.7762453e.chunk.js\"},\"childNodes\":[],\"id\":12},{\"type\":2,\"tagName\":\"title\",\"attributes\":{},\"childNodes\":[{\"type\":3,\"textContent\":\"收银台\",\"id\":14}],\"id\":13}],\"id\":4},{\"type\":2,\"tagName\":\"body\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"article\",\"attributes\":{\"id\":\"root\"},\"childNodes\":[{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"J69g+3SNdLMX8jyEnX1VBQ== undefined\"},\"childNodes\":[],\"id\":17}],\"id\":16},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.haiziwang.com/static/tracker/4.0.0/tracker.js\"},\"childNodes\":[],\"id\":18},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://res.wx.qq.com/open/js/jweixin-1.4.0.js\"},\"childNodes\":[],\"id\":19},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/runtime.1688046144464.88573559.js\"},\"childNodes\":[],\"id\":20},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/vendor.1688046144464.88f32a68.chunk.js\"},\"childNodes\":[],\"id\":21},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/main.1688046144464.62820d7b.chunk.js\"},\"childNodes\":[],\"id\":22},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"toast\"},\"childNodes\":[],\"id\":23},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"loader\"},\"childNodes\":[],\"id\":24}],\"id\":15}],\"id\":3}],\"id\":1},\"initialOffset\":{\"left\":0,\"top\":0}},\"timestamp\":1693403014554}]",
+			"sort": 248,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:34.845+0000"
+		},
+		{
+			"id": "64ef47873fc0fa5a7db3a3f9",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":16,\"id\":17}],\"adds\":[]},\"timestamp\":1693403015196}]",
+			"sort": 249,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:35.480+0000"
+		},
+		{
+			"id": "64ef4792dc22313b8203468f",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":16,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"J69g+3SNdLMX8jyEnX1VBQ== undefined\"},\"childNodes\":[],\"id\":25}},{\"parentId\":4,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"charset\":\"utf-8\",\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/7.1688046144464.fcc938c3.chunk.js\"},\"childNodes\":[],\"id\":26}},{\"parentId\":16,\"nextId\":25,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"chHqMjvfU4-QM5AGaYhZAQ==\"},\"childNodes\":[],\"id\":27}},{\"parentId\":27,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":28}},{\"parentId\":28,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"页面加载中...\",\"id\":29}},{\"parentId\":4,\"nextId\":26,\"node\":{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"stylesheet\",\"type\":\"text/css\",\"href\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/css/7.1688046144464.fcc938c3.chunk.css\"},\"childNodes\":[],\"id\":30}}]},\"timestamp\":1693403025735}]",
+			"sort": 250,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.138+0000"
+		},
+		{
+			"id": "64ef4792dc22313b82034690",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":16,\"id\":27}],\"adds\":[{\"parentId\":16,\"nextId\":25,\"node\":{\"type\":2,\"tagName\":\"section\",\"attributes\":{\"class\":\"rs7Ov1L8bSrf8OiXgZ19jw==\"},\"childNodes\":[],\"id\":31}},{\"parentId\":31,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{},\"childNodes\":[],\"id\":32}},{\"parentId\":32,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"正在支付中，请耐心等待哦～\",\"id\":33}},{\"parentId\":31,\"nextId\":32,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"QMkmVXd-T+WRTRTfnx1vcA==\"},\"childNodes\":[],\"id\":34}},{\"parentId\":31,\"nextId\":34,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"mS1rQIV1zGlGa3HUV3EJ5Q==\"},\"childNodes\":[],\"id\":35}}]},\"timestamp\":1693403025803}]",
+			"sort": 251,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.177+0000"
+		},
+		{
+			"id": "64ef47923fc0fa5a7db3a461",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":13,\"id\":14}],\"adds\":[{\"parentId\":13,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"支付结果\",\"id\":36}}]},\"timestamp\":1693403025806}]",
+			"sort": 252,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.187+0000"
+		},
+		{
+			"id": "64ef4792dc22313b82034692",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":16,\"id\":25}],\"adds\":[]},\"timestamp\":1693403025824}]",
+			"sort": 253,
+			"pageId": "4",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.201+0000"
+		},
+		{
+			"id": "64ef4792dc22313b8203469a",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":4,\"data\":{\"href\":\"https://finance.xingbeibaoxian.com/xb-cashier/pay-success?orderid=23083000355130506&bizCode=xb&shareKey=1008908029&recomKey=1008908029&posterId=934&hseshareKey=48e42f23b1a519c9\",\"width\":360,\"height\":722},\"timestamp\":1693403026185}]",
+			"sort": 254,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.488+0000"
+		},
+		{
+			"id": "64ef4792dc22313b82034699",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":2,\"data\":{\"node\":{\"type\":0,\"childNodes\":[{\"type\":1,\"name\":\"html\",\"publicId\":\"\",\"systemId\":\"\",\"id\":2},{\"type\":2,\"tagName\":\"html\",\"attributes\":{\"lang\":\"en\"},\"childNodes\":[{\"type\":2,\"tagName\":\"head\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"charset\":\"utf-8\"},\"childNodes\":[],\"id\":5},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"keywords\",\"content\":\"\"},\"childNodes\":[],\"id\":6},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"description\",\"content\":\"\"},\"childNodes\":[],\"id\":7},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"format-detection\",\"content\":\"telephone=no\"},\"childNodes\":[],\"id\":8},{\"type\":2,\"tagName\":\"meta\",\"attributes\":{\"name\":\"viewport\",\"content\":\"width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\"},\"childNodes\":[],\"id\":9},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"icon\",\"href\":\"data:image/ico;base64,aWNv\"},\"childNodes\":[],\"id\":10},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"href\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/css/main.1688046144464.62820d7b.chunk.css\",\"rel\":\"stylesheet\"},\"childNodes\":[],\"id\":11},{\"type\":2,\"tagName\":\"link\",\"attributes\":{\"rel\":\"stylesheet\",\"type\":\"text/css\",\"href\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/css/3.1688046144464.7246c649.chunk.css\"},\"childNodes\":[],\"id\":12},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"charset\":\"utf-8\",\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/3.1688046144464.7246c649.chunk.js\"},\"childNodes\":[],\"id\":13}],\"id\":4},{\"type\":2,\"tagName\":\"body\",\"attributes\":{},\"childNodes\":[{\"type\":2,\"tagName\":\"article\",\"attributes\":{\"id\":\"root\"},\"childNodes\":[],\"id\":15},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.haiziwang.com/static/tracker/4.0.0/tracker.js\"},\"childNodes\":[],\"id\":16},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://res.wx.qq.com/open/js/jweixin-1.4.0.js\"},\"childNodes\":[],\"id\":17},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/runtime.1688046144464.88573559.js\"},\"childNodes\":[],\"id\":18},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/vendor.1688046144464.88f32a68.chunk.js\"},\"childNodes\":[],\"id\":19},{\"type\":2,\"tagName\":\"script\",\"attributes\":{\"src\":\"https://st.xingbeibaoxian.com/p/xb-cashier/static/js/main.1688046144464.62820d7b.chunk.js\"},\"childNodes\":[],\"id\":20},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"toast\"},\"childNodes\":[],\"id\":21},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"loader\"},\"childNodes\":[],\"id\":22},{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"id\":\"alert\"},\"childNodes\":[],\"id\":23}],\"id\":14}],\"id\":3}],\"id\":1},\"initialOffset\":{\"left\":0,\"top\":0}},\"timestamp\":1693403026190}]",
+			"sort": 255,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.483+0000"
+		},
+		{
+			"id": "64ef47923fc0fa5a7db3a46c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":15,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"J69g+3SNdLMX8jyEnX1VBQ== undefined\"},\"childNodes\":[],\"id\":24}}]},\"timestamp\":1693403026207}]",
+			"sort": 256,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.525+0000"
+		},
+		{
+			"id": "64ef4792dc22313b8203469c",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":4,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"title\",\"attributes\":{},\"childNodes\":[],\"id\":25}},{\"parentId\":25,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"支付结果\",\"id\":26}}]},\"timestamp\":1693403026210}]",
+			"sort": 257,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.583+0000"
+		},
+		{
+			"id": "64ef47923fc0fa5a7db3a46d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[],\"adds\":[{\"parentId\":15,\"nextId\":24,\"node\":{\"type\":2,\"tagName\":\"section\",\"attributes\":{\"class\":\"S4rwuCMFVF-982knAJTytA==\"},\"childNodes\":[],\"id\":27}},{\"parentId\":27,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"GwdhH7j92yck63o0nRgtyQ== fE89gvW3Ffu5ZrBIGSLn8g== ZStfa8ncxCho8AdiaEN9kw== undefined\",\"style\":\"z-index: 999;\"},\"childNodes\":[],\"id\":28}},{\"parentId\":28,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"dJZRxLzWJqZz52L702TSAw== GLHVoz4+b5kqn8G+lewnww==\"},\"childNodes\":[],\"id\":29}},{\"parentId\":29,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"pSSCDH1J3l8n6z0-Jib1WA==\"},\"childNodes\":[],\"id\":30}},{\"parentId\":30,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"class\":\"_661jU6akZk-B00LEG5k6MQ==\",\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/47e17dd0-c0c2-11ea-8e6f-bf8a28ffb564_size_60x60\"},\"childNodes\":[],\"id\":31}},{\"parentId\":27,\"nextId\":28,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"M1KXoJxBxAljuPDFDSf8Kw== undefined\"},\"childNodes\":[],\"id\":32}},{\"parentId\":27,\"nextId\":32,\"node\":{\"type\":2,\"tagName\":\"h3\",\"attributes\":{\"class\":\"EI6vMt3Noo2zsD8EYC5Nzw==\"},\"childNodes\":[],\"id\":33}},{\"parentId\":27,\"nextId\":33,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"NKKTv+aTvEjvVTjXfrGhnA==\"},\"childNodes\":[],\"id\":34}},{\"parentId\":33,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"购买成功\",\"id\":35}},{\"parentId\":32,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"button\",\"attributes\":{\"class\":\"SGbxFXGe7qSD5oFCHdTxXA== AkzLH7k86o7tsByuIHlGEA== undefined\"},\"childNodes\":[],\"id\":36}},{\"parentId\":32,\"nextId\":36,\"node\":{\"type\":2,\"tagName\":\"button\",\"attributes\":{\"class\":\"SGbxFXGe7qSD5oFCHdTxXA== BHOwQ1d8SN1dGxyyiwxGbQ== undefined\"},\"childNodes\":[],\"id\":37}},{\"parentId\":37,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":38}},{\"parentId\":38,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"返回首页\",\"id\":39}},{\"parentId\":36,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":40}},{\"parentId\":40,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"查看保单\",\"id\":41}},{\"parentId\":28,\"nextId\":29,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"fkeTinBXKUcR-bHtAFyaoQ== LecPEVSrQ4yNVEZpGiQMKw==\"},\"childNodes\":[],\"id\":42}},{\"parentId\":30,\"nextId\":31,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"HUvXUN7wYZ2+2B-6IsIclA==\"},\"childNodes\":[],\"id\":43}},{\"parentId\":30,\"nextId\":43,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"GIyDznk8B32fubNsaMyWLQ==\"},\"childNodes\":[],\"id\":44}},{\"parentId\":30,\"nextId\":44,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{\"class\":\"N0j809xBQfOoEvk1U7AJYw==\"},\"childNodes\":[],\"id\":45}},{\"parentId\":30,\"nextId\":45,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"GkNjBhAtPN3fnSj4VEo5pw==\"},\"childNodes\":[],\"id\":46}},{\"parentId\":30,\"nextId\":46,\"node\":{\"type\":2,\"tagName\":\"h2\",\"attributes\":{\"class\":\"hDg4heQc9DAcoN0sZiQpQw==\"},\"childNodes\":[],\"id\":47}},{\"parentId\":47,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"专属理赔顾问 全程协助\",\"id\":48}},{\"parentId\":46,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"- 随时咨询，将服务进行到底! -\",\"id\":49}},{\"parentId\":45,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{\"class\":\"CQqkKhuJyf5Wo6XQZyq71w==\"},\"childNodes\":[],\"id\":50}},{\"parentId\":45,\"nextId\":50,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"jgIXYSR3tJPwsUdlO-jYGA==\"},\"childNodes\":[],\"id\":51}},{\"parentId\":45,\"nextId\":51,\"node\":{\"type\":2,\"tagName\":\"p\",\"attributes\":{\"class\":\"fOlUyDvDZdDpOa7pwsa3Hg==\"},\"childNodes\":[],\"id\":52}},{\"parentId\":45,\"nextId\":52,\"node\":{\"type\":2,\"tagName\":\"div\",\"attributes\":{},\"childNodes\":[],\"id\":53}},{\"parentId\":45,\"nextId\":53,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{\"src\":\"https://hzwimspic-1251601690.image.myqcloud.com/70bb71a0-f5cf-11eb-a24b-1319ff71da9b_size_180x180\",\"alt\":\"代理人头像\"},\"childNodes\":[],\"id\":54}},{\"parentId\":53,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":55}},{\"parentId\":53,\"nextId\":55,\"node\":{\"type\":2,\"tagName\":\"h5\",\"attributes\":{},\"childNodes\":[],\"id\":56}},{\"parentId\":55,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"保险顾问\",\"id\":57}},{\"parentId\":52,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":58}},{\"parentId\":52,\"nextId\":58,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{},\"childNodes\":[],\"id\":59}},{\"parentId\":58,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"微信\",\"id\":60}},{\"parentId\":51,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"span\",\"attributes\":{},\"childNodes\":[],\"id\":61}},{\"parentId\":51,\"nextId\":61,\"node\":{\"type\":2,\"tagName\":\"i\",\"attributes\":{},\"childNodes\":[],\"id\":62}},{\"parentId\":61,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"电话\",\"id\":63}},{\"parentId\":44,\"nextId\":null,\"node\":{\"type\":2,\"tagName\":\"img\",\"attributes\":{},\"childNodes\":[],\"id\":64}},{\"parentId\":43,\"nextId\":null,\"node\":{\"type\":3,\"textContent\":\"长按保存二维码，添加专属顾问微信\",\"id\":65}}]},\"timestamp\":1693403026418}]",
+			"sort": 258,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.712+0000"
+		},
+		{
+			"id": "64ef4792dc22313b8203469d",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":0,\"texts\":[],\"attributes\":[],\"removes\":[{\"parentId\":15,\"id\":24}],\"adds\":[]},\"timestamp\":1693403026426}]",
+			"sort": 259,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:46.744+0000"
+		},
+		{
+			"id": "64ef4794dc22313b820346c5",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":7,\"id\":40,\"x\":291.854736328125,\"y\":685.9762573242188},\"timestamp\":1693403028444}]",
+			"sort": 260,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:48.777+0000"
+		},
+		{
+			"id": "64ef4794dc22313b820346c7",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":9,\"id\":40,\"x\":291.854736328125,\"y\":685.9762573242188},\"timestamp\":1693403028498}]",
+			"sort": 261,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:48.803+0000"
+		},
+		{
+			"id": "64ef47943fc0fa5a7db3a498",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":1,\"positions\":[{\"x\":292,\"y\":686,\"id\":40,\"timeOffset\":0}]},\"timestamp\":1693403028505}]",
+			"sort": 262,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:48.827+0000"
+		},
+		{
+			"id": "64ef47943fc0fa5a7db3a497",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":1,\"id\":40,\"x\":292,\"y\":686},\"timestamp\":1693403028507}]",
+			"sort": 263,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:48.826+0000"
+		},
+		{
+			"id": "64ef4794dc22313b820346c8",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":5,\"id\":36},\"timestamp\":1693403028510}]",
+			"sort": 264,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:48.846+0000"
+		},
+		{
+			"id": "64ef4794dc22313b820346ca",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":0,\"id\":40,\"x\":292,\"y\":686},\"timestamp\":1693403028512}]",
+			"sort": 265,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:48.863+0000"
+		},
+		{
+			"id": "64ef47943fc0fa5a7db3a49b",
+			"uid": null,
+			"itemId": "100775",
+			"traceId": "a68a9d75f19248a8be8dd52b48a4e239",
+			"data": "[{\"type\":3,\"data\":{\"source\":2,\"type\":2,\"id\":40,\"x\":292,\"y\":686},\"timestamp\":1693403028515}]",
+			"sort": 266,
+			"pageId": "5",
+			"deviceInfo": "Mozilla/5.0 (Linux; Android 13; 23013RK75C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/5235 MMWEBSDK/20230701 MMWEBID/1779 MicroMessenger/8.0.40.2420(0x28002855) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64",
+			"createTime": "2023-08-30T13:43:48.877+0000"
+		}
+	];
 
 module.exports = events

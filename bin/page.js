@@ -61,7 +61,7 @@ class Page extends events.EventEmitter {
     this.readAble.push(null)
     this.ffmpeg
     .videoCodec('mpeg4')
-    .videoBitrate('400k')
+    .videoBitrate('100k')
     .inputFPS(50)
     .on('end', () => {
       console.log('\n视频转换成功')
@@ -78,11 +78,12 @@ class Page extends events.EventEmitter {
     if (this.isPlaying === false) {
       return;
     }
-    if (this.imgIndex * 20 >= this.timeLength) {
+    var speed = 20
+    if (this.imgIndex * speed >= this.timeLength) {
       this.stopCut();
       return;
     }
-    this.progressBar.tick(20)
+    this.progressBar.tick(speed)
 
     this.iframe.screenshot({
       type: 'png',
@@ -94,8 +95,12 @@ class Page extends events.EventEmitter {
       this.readAble.push(buffer)
       this.page.evaluate((data) => {
         window.chromePlayer.pause(data * 20);
-      }, this.imgIndex)
+      }, this,this.imgIndex)
 
+      this.updateCanvas(this.imgIndex++)
+    }).catch(e => {
+      // console.error(e)
+      console.log("录制截图报错了--------")
       this.updateCanvas(this.imgIndex++)
     })
   }

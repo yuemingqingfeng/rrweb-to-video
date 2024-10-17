@@ -13,8 +13,8 @@ class Manager {
     console.log('启动无头浏览器')
     this.browser = await puppeteer.launch({
       ignoreHTTPSErrors: true,
-      // headless: false,
-      // devtools: true,
+      headless: false,
+      devtools: true,
       args: [
         '–disable-gpu',
         '–disable-dev-shm-usage',
